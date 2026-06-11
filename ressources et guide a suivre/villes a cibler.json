@@ -1,0 +1,333 @@
+{
+    "Phase 1 : Priorité Haute (Zones de Proximité Immédiate)": [
+      {
+        "ville": "Sannois",
+        "departement": "95",
+        "distance_argenteuil": "2,04 km",
+        "potentiel_demographique_residentiel": "~27 266 hab. ; 33,1 % de maisons individuelles ; taux de propriétaires de 55,5 % ; revenu médian de 34 937 €.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Sannois (Forte)",
+          "Rachat métaux Sannois (Forte)",
+          "Débarras métaux Sannois (Moyenne)",
+          "Benne particulier Sannois (Moyenne)"
+        ],
+        "facteurs_rentabilite_concurrence": "Proximité géographique immédiate facilitant des temps de réponse ultra-rapides. Faible présence de concurrents physiques directs intra-muros."
+      },
+      {
+        "ville": "Cormeilles-en-Parisis",
+        "departement": "95",
+        "distance_argenteuil": "3,37 km",
+        "potentiel_demographique_residentiel": "~29 048 hab. ; forte dynamique résidentielle (+2,10 %/an) ; fort tissu de pavillons de standing ; revenu médian très élevé de 42 693 €.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Cormeilles-en-Parisis (Forte)",
+          "Rachat métaux Cormeilles (Moyenne)",
+          "Débarras métaux Cormeilles (Forte)",
+          "Benne particulier Cormeilles (Forte)"
+        ],
+        "facteurs_rentabilite_concurrence": "Clientèle à haut pouvoir d'achat réalisant d'importants travaux de rénovation de standing générant du cuivre et du zinc. Faible coût de transport."
+      },
+      {
+        "ville": "Sartrouville",
+        "departement": "78",
+        "distance_argenteuil": "6,04 km",
+        "potentiel_demographique_residentiel": "~53 239 hab. ; deuxième ville des Yvelines ; grands secteurs pavillonnaires familiaux ; revenu médian de 34 884 €.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Sartrouville (Forte)",
+          "Rachat métaux Sartrouville (Forte)",
+          "Débarras métaux Sartrouville (Forte)",
+          "Benne particulier Sartrouville (Moyenne)"
+        ],
+        "facteurs_rentabilite_concurrence": "Volume démographique exceptionnel garantissant un flux continu de demandes de débarras de garages ou de jardins. Connexion directe via le réseau routier principal."
+      },
+      {
+        "ville": "Houilles",
+        "departement": "78",
+        "distance_argenteuil": "5,75 km",
+        "potentiel_demographique_residentiel": "~34 909 hab. ; 44,6 % de maisons individuelles ; profil résidentiel très marqué ; revenu médian élevé de 40 756 €.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Houilles (Forte)",
+          "Rachat métaux Houilles (Moyenne)",
+          "Débarras métaux Houilles (Forte)",
+          "Benne particulier Houilles (Forte)"
+        ],
+        "facteurs_rentabilite_concurrence": "Taux d'habitat pavillonnaire exceptionnel pour la petite couronne. Forte propension à l'accumulation de métaux dans les sous-sols et dépendances."
+      },
+      {
+        "ville": "Franconville",
+        "departement": "95",
+        "distance_argenteuil": "3,71 km",
+        "potentiel_demographique_residentiel": "~37 896 hab. ; ville résidentielle et familiale importante de l'agglomération Val Parisis.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Franconville (Forte)",
+          "Rachat métaux Franconville (Moyenne)",
+          "Débarras métaux Franconville (Moyenne)",
+          "Benne particulier Franconville (Forte)"
+        ],
+        "facteurs_rentabilite_concurrence": "Quatrième ville du département en population. Accès direct via l'autoroute A15 permettant une desserte rapide pour la pose de bennes."
+      },
+      {
+        "ville": "Ermont",
+        "departement": "95",
+        "distance_argenteuil": "3,18 km",
+        "potentiel_demographique_residentiel": "~29 691 hab. ; tissu urbain équilibré entre pavillons et habitat intermédiaire ; forte densité de population active.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Ermont (Forte)",
+          "Rachat métaux Ermont (Moyenne)",
+          "Débarras métaux Ermont (Moyenne)",
+          "Benne particulier Ermont (Moyenne)"
+        ],
+        "facteurs_rentabilite_concurrence": "Liaison logistique rapide au nord d'Argenteuil. Trafic régulier d'artisans et de particuliers susceptibles de pratiquer l'apport volontaire."
+      },
+      {
+        "ville": "Eaubonne",
+        "departement": "95",
+        "distance_argenteuil": "4,34 km",
+        "potentiel_demographique_residentiel": "~26 558 hab. ; secteur résidentiel aisé, forte proportion de maisons individuelles avec dépendances.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Eaubonne (Moyenne)",
+          "Rachat métaux Eaubonne (Forte)",
+          "Débarras métaux Eaubonne (Forte)",
+          "Benne particulier Eaubonne (Moyenne)"
+        ],
+        "facteurs_rentabilite_concurrence": "Présence historique d'anciennes installations de chauffage individuel nécessitant des opérations de débarras de tuyauteries et radiateurs."
+      },
+      {
+        "ville": "Colombes",
+        "departement": "92",
+        "distance_argenteuil": "4,23 km",
+        "potentiel_demographique_residentiel": "~86 000 hab. ; forte densité globale mais vaste secteur pavillonnaire dans les quartiers de la Petite Garenne et des Vallées.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Colombes (Forte)",
+          "Rachat métaux Colombes (Forte)",
+          "Débarras métaux Colombes (Forte)",
+          "Benne particulier Colombes (Moyenne)"
+        ],
+        "facteurs_rentabilite_concurrence": "Volume démographique massif à proximité immédiate d'Argenteuil. Le franchissement de la Seine constitue le seul point de friction logistique."
+      },
+      {
+        "ville": "Bezons",
+        "departement": "95",
+        "distance_argenteuil": "3,94 km",
+        "potentiel_demographique_residentiel": "~31 000 hab. ; commune limitrophe en pleine métamorphose urbaine ; forte présence de chantiers de particuliers.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Bezons (Moyenne)",
+          "Rachat métaux Bezons (Moyenne)",
+          "Débarras métaux Bezons (Forte)",
+          "Benne particulier Bezons (Forte)"
+        ],
+        "facteurs_rentabilite_concurrence": "Proximité immédiate. Demande accrue pour l'évacuation de ferrailles de démolition et de rénovation immobilière individuelle."
+      }
+    ],
+    "Phase 2 : Priorité Moyenne (Espaces Pavillonnaires Résidentiels)": [
+      {
+        "ville": "Montigny-lès-Cormeilles",
+        "departement": "95",
+        "distance_argenteuil": "5,18 km",
+        "potentiel_demographique_residentiel": "~22 555 hab. ; habitat pavillonnaire dense structuré le long de l'axe commercial de la RD14.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Montigny-les-Cormeilles (Forte)",
+          "Rachat métaux Montigny (Moyenne)",
+          "Débarras métaux Montigny (Moyenne)",
+          "Benne particulier Montigny (Moyenne)"
+        ],
+        "facteurs_rentabilite_concurrence": "Logistique simplifiée via l'autoroute A15. Concurrence locale modérée sur le segment de la récupération au détail auprès des particuliers."
+      },
+      {
+        "ville": "Herblay-sur-Seine",
+        "departement": "95",
+        "distance_argenteuil": "6,93 km",
+        "potentiel_demographique_residentiel": "~32 044 hab. ; 56,0 % de maisons individuelles ; forte dynamique de rénovation résidentielle.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Herblay (Forte)",
+          "Rachat métaux Herblay (Forte)",
+          "Débarras métaux Herblay (Forte)",
+          "Benne particulier Herblay (Forte)"
+        ],
+        "facteurs_rentabilite_concurrence": "Gisement de métaux exceptionnel. Cependant, présence historique du concurrent IDF Recyclage, ce qui impose un ciblage SEO local chirurgical pour s'imposer sur le web."
+      },
+      {
+        "ville": "Taverny",
+        "departement": "95",
+        "distance_argenteuil": "7,02 km",
+        "potentiel_demographique_residentiel": "~27 756 hab. ; tissu pavillonnaire étendu s'étirant vers la forêt de Montmorency.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Taverny (Forte)",
+          "Rachat métaux Taverny (Moyenne)",
+          "Débarras métaux Taverny (Forte)",
+          "Benne particulier Taverny (Forte)"
+        ],
+        "facteurs_rentabilite_concurrence": "Taux de propriétaires élevé favorisant la location de bennes pour travaux extérieurs. Distance de transit modérée via l'A115."
+      },
+      {
+        "ville": "Saint-Leu-la-Forêt",
+        "departement": "95",
+        "distance_argenteuil": "6,09 km",
+        "potentiel_demographique_residentiel": "~16 267 hab. ; commune très résidentielle et verdoyante ; majorité absolue de propriétaires occupants.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Saint-Leu-la-Forêt (Moyenne)",
+          "Rachat métaux Saint-Leu (Forte)",
+          "Débarras métaux Saint-Leu (Forte)",
+          "Benne particulier Saint-Leu (Moyenne)"
+        ],
+        "facteurs_rentabilite_concurrence": "Gisement qualitatif caractérisé par des rénovations thermiques importantes générant des tuyauteries en cuivre et des gouttières en zinc."
+      },
+      {
+        "ville": "Montmorency",
+        "departement": "95",
+        "distance_argenteuil": "6,77 km",
+        "potentiel_demographique_residentiel": "~21 000 hab. ; ville de colline caractérisée par des villas anciennes et de grandes propriétés individuelles.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Montmorency (Moyenne)",
+          "Rachat métaux Montmorency (Moyenne)",
+          "Débarras métaux Montmorency (Forte)",
+          "Benne particulier Montmorency (Forte)"
+        ],
+        "facteurs_rentabilite_concurrence": "Marché de débarras haut de gamme (anciennes demeures avec sous-sols encombrés de métaux, vieilles chaudières en fonte, tuyaux en cuivre épais)."
+      },
+      {
+        "ville": "Chatou",
+        "departement": "78",
+        "distance_argenteuil": "9,55 km",
+        "potentiel_demographique_residentiel": "~29 516 hab. ; haut niveau de vie ; vieillissement de la population (21 % ont plus de 60 ans) ; habitat pavillonnaire ancien de prestige.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Chatou (Moyenne)",
+          "Rachat métaux Chatou (Forte)",
+          "Débarras métaux Chatou (Forte)",
+          "Benne particulier Chatou (Moyenne)"
+        ],
+        "facteurs_rentabilite_concurrence": "Présence historique de la Foire de Chatou, indiquant un marché dynamique pour la brocante et les débarras de successions riches en métaux."
+      },
+      {
+        "ville": "Carrières-sur-Seine",
+        "departement": "78",
+        "distance_argenteuil": "6,34 km",
+        "potentiel_demographique_residentiel": "~15 000 hab. ; commune pavillonnaire limitrophe de Sartrouville et Houilles.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Carrières-sur-Seine (Moyenne)",
+          "Rachat métaux Carrières (Moyenne)",
+          "Débarras métaux Carrières (Forte)",
+          "Benne particulier Carrières (Moyenne)"
+        ],
+        "facteurs_rentabilite_concurrence": "Synergie logistique naturelle avec les opérations menées sur Sartrouville. Demande régulière de débarras de garages et dépendances."
+      },
+      {
+        "ville": "Épinay-sur-Seine",
+        "departement": "93",
+        "distance_argenteuil": "4,66 km",
+        "potentiel_demographique_residentiel": "~54 249 hab. ; tissu urbain mixte avec de grandes cités pavillonnaires anciennes à fort potentiel.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Épinay-sur-Seine (Forte)",
+          "Rachat métaux Épinay (Forte)",
+          "Débarras métaux Épinay (Forte)",
+          "Benne particulier Épinay (Moyenne)"
+        ],
+        "facteurs_rentabilite_concurrence": "Secteur géographique de volume. Nécessite de faire face au concurrent CashMetaux installé localement, en misant sur une stratégie SEO locale agressive."
+      }
+    ],
+    "Phase 3 : Extension (Extension Géographique et Conquête Globale)": [
+      {
+        "ville": "Maisons-Laffitte",
+        "departement": "78",
+        "distance_argenteuil": "7,29 km",
+        "potentiel_demographique_residentiel": "~22 855 hab. ; célèbre pour son parc résidentiel privé de très grand standing, ses demeures de caractère et son domaine équestre.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Maisons-Laffitte (Moyenne)",
+          "Rachat métaux Maisons-Laffitte (Moyenne)",
+          "Débarras métaux Maisons-Laffitte (Forte)",
+          "Benne particulier Maisons-Laffitte (Forte)"
+        ],
+        "facteurs_rentabilite_concurrence": "Demande qualitative pour l'évacuation d'équipements de chauffage de grande taille, de structures métalliques de jardins ou d'écuries, et de vieux réseaux de plomberie."
+      },
+      {
+        "ville": "Montesson",
+        "departement": "78",
+        "distance_argenteuil": "8,03 km",
+        "potentiel_demographique_residentiel": "~15 000 hab. ; zone résidentielle de plaine, vastes parcelles individuelles abritant de nombreuses dépendances et serres maraîchères historiques.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Montesson (Moyenne)",
+          "Rachat métaux Montesson (Moyenne)",
+          "Débarras métaux Montesson (Forte)",
+          "Benne particulier Montesson (Moyenne)"
+        ],
+        "facteurs_rentabilite_concurrence": "Présence d'outillages agricoles obsolètes, de structures de serres en acier galvanisé ou d'aluminium usagé accumulés par les particuliers de la plaine de Montesson."
+      },
+      {
+        "ville": "Rueil-Malmaison",
+        "departement": "92",
+        "distance_argenteuil": "10,37 km",
+        "potentiel_demographique_residentiel": "~78 000 hab. ; commune la plus étendue des Hauts-de-Seine, incluant de grands secteurs résidentiels pavillonnaires aisés (Buzenval, Plaine-Gare).",
+        "mots_cles_pertinents": [
+          "Ferrailleur Rueil-Malmaison (Forte)",
+          "Rachat métaux Rueil-Malmaison (Moyenne)",
+          "Débarras métaux Rueil (Forte)",
+          "Benne particulier Rueil (Forte)"
+        ],
+        "facteurs_rentabilite_concurrence": "Volume démographique exceptionnel. Nécessite une logistique rigoureuse en raison de la distance routière franchissant plusieurs nœuds de circulation complexes."
+      },
+      {
+        "ville": "Conflans-Sainte-Honorine",
+        "departement": "78",
+        "distance_argenteuil": "11,20 km",
+        "potentiel_demographique_residentiel": "~35 000 hab. ; capitale historique de la batellerie ; forte proportion de pavillons familiaux et de zones de stockage.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Conflans (Forte)",
+          "Rachat métaux Conflans-Sainte-Honorine (Moyenne)",
+          "Débarras métaux Conflans (Forte)",
+          "Benne particulier Conflans (Moyenne)"
+        ],
+        "facteurs_rentabilite_concurrence": "Gisement de métaux lié au nautisme et aux activités batelières privées (anciennes pièces de moteurs de bateaux, câbles d'amarrage en acier, batteries de forte puissance)."
+      },
+      {
+        "ville": "Deuil-la-Barre",
+        "departement": "95",
+        "distance_argenteuil": "6,66 km",
+        "potentiel_demographique_residentiel": "~22 000 hab. ; commune résidentielle limitrophe de la Seine-Saint-Denis, fort caractère pavillonnaire.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Deuil-la-Barre (Forte)",
+          "Rachat métaux Deuil (Moyenne)",
+          "Débarras métaux Deuil-la-Barre (Moyenne)",
+          "Benne particulier Deuil-la-Barre (Moyenne)"
+        ],
+        "facteurs_rentabilite_concurrence": "Zone tampon intéressante à l'est d'Argenteuil. Concurrence locale peu organisée sur le segment spécifique du référencement web pour les particuliers."
+      },
+      {
+        "ville": "Le Plessis-Bouchard",
+        "departement": "95",
+        "distance_argenteuil": "4,66 km",
+        "potentiel_demographique_residentiel": "~8 584 hab. ; commune presque exclusivement pavillonnaire, caractérisée par un niveau de vie élevé et un très fort taux de propriétaires.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Le Plessis-Bouchard (Moyenne)",
+          "Rachat métaux Le Plessis-Bouchard (Faible)",
+          "Débarras métaux Plessis-Bouchard (Moyenne)",
+          "Benne particulier Le Plessis-Bouchard (Moyenne)"
+        ],
+        "facteurs_rentabilite_concurrence": "Bien que la population soit modeste, la pureté du profil résidentiel et le taux élevé de propriétaires garantissent une faible concurrence SEO."
+      },
+      {
+        "ville": "Saint-Gratien",
+        "departement": "95",
+        "distance_argenteuil": "3,81 km",
+        "potentiel_demographique_residentiel": "~21 000 hab. ; commune limitrophe d'Argenteuil, densité urbaine importante et présence de zones résidentielles anciennes.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Saint-Gratien (Forte)",
+          "Rachat métaux Saint-Gratien (Moyenne)",
+          "Débarras métaux Saint-Gratien (Moyenne)",
+          "Benne particulier Saint-Gratien (Moyenne)"
+        ],
+        "facteurs_rentabilite_concurrence": "Proximité physique majeure réduisant les frais logistiques de déplacement au strict minimum. Idéal pour des interventions d'opportunité rapides."
+      },
+      {
+        "ville": "Saint-Denis",
+        "departement": "93",
+        "distance_argenteuil": "9,05 km",
+        "potentiel_demographique_residentiel": "~110 154 hab. ; hyper-centre urbain très dense, caractérisé par une forte concentration d'habitat ancien et de locaux artisanaux.",
+        "mots_cles_pertinents": [
+          "Ferrailleur Saint-Denis (Forte)",
+          "Rachat métaux Saint-Denis (Forte)",
+          "Débarras métaux Saint-Denis (Forte)",
+          "Benne particulier Saint-Denis (Faible)"
+        ],
+        "facteurs_rentabilite_concurrence": "Marché de pur volume pour le débarras de caves, de cours intérieures et d'encombrants métalliques. Concurrence intense (présence historique de la SAR à proximité)."
+      }
+    ]
+  }

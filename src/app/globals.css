@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --font-inter: "Inter", system-ui, Arial, sans-serif;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+
+  /* Brand palette */
+  --color-brand-dark: #0f172a;
+  --color-brand-gold: #d97706;
+  --color-brand-gold-light: #fbbf24;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, Arial, sans-serif;
+  background: #ffffff;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  transition: color 0.15s ease;
+}
