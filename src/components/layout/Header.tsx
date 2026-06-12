@@ -105,11 +105,11 @@ export function Header() {
           <button
             type="button"
             onClick={() => setInfoOpen(true)}
-            className="flex items-center gap-1.5 rounded-lg border border-slate-700 px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-400 transition hover:border-amber-400 hover:text-amber-400"
-            aria-label="Infos pratiques"
+            className="flex items-center gap-2 transition hover:text-white"
+            aria-label="Horaires et accès"
           >
-            <svg className="h-3 w-3" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v4a1 1 0 002 0V7zm-1-3a1 1 0 100 2 1 1 0 000-2z" clipRule="evenodd" />
+            <svg className="h-3.5 w-3.5 text-slate-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
             </svg>
             Horaires & accès
           </button>
@@ -121,12 +121,15 @@ export function Header() {
           <button
             type="button"
             onClick={() => setInfoOpen(true)}
-            className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-700 text-slate-400 transition hover:border-amber-400 hover:text-amber-400 lg:hidden"
-            aria-label="Horaires et accès"
+            className="flex flex-col items-center justify-center gap-0.5 rounded-lg border border-slate-600 bg-slate-800 px-2.5 py-1.5 transition hover:border-slate-400 hover:bg-slate-700 lg:hidden"
+            aria-label="Infos pratiques"
           >
-            <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <svg className="h-4 w-4 text-slate-200" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v4a1 1 0 002 0V7zm-1-3a1 1 0 100 2 1 1 0 000-2z" clipRule="evenodd" />
             </svg>
+            <span className="text-[9px] font-bold uppercase leading-none tracking-wide text-slate-400">
+              Infos
+            </span>
           </button>
 
           <a

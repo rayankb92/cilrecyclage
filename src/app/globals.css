@@ -23,3 +23,19 @@ body {
 a {
   transition: color 0.15s ease;
 }
+
+/* ── Animations hero (CSS pur, pas de JS) ── */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-1 { animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.hero-2 { animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.13s both; }
+.hero-3 { animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.26s both; }
+.hero-4 { animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both; }
+
+/* Respecter les préférences d'accessibilité */
+@media (prefers-reduced-motion: reduce) {
+  .hero-1, .hero-2, .hero-3, .hero-4 { animation: none; }
+}

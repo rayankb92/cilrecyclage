@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ALL_DEPARTMENTS } from "@/content";
 import { CORE_SERVICES, SITE } from "@/content/site";
+import { AnimateIn } from "@/components/ui/AnimateIn";
 
 export const metadata: Metadata = {
   title: `${SITE.name} — Ferrailleur Argenteuil | Rachat Métaux Île-de-France`,
@@ -33,11 +34,18 @@ const METAL_GRID = [
   },
 ];
 
+const REASSURANCE = [
+  { icon: "⚡", label: "Virement instantané",  detail: "Crédité en quelques secondes" },
+  { icon: "⚖️", label: "Bascule certifiée",    detail: "Pesée contrôlée & transparente" },
+  { icon: "🕐", label: "Lun–Ven 8h–17h",       detail: "Sam 8h–12h" },
+  { icon: "📍", label: "Dépôt Argenteuil",      detail: "2 rue de l'ouest — 95100" },
+];
+
 export default function HomePage() {
   return (
     <>
-      {/* ── HERO PLEIN ÉCRAN ── */}
-      <section className="relative min-h-[60svh] flex items-center lg:min-h-[90svh]">
+      {/* ── HERO ── */}
+      <section className="relative flex min-h-[60svh] items-center lg:min-h-[90svh]">
         <Image
           src="/images/depot/entry-with-brand.webp"
           alt="Dépôt VALMETAUX à Argenteuil — pelleteuse en action, cuivre et ferrailles"
@@ -46,28 +54,23 @@ export default function HomePage() {
           priority
           sizes="100vw"
         />
-        {/* gradient horizontal : opaque à gauche, transparent à droite */}
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/60 to-transparent" />
-        {/* gradient vertical : opaque en bas pour le texte */}
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
 
         <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-12 sm:py-16 lg:py-24">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-amber-400">
+          {/* Stagger CSS pur — pas de JS nécessaire */}
+          <p className="hero-1 text-xs font-bold uppercase tracking-[0.2em] text-amber-400">
             Argenteuil (95100) · Val-d&apos;Oise
           </p>
-
-          <h1 className="mt-4 max-w-2xl text-4xl font-black leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="hero-2 mt-4 max-w-2xl text-4xl font-black leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
             Rachat de Métaux &amp; Ferrailleur en Île-de-France
           </h1>
-
-          <p className="mt-5 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
+          <p className="hero-3 mt-5 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
             Cuivre, laiton, aluminium, ferraille — pesée certifiée, règlement
             par virement instantané. Dépose de bennes et enlèvement camion-grue
             sur chantier.
           </p>
-
-          {/* CTA téléphone : typographique, pas un bouton classique */}
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+          <div className="hero-4 mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
             <a
               href={`tel:${SITE.phone.replace(/\s/g, "")}`}
               className="group flex items-center gap-4 self-start border-l-4 border-amber-400 pl-4 transition hover:border-amber-300"
@@ -81,7 +84,6 @@ export default function HomePage() {
                 </span>
               </span>
             </a>
-
             <Link
               href="/ferrailleur-val-doise-95"
               className="self-start text-sm font-semibold text-slate-300 underline decoration-slate-600 underline-offset-4 hover:text-white hover:decoration-amber-400"
@@ -95,30 +97,11 @@ export default function HomePage() {
       {/* ── BANDE DE RÉASSURANCE ── */}
       <section className="border-y border-slate-800 bg-slate-900">
         <div className="mx-auto grid max-w-6xl grid-cols-2 px-4 sm:px-6 lg:grid-cols-4">
-          {[
-            {
-              icon: "⚡",
-              label: "Virement instantané",
-              detail: "Crédité en quelques secondes",
-            },
-            {
-              icon: "⚖️",
-              label: "Bascule certifiée",
-              detail: "Pesée contrôlée & transparente",
-            },
-            {
-              icon: "🕐",
-              label: "Lun–Ven 8h–17h",
-              detail: "Sam 8h–12h",
-            },
-            {
-              icon: "📍",
-              label: "Dépôt Argenteuil",
-              detail: "2 rue de l'ouest — 95100",
-            },
-          ].map((item, i) => (
-            <div
+          {REASSURANCE.map((item, i) => (
+            <AnimateIn
               key={i}
+              delay={i * 80}
+              distance={12}
               className="flex items-center gap-3 border-slate-800 px-4 py-5 odd:border-r nth-[n+3]:border-t lg:border-r lg:nth-[n+3]:border-t-0 lg:last:border-r-0 first:pl-0 lg:first:pl-4"
             >
               <span className="text-2xl">{item.icon}</span>
@@ -126,15 +109,14 @@ export default function HomePage() {
                 <p className="text-xs font-bold text-white">{item.label}</p>
                 <p className="text-[11px] text-slate-400">{item.detail}</p>
               </div>
-            </div>
+            </AnimateIn>
           ))}
         </div>
       </section>
 
       {/* ── DOUBLE ENTRÉE B2C / B2B ── */}
       <section className="grid lg:grid-cols-2">
-        {/* Particuliers */}
-        <div className="flex flex-col justify-center bg-white px-8 py-16 sm:px-12 lg:px-16 lg:py-24">
+        <AnimateIn className="flex flex-col justify-center bg-white px-8 py-16 sm:px-12 lg:px-16 lg:py-24">
           <p className="text-[10px] font-black uppercase tracking-[0.25em] text-amber-600">
             Particuliers
           </p>
@@ -153,10 +135,12 @@ export default function HomePage() {
           >
             Nous appeler — {SITE.phone} →
           </a>
-        </div>
+        </AnimateIn>
 
-        {/* Professionnels — fond image */}
-        <div className="relative flex flex-col justify-center overflow-hidden px-8 py-16 sm:px-12 lg:px-16 lg:py-24">
+        <AnimateIn
+          delay={120}
+          className="relative flex flex-col justify-center overflow-hidden px-8 py-16 sm:px-12 lg:px-16 lg:py-24"
+        >
           <Image
             src="/images/depot/balance.webp"
             alt="Pont-bascule et équipement VALMETAUX"
@@ -184,13 +168,13 @@ export default function HomePage() {
               Demander une benne — {SITE.phone} →
             </a>
           </div>
-        </div>
+        </AnimateIn>
       </section>
 
-      {/* ── GRILLE MÉTAUX AVEC PHOTOS ── */}
+      {/* ── GRILLE MÉTAUX ── */}
       <section className="bg-slate-950 px-4 py-16 sm:px-6">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-10 flex items-end justify-between gap-4">
+          <AnimateIn className="mb-10 flex items-end justify-between gap-4">
             <div>
               <p className="text-[10px] font-black uppercase tracking-[0.25em] text-amber-400">
                 Nos spécialités
@@ -202,29 +186,28 @@ export default function HomePage() {
             <p className="max-w-xs text-right text-sm text-slate-400">
               Nous rachetons tous vos métaux ferreux et non ferreux.
             </p>
-          </div>
+          </AnimateIn>
 
           <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-            {METAL_GRID.map((metal) => (
-              <div
-                key={metal.name}
-                className="group relative aspect-square overflow-hidden"
-              >
-                <Image
-                  src={metal.src}
-                  alt={metal.name}
-                  fill
-                  className="object-cover transition duration-500 group-hover:scale-105"
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 300px"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-4">
-                  <p className="text-base font-black text-white sm:text-lg">
-                    {metal.name}
-                  </p>
-                  <p className="text-xs text-slate-300">{metal.detail}</p>
+            {METAL_GRID.map((metal, i) => (
+              <AnimateIn key={metal.name} delay={i * 90} distance={16}>
+                <div className="group relative aspect-square overflow-hidden">
+                  <Image
+                    src={metal.src}
+                    alt={metal.name}
+                    fill
+                    className="object-cover transition duration-500 group-hover:scale-105"
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 300px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <p className="text-base font-black text-white sm:text-lg">
+                      {metal.name}
+                    </p>
+                    <p className="text-xs text-slate-300">{metal.detail}</p>
+                  </div>
                 </div>
-              </div>
+              </AnimateIn>
             ))}
           </div>
         </div>
@@ -233,30 +216,33 @@ export default function HomePage() {
       {/* ── ZONES ── */}
       <section className="bg-white px-4 py-16 sm:px-6">
         <div className="mx-auto max-w-6xl">
-          <p className="text-[10px] font-black uppercase tracking-[0.25em] text-amber-600">
-            Couverture géographique
-          </p>
-          <h2 className="mt-2 text-2xl font-black text-slate-900 sm:text-3xl">
-            Nos zones d&apos;intervention
-          </h2>
+          <AnimateIn>
+            <p className="text-[10px] font-black uppercase tracking-[0.25em] text-amber-600">
+              Couverture géographique
+            </p>
+            <h2 className="mt-2 text-2xl font-black text-slate-900 sm:text-3xl">
+              Nos zones d&apos;intervention
+            </h2>
+          </AnimateIn>
 
           <div className="mt-8 grid gap-px bg-slate-200 sm:grid-cols-2 lg:grid-cols-4">
-            {ALL_DEPARTMENTS.map((dept) => (
-              <Link
-                key={dept.slug}
-                href={`/${dept.slug}`}
-                className="group flex flex-col bg-white px-6 py-8 transition hover:bg-slate-950"
-              >
-                <span className="text-4xl font-black text-slate-200 transition group-hover:text-amber-400">
-                  {dept.code}
-                </span>
-                <span className="mt-2 font-bold text-slate-900 transition group-hover:text-white">
-                  {dept.nom}
-                </span>
-                <span className="mt-auto pt-4 text-xs font-semibold text-amber-600 opacity-0 transition group-hover:opacity-100">
-                  Voir les villes →
-                </span>
-              </Link>
+            {ALL_DEPARTMENTS.map((dept, i) => (
+              <AnimateIn key={dept.slug} delay={i * 60} distance={12}>
+                <Link
+                  href={`/${dept.slug}`}
+                  className="group flex flex-col bg-white px-6 py-8 transition hover:bg-slate-950"
+                >
+                  <span className="text-4xl font-black text-slate-200 transition group-hover:text-amber-400">
+                    {dept.code}
+                  </span>
+                  <span className="mt-2 font-bold text-slate-900 transition group-hover:text-white">
+                    {dept.nom}
+                  </span>
+                  <span className="mt-auto pt-4 text-xs font-semibold text-amber-600 opacity-0 transition group-hover:opacity-100">
+                    Voir les villes →
+                  </span>
+                </Link>
+              </AnimateIn>
             ))}
           </div>
         </div>
@@ -265,26 +251,30 @@ export default function HomePage() {
       {/* ── SERVICES ── */}
       <section className="border-t border-slate-200 bg-slate-50 px-4 py-16 sm:px-6">
         <div className="mx-auto max-w-6xl">
-          <p className="text-[10px] font-black uppercase tracking-[0.25em] text-amber-600">
-            Logistique B2B
-          </p>
-          <h2 className="mt-2 text-2xl font-black text-slate-900 sm:text-3xl">
-            Services sur site
-          </h2>
+          <AnimateIn>
+            <p className="text-[10px] font-black uppercase tracking-[0.25em] text-amber-600">
+              Logistique B2B
+            </p>
+            <h2 className="mt-2 text-2xl font-black text-slate-900 sm:text-3xl">
+              Services sur site
+            </h2>
+          </AnimateIn>
 
           <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {CORE_SERVICES.map((service, i) => (
-              <div key={service.slug} className="flex gap-4">
-                <span className="mt-1 text-xl font-black text-slate-200">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <div>
-                  <h3 className="font-bold text-slate-900">{service.name}</h3>
-                  <p className="mt-1 text-sm leading-6 text-slate-500">
-                    {service.description}
-                  </p>
+              <AnimateIn key={service.slug} delay={i * 80}>
+                <div className="flex gap-4">
+                  <span className="mt-1 text-xl font-black text-slate-200">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div>
+                    <h3 className="font-bold text-slate-900">{service.name}</h3>
+                    <p className="mt-1 text-sm leading-6 text-slate-500">
+                      {service.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </AnimateIn>
             ))}
           </div>
         </div>
@@ -293,7 +283,7 @@ export default function HomePage() {
       {/* ── CONTACT FINAL ── */}
       <section className="bg-slate-950 px-4 py-16 sm:px-6">
         <div className="mx-auto max-w-6xl lg:grid lg:grid-cols-2 lg:gap-16">
-          <div>
+          <AnimateIn>
             <p className="text-[10px] font-black uppercase tracking-[0.25em] text-amber-400">
               Dépôt
             </p>
@@ -320,10 +310,12 @@ export default function HomePage() {
                 </span>
               </span>
             </a>
-          </div>
+          </AnimateIn>
 
-          {/* Garanties de paiement */}
-          <div className="mt-12 border-t border-slate-800 pt-12 lg:mt-0 lg:border-l lg:border-t-0 lg:pl-16 lg:pt-0">
+          <AnimateIn
+            delay={150}
+            className="mt-12 border-t border-slate-800 pt-12 lg:mt-0 lg:border-l lg:border-t-0 lg:pl-16 lg:pt-0"
+          >
             <p className="text-[10px] font-black uppercase tracking-[0.25em] text-amber-400">
               Règlement
             </p>
@@ -349,7 +341,7 @@ export default function HomePage() {
                 </li>
               ))}
             </ul>
-          </div>
+          </AnimateIn>
         </div>
       </section>
     </>
