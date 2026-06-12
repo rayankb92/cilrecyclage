@@ -95,21 +95,21 @@ export default function HomePage() {
       </section>
 
       {/* ── BANDE DE RÉASSURANCE ── */}
+      {/* CSS pur (pas d'IntersectionObserver) : section juste sous le hero,
+          toujours visible au chargement → pas de risque de rester invisible */}
       <section className="border-y border-slate-800 bg-slate-900">
         <div className="mx-auto grid max-w-6xl grid-cols-2 px-4 sm:px-6 lg:grid-cols-4">
           {REASSURANCE.map((item, i) => (
-            <AnimateIn
+            <div
               key={i}
-              delay={i * 80}
-              distance={12}
-              className="flex items-center gap-3 border-slate-800 px-4 py-5 odd:border-r nth-[n+3]:border-t lg:border-r lg:nth-[n+3]:border-t-0 lg:last:border-r-0 first:pl-0 lg:first:pl-4"
+              className={`reassurance-${i + 1} flex items-center gap-3 border-slate-800 px-4 py-5 odd:border-r nth-[n+3]:border-t lg:border-r lg:nth-[n+3]:border-t-0 lg:last:border-r-0 first:pl-0 lg:first:pl-4`}
             >
               <span className="text-2xl">{item.icon}</span>
               <div>
                 <p className="text-xs font-bold text-white">{item.label}</p>
                 <p className="text-[11px] text-slate-400">{item.detail}</p>
               </div>
-            </AnimateIn>
+            </div>
           ))}
         </div>
       </section>

@@ -24,18 +24,25 @@ a {
   transition: color 0.15s ease;
 }
 
-/* ── Animations hero (CSS pur, pas de JS) ── */
+/* ── Animations CSS pur (hero + bande réassurance) ── */
 @keyframes heroFadeUp {
   from { opacity: 0; transform: translateY(18px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
+/* Hero — stagger rapide */
 .hero-1 { animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both; }
 .hero-2 { animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.13s both; }
 .hero-3 { animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.26s both; }
 .hero-4 { animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both; }
 
-/* Respecter les préférences d'accessibilité */
+/* Bande réassurance — démarre après le hero */
+.reassurance-1 { animation: heroFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.55s both; }
+.reassurance-2 { animation: heroFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.65s both; }
+.reassurance-3 { animation: heroFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.75s both; }
+.reassurance-4 { animation: heroFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.85s both; }
+
 @media (prefers-reduced-motion: reduce) {
-  .hero-1, .hero-2, .hero-3, .hero-4 { animation: none; }
+  .hero-1, .hero-2, .hero-3, .hero-4,
+  .reassurance-1, .reassurance-2, .reassurance-3, .reassurance-4 { animation: none; }
 }

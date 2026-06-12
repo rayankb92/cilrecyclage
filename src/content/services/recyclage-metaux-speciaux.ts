@@ -18,6 +18,12 @@ export const recyclageMetauxSpeciaux: ServiceContent = {
     imageAlt: "Plaquettes et outils en carbure de tungstène — VALMETAUX",
   },
   targets: {
+    particuliers: [
+      "Vieux outils de bricolage en carbure (forets, fraises) accumulés au garage",
+      "Pots catalytiques de voiture ou moto à remplacer",
+      "Bijoux et objets en alliages nobles (contactez-nous pour identification)",
+      "Matériel d'atelier amateur hors service contenant des inserts carbure",
+    ],
     professionnels: [
       "Ateliers d'usinage : plaquettes de coupe, forets carbure, outils monoblocs hors service",
       "Industries high-tech : rebuts en titane, nickel, Inconel, tantale",
