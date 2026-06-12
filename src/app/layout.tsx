@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
-import { MobileCta } from "@/components/layout/MobileCta";
 import { LocalBusinessJsonLd } from "@/components/seo/JsonLd";
 import { SITE } from "@/content/site";
 import "./globals.css";
@@ -60,7 +59,6 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        <MobileCta />
       </body>
     </html>
   );

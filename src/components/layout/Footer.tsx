@@ -5,7 +5,7 @@ import { PRIORITY_METALS, SITE } from "@/content/site";
 
 export function Footer() {
   return (
-    <footer className="border-t border-slate-800 bg-slate-900 pb-20 text-slate-400 lg:pb-0">
+    <footer className="border-t border-slate-800 bg-slate-900 text-slate-400">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-4">
         <div className="md:col-span-1">
           <Image

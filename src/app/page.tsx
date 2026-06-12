@@ -51,7 +51,7 @@ export default function HomePage() {
         {/* gradient vertical : opaque en bas pour le texte */}
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
 
-        <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pb-16 lg:pb-0 lg:py-20">
+        <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-12 sm:py-16 lg:py-24">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-amber-400">
             Argenteuil (95100) · Val-d&apos;Oise
           </p>

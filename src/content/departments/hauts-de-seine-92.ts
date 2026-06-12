@@ -23,13 +23,16 @@ export const hautsDeSeine92: DepartmentContent = {
     metauxDominants:
       "Nous rachetons l'ensemble de vos métaux ferreux et non ferreux dans les Hauts-de-Seine. Le tissu local met en avant le **cuivre** de plomberie et les câbles électriques, le **laiton** de robinetterie, l'**aluminium** (jantes, carters) et les **radiateurs** cuivre/alu. Pour les chantiers de rénovation lourde, nous valorisons les poutrelles IPN/IPE et le platin en volume.",
     logistique:
-      "Pour les volumes plus importants, notamment sur les axes denses comme [Gennevilliers](/ferrailleur-gennevilliers/) ou [Colombes](/ferrailleur-colombes/), nous mettons à votre disposition notre service de [dépose de bennes de chantier](/logistique-chantier/depose-de-bennes/) et nos camions-grues pour l'enlèvement de structures lourdes.",
+      "Pour les volumes plus importants, notamment sur les axes denses comme [Rueil-Malmaison](/ferrailleur-rueil-malmaison/) ou [Colombes](/ferrailleur-colombes/), nous mettons à votre disposition notre service de [dépose de bennes de chantier](/logistique-chantier/depose-de-bennes/) et nos camions-grues pour l'enlèvement de structures lourdes.",
     interDept:
       "Vous avez également des chantiers ou des besoins d'évacuation de ferrailles de l'autre côté de la Seine ? Découvrez notre service d'achat de métaux dans le [Val-d'Oise (95)](/ferrailleur-val-doise-95/) ou contactez directement notre [centre de récupération à Argenteuil](/).",
   },
   internalLinks: {
     home: { label: "Centre de récupération à Argenteuil", slug: "" },
-    cities: [{ label: "Colombes", slug: "ferrailleur-colombes" }],
+    cities: [
+      { label: "Colombes", slug: "ferrailleur-colombes" },
+      { label: "Rueil-Malmaison", slug: "ferrailleur-rueil-malmaison" },
+    ],
     neighborDept: {
       label: "Seine-Saint-Denis (93)",
       slug: "ferrailleur-seine-saint-denis-93",

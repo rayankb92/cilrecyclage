@@ -32,6 +32,11 @@ export const yvelines78: DepartmentContent = {
     cities: [
       { label: "Sartrouville", slug: "ferrailleur-sartrouville" },
       { label: "Houilles", slug: "ferrailleur-houilles" },
+      { label: "Chatou", slug: "ferrailleur-chatou" },
+      { label: "Carrières-sur-Seine", slug: "ferrailleur-carrieres-sur-seine" },
+      { label: "Maisons-Laffitte", slug: "ferrailleur-maisons-laffitte" },
+      { label: "Montesson", slug: "ferrailleur-montesson" },
+      { label: "Conflans-Sainte-Honorine", slug: "ferrailleur-conflans-sainte-honorine" },
     ],
     neighborDept: {
       label: "Hauts-de-Seine (92)",

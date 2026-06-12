@@ -8,7 +8,7 @@ export const SITE = {
   phone: "06 07 56 14 96",
   email: "contact@valmetaux.fr",
   address: {
-    streetAddress: "Zone industrielle",
+    streetAddress: "2 rue de l'ouest",
     addressLocality: "Argenteuil",
     postalCode: "95100",
     addressRegion: "Île-de-France",
@@ -39,12 +39,6 @@ export const CORE_SERVICES: ServiceItem[] = [
     slug: "logistique-chantier/enlevement-camion-grue",
     description:
       "Manutention et enlèvement de charges lourdes : poutrelles, machines industrielles et structures métalliques.",
-  },
-  {
-    name: "Découpe au chalumeau",
-    slug: "logistique-chantier/decoupe-chalumeau",
-    description:
-      "Démantèlement sur site de structures complexes avant évacuation des ferrailles.",
   },
   {
     name: "Évacuation de ferrailles",

@@ -12,6 +12,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
+    {
+      url: `${baseUrl}/infos-pratiques`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
 
   const departments: MetadataRoute.Sitemap = ALL_DEPARTMENTS.map((dept) => ({
@@ -27,6 +33,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly",
     priority: city.phase === 1 ? 0.8 : 0.6,
   }));
+
+  const prestationsIndex: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/prestations`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+  ];
 
   const services: MetadataRoute.Sitemap = ALL_SERVICES.map((s) => ({
     url: `${baseUrl}/prestations/${s.slug}`,
@@ -51,5 +66,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  return [...home, ...departments, ...cities, ...services, ...guides, ...guideIndex];
+  return [...home, ...departments, ...cities, ...prestationsIndex, ...services, ...guides, ...guideIndex];
 }

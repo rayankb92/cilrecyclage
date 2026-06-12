@@ -1,9 +1,15 @@
 import Link from "next/link";
 import type { CityContent } from "@/content/types";
+import { ALL_SERVICES } from "@/content";
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
 import { BreadcrumbJsonLd, LocalBusinessJsonLd } from "@/components/seo/JsonLd";
 import { SITE } from "@/content/site";
 import { RichParagraph } from "@/lib/render-content";
+
+// Services les plus pertinents pour une page ville (apport + enlèvement)
+const CITY_SERVICES = ALL_SERVICES.filter((s) =>
+  ["rachat-de-metaux", "enlevement-chantier", "depose-de-bennes"].includes(s.slug),
+);
 
 export function CityPageTemplate({ content }: { content: CityContent }) {
   const breadcrumbItems = [
@@ -95,8 +101,30 @@ export function CityPageTemplate({ content }: { content: CityContent }) {
           )}
         </div>
 
+        {/* ── PRESTATIONS ── */}
+        <section className="mt-12 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+          <h2 className="text-xl font-bold text-slate-900">
+            Nos prestations à {content.ville}
+          </h2>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-3">
+            {CITY_SERVICES.map((service) => (
+              <li key={service.slug}>
+                <Link
+                  href={`/prestations/${service.slug}`}
+                  className="block rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-800 transition hover:border-amber-300 hover:text-amber-700"
+                >
+                  {service.nav}
+                  <span className="mt-1 block text-xs font-normal text-slate-400 line-clamp-2">
+                    {service.hero.pitch.slice(0, 60)}…
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+
         {/* ── MAILLAGE INTERNE ── */}
-        <section className="mt-12 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
           <h2 className="text-xl font-bold text-slate-900">
             Communes voisines et département
           </h2>

@@ -34,7 +34,7 @@ export const colombes: CityContent = {
     },
     nearbyCities: [
       { label: "Argenteuil", slug: "ferrailleur-argenteuil" },
-      { label: "Gennevilliers", slug: "ferrailleur-gennevilliers" },
+      { label: "Rueil-Malmaison", slug: "ferrailleur-rueil-malmaison" },
     ],
   },
 };

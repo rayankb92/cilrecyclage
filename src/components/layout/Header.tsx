@@ -5,10 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { ALL_SERVICES } from "@/content";
 import { SITE } from "@/content/site";
+import { InfoModal } from "@/components/layout/InfoModal";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [prestationsOpen, setPrestationsOpen] = useState(false);
+  const [infoOpen, setInfoOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate-800 bg-slate-950/95 backdrop-blur-sm">
@@ -41,8 +43,8 @@ export function Header() {
             onMouseEnter={() => setPrestationsOpen(true)}
             onMouseLeave={() => setPrestationsOpen(false)}
           >
-            <button
-              type="button"
+            <Link
+              href="/prestations"
               className="flex items-center gap-1 transition hover:text-white"
               aria-expanded={prestationsOpen}
               aria-haspopup="true"
@@ -52,6 +54,7 @@ export function Header() {
                 className={`h-3 w-3 transition-transform duration-200 ${prestationsOpen ? "rotate-180" : ""}`}
                 viewBox="0 0 20 20"
                 fill="currentColor"
+                aria-hidden="true"
               >
                 <path
                   fillRule="evenodd"
@@ -59,7 +62,7 @@ export function Header() {
                   clipRule="evenodd"
                 />
               </svg>
-            </button>
+            </Link>
             {/* pt-2 = pont invisible entre le bouton et le panneau (évite la fermeture au survol) */}
             <div
               className={`absolute left-1/2 top-full z-50 w-72 -translate-x-1/2 transition-all duration-200 ${
@@ -70,7 +73,13 @@ export function Header() {
             >
               <div className="pt-2">
                 <div className="rounded-xl border border-slate-800 bg-slate-900 p-3 shadow-2xl">
-                  <div className="mb-2 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-slate-500">
+                  <Link
+                    href="/prestations"
+                    className="mb-2 block rounded-lg px-3 py-2.5 text-sm font-bold normal-case tracking-normal text-amber-400 transition hover:bg-slate-800 hover:text-amber-300"
+                  >
+                    Toutes les prestations →
+                  </Link>
+                  <div className="mb-2 border-t border-slate-800 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-slate-500">
                     Nos services
                   </div>
                   {ALL_SERVICES.map((service) => (
@@ -91,13 +100,38 @@ export function Header() {
           <Link href="/guides" className="transition hover:text-white">
             Guides
           </Link>
+
+          {/* Shortcut infos pratiques — desktop */}
+          <button
+            type="button"
+            onClick={() => setInfoOpen(true)}
+            className="flex items-center gap-1.5 rounded-lg border border-slate-700 px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-400 transition hover:border-amber-400 hover:text-amber-400"
+            aria-label="Infos pratiques"
+          >
+            <svg className="h-3 w-3" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v4a1 1 0 002 0V7zm-1-3a1 1 0 100 2 1 1 0 000-2z" clipRule="evenodd" />
+            </svg>
+            Horaires & accès
+          </button>
         </nav>
 
-        {/* Téléphone + burger mobile */}
-        <div className="flex items-center gap-4">
+        {/* Téléphone + infos (mobile) + burger */}
+        <div className="flex items-center gap-3">
+          {/* Shortcut infos pratiques — mobile uniquement */}
+          <button
+            type="button"
+            onClick={() => setInfoOpen(true)}
+            className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-700 text-slate-400 transition hover:border-amber-400 hover:text-amber-400 lg:hidden"
+            aria-label="Horaires et accès"
+          >
+            <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v4a1 1 0 002 0V7zm-1-3a1 1 0 100 2 1 1 0 000-2z" clipRule="evenodd" />
+            </svg>
+          </button>
+
           <a
             href={`tel:${SITE.phone.replace(/\s/g, "")}`}
-            className="flex-shrink-0 border-l-2 border-amber-400 pl-4 transition hover:border-amber-300"
+            className="shrink-0 border-l-2 border-amber-400 pl-4 transition hover:border-amber-300"
           >
             <span className="block text-[10px] font-semibold uppercase tracking-widest text-amber-400">
               Appeler
@@ -126,6 +160,9 @@ export function Header() {
         </div>
       </div>
 
+      {/* ── Modal infos pratiques ── */}
+      {infoOpen && <InfoModal onClose={() => setInfoOpen(false)} />}
+
       {/* ── Menu mobile ── */}
       {mobileOpen && (
         <div className="border-t border-slate-800 bg-slate-900 lg:hidden">
@@ -145,10 +182,25 @@ export function Header() {
               Guides & Conseils
             </Link>
 
+            <Link
+              href="/infos-pratiques"
+              onClick={() => setMobileOpen(false)}
+              className="block rounded-lg px-4 py-3 text-sm font-semibold text-slate-300 hover:bg-slate-800 hover:text-white"
+            >
+              Horaires & accès
+            </Link>
+
             <div className="pt-2">
               <p className="px-4 pb-1 text-[10px] font-bold uppercase tracking-wider text-slate-500">
                 Prestations
               </p>
+              <Link
+                href="/prestations"
+                onClick={() => setMobileOpen(false)}
+                className="block rounded-lg px-4 py-3 text-sm font-bold text-amber-400 hover:bg-slate-800 hover:text-amber-300"
+              >
+                Toutes les prestations →
+              </Link>
               {ALL_SERVICES.map((service) => (
                 <Link
                   key={service.slug}

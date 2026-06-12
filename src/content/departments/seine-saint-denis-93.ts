@@ -30,7 +30,10 @@ export const seineSaintDenis93: DepartmentContent = {
   },
   internalLinks: {
     home: { label: "Centre de récupération à Argenteuil", slug: "" },
-    cities: [],
+    cities: [
+      { label: "Épinay-sur-Seine", slug: "ferrailleur-epinay-sur-seine" },
+      { label: "Saint-Denis", slug: "ferrailleur-saint-denis" },
+    ],
     neighborDept: {
       label: "Hauts-de-Seine (92)",
       slug: "ferrailleur-hauts-de-seine-92",
