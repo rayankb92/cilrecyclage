@@ -116,31 +116,34 @@ export default function HomePage() {
 
       {/* ── DOUBLE ENTRÉE B2C / B2B ── */}
       <section className="grid lg:grid-cols-2">
-        <AnimateIn className="flex flex-col justify-center bg-white px-8 py-16 sm:px-12 lg:px-16 lg:py-24">
-          <p className="text-[10px] font-black uppercase tracking-[0.25em] text-amber-600">
-            Particuliers
-          </p>
-          <h2 className="mt-3 text-2xl font-black leading-tight text-slate-900 sm:text-3xl">
-            Vendez vos métaux au comptoir
-          </h2>
-          <p className="mt-4 leading-7 text-slate-600">
-            Vous rénovez un pavillon, videz un sous-sol ou remplacez votre
-            installation de chauffage ? Apportez vos cuivres, radiateurs,
-            câbles et ferrailles — pesée immédiate, règlement par virement
-            instantané (crédité en quelques secondes).
-          </p>
-          <a
-            href={`tel:${SITE.phone.replace(/\s/g, "")}`}
-            className="mt-8 self-start border-b-2 border-amber-500 pb-0.5 text-sm font-bold text-slate-900 transition hover:border-amber-700 hover:text-amber-700"
-          >
-            Nous appeler — {SITE.phone} →
-          </a>
-        </AnimateIn>
+        <div className="flex flex-col justify-center bg-white px-8 py-16 sm:px-12 lg:px-16 lg:py-24">
+          <AnimateIn>
+            <p className="text-[10px] font-black uppercase tracking-[0.25em] text-amber-600">
+              Particuliers
+            </p>
+            <h2 className="mt-3 text-2xl font-black leading-tight text-slate-900 sm:text-3xl">
+              Vendez vos métaux au comptoir
+            </h2>
+          </AnimateIn>
+          <AnimateIn delay={160}>
+            <p className="mt-4 leading-7 text-slate-600">
+              Vous rénovez un pavillon, videz un sous-sol ou remplacez votre
+              installation de chauffage ? Apportez vos cuivres, radiateurs,
+              câbles et ferrailles — pesée immédiate, règlement par virement
+              instantané (crédité en quelques secondes).
+            </p>
+            <a
+              href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+              className="mt-8 self-start border-b-2 border-amber-500 pb-0.5 text-sm font-bold text-slate-900 transition hover:border-amber-700 hover:text-amber-700"
+            >
+              Nous appeler — {SITE.phone} →
+            </a>
+          </AnimateIn>
+        </div>
 
-        <AnimateIn
-          delay={120}
-          className="relative flex flex-col justify-center overflow-hidden px-8 py-16 sm:px-12 lg:px-16 lg:py-24"
-        >
+        {/* Le conteneur porte overflow-hidden pour l'image → on n'anime pas le bloc
+            mais uniquement le contenu textuel pour éviter le clip du translateY */}
+        <div className="relative flex flex-col justify-center overflow-hidden px-8 py-16 sm:px-12 lg:px-16 lg:py-24">
           <Image
             src="/images/depot/balance.webp"
             alt="Pont-bascule et équipement VALMETAUX"
@@ -150,25 +153,29 @@ export default function HomePage() {
           />
           <div className="absolute inset-0 bg-slate-950/75" />
           <div className="relative z-10">
-            <p className="text-[10px] font-black uppercase tracking-[0.25em] text-amber-400">
-              Artisans &amp; Professionnels
-            </p>
-            <h2 className="mt-3 text-2xl font-black leading-tight text-white sm:text-3xl">
-              Bennes sur chantier &amp; enlèvement
-            </h2>
-            <p className="mt-4 leading-7 text-slate-300">
-              Plombier, électricien, maçon ou gestionnaire de site ? Nous
-              déposons des bennes, intervenons au camion-grue et évacuons vos
-              ferrailles directement sur site.
-            </p>
-            <a
-              href={`tel:${SITE.phone.replace(/\s/g, "")}`}
-              className="mt-8 self-start border-b-2 border-amber-400 pb-0.5 text-sm font-bold text-white transition hover:border-amber-300 hover:text-amber-300"
-            >
-              Demander une benne — {SITE.phone} →
-            </a>
+            <AnimateIn delay={80}>
+              <p className="text-[10px] font-black uppercase tracking-[0.25em] text-amber-400">
+                Artisans &amp; Professionnels
+              </p>
+              <h2 className="mt-3 text-2xl font-black leading-tight text-white sm:text-3xl">
+                Bennes sur chantier &amp; enlèvement
+              </h2>
+            </AnimateIn>
+            <AnimateIn delay={200}>
+              <p className="mt-4 leading-7 text-slate-300">
+                Plombier, électricien, maçon ou gestionnaire de site ? Nous
+                déposons des bennes, intervenons au camion-grue et évacuons vos
+                ferrailles directement sur site.
+              </p>
+              <a
+                href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+                className="mt-8 self-start border-b-2 border-amber-400 pb-0.5 text-sm font-bold text-white transition hover:border-amber-300 hover:text-amber-300"
+              >
+                Demander une benne — {SITE.phone} →
+              </a>
+            </AnimateIn>
           </div>
-        </AnimateIn>
+        </div>
       </section>
 
       {/* ── GRILLE MÉTAUX ── */}
