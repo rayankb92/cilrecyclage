@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ALL_DEPARTMENTS } from "@/content";
+import { NEARBY_DEPARTMENTS, EXTENDED_DEPARTMENTS } from "@/content";
 import { CORE_SERVICES, SITE } from "@/content/site";
 import { AnimateIn } from "@/components/ui/AnimateIn";
 
@@ -213,41 +213,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── ZONES ── */}
-      <section className="bg-white px-4 py-16 sm:px-6">
-        <div className="mx-auto max-w-6xl">
-          <AnimateIn>
-            <p className="text-[10px] font-black uppercase tracking-[0.25em] text-amber-600">
-              Couverture géographique
-            </p>
-            <h2 className="mt-2 text-2xl font-black text-slate-900 sm:text-3xl">
-              Nos zones d&apos;intervention
-            </h2>
-          </AnimateIn>
-
-          <div className="mt-8 grid gap-px bg-slate-200 sm:grid-cols-2 lg:grid-cols-4">
-            {ALL_DEPARTMENTS.map((dept, i) => (
-              <AnimateIn key={dept.slug} delay={i * 60} distance={12}>
-                <Link
-                  href={`/${dept.slug}`}
-                  className="group flex flex-col bg-white px-6 py-8 transition hover:bg-slate-950"
-                >
-                  <span className="text-4xl font-black text-slate-200 transition group-hover:text-amber-400">
-                    {dept.code}
-                  </span>
-                  <span className="mt-2 font-bold text-slate-900 transition group-hover:text-white">
-                    {dept.nom}
-                  </span>
-                  <span className="mt-auto pt-4 text-xs font-semibold text-amber-600 opacity-0 transition group-hover:opacity-100">
-                    Voir les villes →
-                  </span>
-                </Link>
-              </AnimateIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── SERVICES ── */}
       <section className="border-t border-slate-200 bg-slate-50 px-4 py-16 sm:px-6">
         <div className="mx-auto max-w-6xl">
@@ -310,6 +275,27 @@ export default function HomePage() {
                 </span>
               </span>
             </a>
+
+            {/* Zones d'intervention — mention sobre, liens utiles pour le maillage */}
+            <div className="mt-10 border-t border-slate-800 pt-8">
+              <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
+                Zones d&apos;intervention
+              </p>
+              <p className="mt-2 text-sm leading-6 text-slate-400">
+                Dépôt à Argenteuil, interventions dans toute l&apos;Île-de-France.
+              </p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {[...NEARBY_DEPARTMENTS, ...EXTENDED_DEPARTMENTS].map((dept) => (
+                  <Link
+                    key={dept.slug}
+                    href={`/${dept.slug}`}
+                    className="rounded-full border border-slate-700 px-3 py-1 text-xs font-semibold text-slate-400 transition hover:border-amber-400 hover:text-amber-400"
+                  >
+                    {dept.nom} ({dept.code})
+                  </Link>
+                ))}
+              </div>
+            </div>
           </AnimateIn>
 
           <AnimateIn
