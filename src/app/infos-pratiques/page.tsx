@@ -120,10 +120,23 @@ export default function InfosPratiquesPage() {
             <div className="mt-4 space-y-3">
               <a
                 href={`tel:${SITE.phone.replace(/\s/g, "")}`}
-                className="flex items-center gap-3 rounded-xl bg-amber-500 px-5 py-3 font-black text-white transition hover:bg-amber-600"
+                className="flex items-center justify-between rounded-xl bg-amber-500 px-5 py-3 transition hover:bg-amber-600"
               >
+                <span className="flex flex-col">
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-amber-100">Mobile</span>
+                  <span className="font-black text-white">{SITE.phone}</span>
+                </span>
+                <span className="text-lg">📱</span>
+              </a>
+              <a
+                href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
+                className="flex items-center justify-between rounded-xl border border-slate-200 px-5 py-3 transition hover:border-amber-300"
+              >
+                <span className="flex flex-col">
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Fixe dépôt</span>
+                  <span className="font-black text-slate-800">{SITE.phoneLandline}</span>
+                </span>
                 <span className="text-lg">📞</span>
-                {SITE.phone}
               </a>
               <a
                 href={`mailto:${SITE.email}`}

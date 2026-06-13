@@ -17,7 +17,7 @@ export function LocalBusinessJsonLd({
     name: SITE.name,
     description: SITE.tagline,
     url: pageUrl ?? SITE.url,
-    telephone: SITE.phone,
+    telephone: [SITE.phone, SITE.phoneLandline],
     email: SITE.email,
     image: `${SITE.url}/logo-valmetaux.png`,
     address: {

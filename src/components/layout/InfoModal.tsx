@@ -123,23 +123,35 @@ export function InfoModal({ onClose }: InfoModalProps) {
             </a>
           </div>
 
-          {/* CTAs */}
+          {/* CTAs téléphone */}
           <div className="grid grid-cols-2 gap-2 pt-4">
             <a
               href={`tel:${SITE.phone.replace(/\s/g, "")}`}
-              className="flex flex-col items-center justify-center gap-1 rounded-xl bg-amber-500 py-3 text-center font-black text-white transition hover:bg-amber-600"
+              className="flex flex-col items-center justify-center gap-1 rounded-xl bg-amber-500 py-3 text-center transition hover:bg-amber-600"
             >
-              <span className="text-lg">📞</span>
-              <span className="text-xs leading-tight">{SITE.phone}</span>
+              <span className="text-[10px] font-bold uppercase tracking-widest text-amber-100">
+                Mobile
+              </span>
+              <span className="text-sm font-black text-white">{SITE.phone}</span>
             </a>
             <a
-              href={`mailto:${SITE.email}`}
-              className="flex flex-col items-center justify-center gap-1 rounded-xl border border-slate-200 bg-slate-50 py-3 text-center text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+              href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
+              className="flex flex-col items-center justify-center gap-1 rounded-xl border border-slate-200 bg-slate-50 py-3 text-center transition hover:border-amber-300 hover:bg-white"
             >
-              <span className="text-lg">✉️</span>
-              <span className="truncate px-2 text-xs">{SITE.email}</span>
+              <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                Fixe dépôt
+              </span>
+              <span className="text-sm font-black text-slate-800">{SITE.phoneLandline}</span>
             </a>
           </div>
+          {/* Email */}
+          <a
+            href={`mailto:${SITE.email}`}
+            className="mt-2 flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-slate-50 py-2.5 text-sm text-slate-500 transition hover:border-slate-300 hover:text-slate-800"
+          >
+            <span>✉️</span>
+            <span className="text-xs">{SITE.email}</span>
+          </a>
 
           {/* Lien page complète */}
           <div className="pt-4">

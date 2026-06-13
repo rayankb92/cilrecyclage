@@ -6,9 +6,10 @@ export const SITE = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.valmetaux.fr",
   locale: "fr_FR",
   phone: "06 07 56 14 96",
+  phoneLandline: "01 34 11 05 10",
   email: "contact@valmetaux.fr",
   address: {
-    streetAddress: "2 rue de l'ouest",
+    streetAddress: "5 rue de l'ouest",
     addressLocality: "Argenteuil",
     postalCode: "95100",
     addressRegion: "Île-de-France",

@@ -38,7 +38,7 @@ const REASSURANCE = [
   { icon: "⚡", label: "Virement instantané",  detail: "Crédité en quelques secondes" },
   { icon: "⚖️", label: "Bascule certifiée",    detail: "Pesée contrôlée & transparente" },
   { icon: "🕐", label: "Lun–Ven 8h–17h",       detail: "Sam 8h–12h" },
-  { icon: "📍", label: "Dépôt Argenteuil",      detail: "2 rue de l'ouest — 95100" },
+  { icon: "📍", label: "Dépôt Argenteuil",      detail: "5 rue de l'ouest — 95100" },
 ];
 
 export default function HomePage() {
@@ -70,26 +70,35 @@ export default function HomePage() {
             par virement instantané. Dépose de bennes et enlèvement camion-grue
             sur chantier.
           </p>
-          <div className="hero-4 mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+          <div className="hero-4 mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-8">
+            {/* Fixe — CTA principal */}
             <a
-              href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+              href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
               className="group flex items-center gap-4 self-start border-l-4 border-amber-400 pl-4 transition hover:border-amber-300"
             >
               <span className="flex flex-col">
                 <span className="text-xs font-semibold uppercase tracking-widest text-amber-400 group-hover:text-amber-300">
-                  Appeler le dépôt
+                  Fixe dépôt
                 </span>
                 <span className="text-2xl font-black tracking-tight text-white sm:text-3xl">
+                  {SITE.phoneLandline}
+                </span>
+              </span>
+            </a>
+            {/* Mobile — secondaire */}
+            <a
+              href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+              className="group flex items-center gap-3 self-start border-l-2 border-slate-600 pl-3 transition hover:border-slate-400"
+            >
+              <span className="flex flex-col">
+                <span className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 group-hover:text-slate-400">
+                  Mobile
+                </span>
+                <span className="text-base font-bold text-slate-400 group-hover:text-slate-200">
                   {SITE.phone}
                 </span>
               </span>
             </a>
-            <Link
-              href="/ferrailleur-val-doise-95"
-              className="self-start text-sm font-semibold text-slate-300 underline decoration-slate-600 underline-offset-4 hover:text-white hover:decoration-amber-400"
-            >
-              Ferrailleur Val-d&apos;Oise (95) →
-            </Link>
           </div>
         </div>
       </section>
@@ -269,19 +278,34 @@ export default function HomePage() {
               </p>
               <p>Lun–Ven 8h–17h · Sam 8h–12h</p>
             </address>
-            <a
-              href={`tel:${SITE.phone.replace(/\s/g, "")}`}
-              className="mt-8 flex items-center gap-4 self-start border-l-4 border-amber-400 pl-4 transition hover:border-amber-300"
-            >
-              <span className="flex flex-col">
-                <span className="text-xs font-semibold uppercase tracking-widest text-amber-400">
-                  Appeler le dépôt
+            <div className="mt-8 flex flex-col gap-3">
+              <a
+                href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
+                className="flex items-center gap-4 self-start border-l-4 border-amber-400 pl-4 transition hover:border-amber-300"
+              >
+                <span className="flex flex-col">
+                  <span className="text-xs font-semibold uppercase tracking-widest text-amber-400">
+                    Fixe dépôt
+                  </span>
+                  <span className="text-3xl font-black text-white">
+                    {SITE.phoneLandline}
+                  </span>
                 </span>
-                <span className="text-3xl font-black text-white">
-                  {SITE.phone}
+              </a>
+              <a
+                href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+                className="flex items-center gap-4 self-start border-l-4 border-slate-700 pl-4 transition hover:border-slate-500"
+              >
+                <span className="flex flex-col">
+                  <span className="text-xs font-semibold uppercase tracking-widest text-slate-500">
+                    Mobile
+                  </span>
+                  <span className="text-xl font-black text-slate-300">
+                    {SITE.phone}
+                  </span>
                 </span>
-              </span>
-            </a>
+              </a>
+            </div>
 
             {/* Zones d'intervention — mention sobre, liens utiles pour le maillage */}
             <div className="mt-10 border-t border-slate-800 pt-8">

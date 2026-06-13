@@ -133,14 +133,14 @@ export function Header() {
           </button>
 
           <a
-            href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+            href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
             className="shrink-0 border-l-2 border-amber-400 pl-4 transition hover:border-amber-300"
           >
             <span className="block text-[10px] font-semibold uppercase tracking-widest text-amber-400">
               Appeler
             </span>
             <span className="block text-sm font-black text-white">
-              {SITE.phone}
+              {SITE.phoneLandline}
             </span>
           </a>
 
