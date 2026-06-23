@@ -134,13 +134,19 @@ export function Header() {
 
           <a
             href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
-            className="shrink-0 border-l-2 border-amber-400 pl-4 transition hover:border-amber-300"
+            className="group flex shrink-0 items-center gap-2.5 rounded-xl border border-amber-400 px-4 py-2 transition hover:border-amber-300 hover:bg-amber-400/10"
+            aria-label={`Appeler le dépôt — ${SITE.phoneLandline}`}
           >
-            <span className="block text-[10px] font-semibold uppercase tracking-widest text-amber-400">
+            <svg
+              className="h-4 w-4 shrink-0 text-amber-400 transition group-hover:text-amber-300"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+            </svg>
+            <span className="text-sm font-bold text-white transition group-hover:text-amber-400">
               Appeler
-            </span>
-            <span className="block text-sm font-black text-white">
-              {SITE.phoneLandline}
             </span>
           </a>
 
