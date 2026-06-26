@@ -7,6 +7,9 @@ import { createPortal } from "react-dom";
 import Link from "next/link";
 import { SITE } from "@/content/site";
 
+// const MAPS_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${SITE.address.streetAddress}, ${SITE.address.postalCode} ${SITE.address.addressLocality}`)}`;
+const MAPS_LINK='https://maps.app.goo.gl/rpUUrJfLqfCcunwW8'
+
 const HORAIRES = [
   { jour: "Lun – Ven", heures: "08h – 17h" },
   { jour: "Samedi", heures: "08h – 12h" },
@@ -32,10 +35,6 @@ export function InfoModal({ onClose }: InfoModalProps) {
       document.body.style.overflow = "";
     };
   }, []);
-
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    `${SITE.address.streetAddress}, ${SITE.address.postalCode} ${SITE.address.addressLocality}`,
-  )}`;
 
   const modal = (
     <div
@@ -103,7 +102,7 @@ export function InfoModal({ onClose }: InfoModalProps) {
             </ul>
           </div>
 
-          {/* Adresse */}
+          {/* Adresse + navigation */}
           <div className="py-4">
             <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-slate-400">
               Adresse
@@ -114,12 +113,21 @@ export function InfoModal({ onClose }: InfoModalProps) {
               {SITE.address.postalCode} {SITE.address.addressLocality}
             </p>
             <a
-              href={mapsUrl}
+              href={MAPS_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-block text-xs font-bold text-amber-600 hover:text-amber-700"
+              className="group mt-3 flex w-full items-center gap-3 rounded-xl border border-amber-400 px-4 py-3 transition hover:bg-amber-400/10"
             >
-              Ouvrir dans Maps →
+              <svg className="h-5 w-5 shrink-0 text-amber-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+              </svg>
+              <span className="flex flex-col">
+                <span className="text-sm font-bold text-slate-900">Lancer la navigation</span>
+                <span className="text-xs text-slate-500">{SITE.address.streetAddress}, {SITE.address.addressLocality}</span>
+              </span>
+              <svg className="ml-auto h-4 w-4 shrink-0 text-amber-400 transition group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
             </a>
           </div>
 

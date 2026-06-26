@@ -34,11 +34,48 @@ const METAL_GRID = [
   },
 ];
 
+// Tous les SVG utilisent le même gabarit : cercle plein 20×20, masse visuelle centrée
 const REASSURANCE = [
-  { icon: "⚡", label: "Virement instantané",  detail: "Crédité en quelques secondes" },
-  { icon: "⚖️", label: "Bascule certifiée",    detail: "Pesée contrôlée & transparente" },
-  { icon: "🕐", label: "Lun–Ven 8h–17h",       detail: "Sam 8h–12h" },
-  { icon: "📍", label: "Dépôt Argenteuil",      detail: "5 rue de l'ouest — 95100" },
+  {
+    label: "Virement instantané",
+    detail: "Crédité en quelques secondes",
+    icon: (
+      // Éclair — viewBox décalé vers le bas pour recentrer le mass visuel
+      <svg viewBox="0 -2 20 20" fill="currentColor" className="h-5 w-5 text-amber-400" aria-hidden="true">
+        <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+      </svg>
+    ),
+  },
+  {
+    label: "Bascule certifiée",
+    detail: "Pesée contrôlée & transparente",
+    icon: (
+      // Cercle check — badge vérifié
+      <svg viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5 text-amber-400" aria-hidden="true">
+        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+      </svg>
+    ),
+  },
+  {
+    label: "Lun–Ven 8h–17h",
+    detail: "Sam 8h–12h",
+    icon: (
+      // Horloge — clock
+      <svg viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5 text-amber-400" aria-hidden="true">
+        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+      </svg>
+    ),
+  },
+  {
+    label: "Dépôt Argenteuil",
+    detail: "5 rue de l'ouest — 95100",
+    icon: (
+      // Pin — viewBox décalé vers le haut pour compenser la pointe basse
+      <svg viewBox="0 2 20 20" fill="currentColor" className="h-5 w-5 text-amber-400" aria-hidden="true">
+        <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+      </svg>
+    ),
+  },
 ];
 
 export default function HomePage() {
@@ -111,9 +148,9 @@ export default function HomePage() {
           {REASSURANCE.map((item, i) => (
             <div
               key={i}
-              className={`reassurance-${i + 1} flex items-center gap-3 border-slate-800 px-4 py-5 odd:border-r nth-[n+3]:border-t lg:border-r lg:nth-[n+3]:border-t-0 lg:last:border-r-0 first:pl-0 lg:first:pl-4`}
+              className={`reassurance-${i + 1} flex items-center gap-2 border-slate-800 px-3 py-4 odd:border-r nth-[n+3]:border-t lg:border-r lg:nth-[n+3]:border-t-0 lg:last:border-r-0`}
             >
-              <span className="text-2xl">{item.icon}</span>
+              <span className="shrink-0">{item.icon}</span>
               <div>
                 <p className="text-xs font-bold text-white">{item.label}</p>
                 <p className="text-[11px] text-slate-400">{item.detail}</p>
