@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE } from "@/content/site";
+import { PhoneLink } from "@/components/ui/PhoneLink";
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
 const url = `${SITE.url}/infos-pratiques`;
@@ -123,8 +124,7 @@ export default function InfosPratiquesPage() {
               Contact
             </h2>
             <div className="mt-4 space-y-3">
-              <a
-                href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+              <PhoneLink
                 className="flex items-center justify-between rounded-xl bg-amber-500 px-5 py-3 transition hover:bg-amber-600"
               >
                 <span className="flex flex-col">
@@ -132,9 +132,10 @@ export default function InfosPratiquesPage() {
                   <span className="font-black text-white">{SITE.phone}</span>
                 </span>
                 <span className="text-lg">📱</span>
-              </a>
-              <a
-                href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
+              </PhoneLink>
+              <PhoneLink
+                phone={SITE.phoneLandline}
+                trackConversion={false}
                 className="flex items-center justify-between rounded-xl border border-slate-200 px-5 py-3 transition hover:border-amber-300"
               >
                 <span className="flex flex-col">
@@ -142,7 +143,7 @@ export default function InfosPratiquesPage() {
                   <span className="font-black text-slate-800">{SITE.phoneLandline}</span>
                 </span>
                 <span className="text-lg">📞</span>
-              </a>
+              </PhoneLink>
               <a
                 href={`mailto:${SITE.email}`}
                 className="flex items-center gap-3 rounded-xl border border-slate-200 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-amber-300"

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ALL_CITIES, NEARBY_DEPARTMENTS, EXTENDED_DEPARTMENTS } from "@/content";
 import { PRIORITY_METALS, SITE } from "@/content/site";
+import { PhoneLink } from "@/components/ui/PhoneLink";
 
 export function Footer() {
   return (
@@ -25,20 +26,20 @@ export function Footer() {
               {SITE.address.postalCode} {SITE.address.addressLocality}
             </p>
             <p>Lun–Ven 8h–17h · Sam 8h–12h</p>
-            <a
-              href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+            <PhoneLink
               className="mt-2 inline-block font-bold text-amber-400 hover:text-amber-300"
             >
               {SITE.phone}
-            </a>
+            </PhoneLink>
             <span className="ml-2 text-xs text-slate-600">mobile</span>
             <br />
-            <a
-              href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
+            <PhoneLink
+              phone={SITE.phoneLandline}
+              trackConversion={false}
               className="font-semibold text-slate-400 hover:text-amber-300"
             >
               {SITE.phoneLandline}
-            </a>
+            </PhoneLink>
             <span className="ml-2 text-xs text-slate-600">fixe</span>
             <br />
             <a

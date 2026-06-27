@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
 import { SITE } from "@/content/site";
+import { PhoneLink } from "@/components/ui/PhoneLink";
 
 // const MAPS_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${SITE.address.streetAddress}, ${SITE.address.postalCode} ${SITE.address.addressLocality}`)}`;
 const MAPS_LINK='https://maps.app.goo.gl/rpUUrJfLqfCcunwW8'
@@ -133,24 +134,24 @@ export function InfoModal({ onClose }: InfoModalProps) {
 
           {/* CTAs téléphone */}
           <div className="grid grid-cols-2 gap-2 pt-4">
-            <a
-              href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+            <PhoneLink
               className="flex flex-col items-center justify-center gap-1 rounded-xl bg-amber-500 py-3 text-center transition hover:bg-amber-600"
             >
               <span className="text-[10px] font-bold uppercase tracking-widest text-amber-100">
                 Mobile
               </span>
               <span className="text-sm font-black text-white">{SITE.phone}</span>
-            </a>
-            <a
-              href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
+            </PhoneLink>
+            <PhoneLink
+              phone={SITE.phoneLandline}
+              trackConversion={false}
               className="flex flex-col items-center justify-center gap-1 rounded-xl border border-slate-200 bg-slate-50 py-3 text-center transition hover:border-amber-300 hover:bg-white"
             >
               <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
                 Fixe dépôt
               </span>
               <span className="text-sm font-black text-slate-800">{SITE.phoneLandline}</span>
-            </a>
+            </PhoneLink>
           </div>
           {/* Email */}
           <a

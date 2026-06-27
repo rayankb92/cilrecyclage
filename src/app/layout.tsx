@@ -60,7 +60,7 @@ export default function RootLayout({
     <html lang="fr" className={`${inter.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-white text-zinc-900">
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18269725493"
+          src={`https://www.googletagmanager.com/gtag/js?id=${SITE.googleAds.id}`}
           strategy="afterInteractive"
         />
         <Script id="google-ads" strategy="afterInteractive">
@@ -68,7 +68,10 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'AW-18269725493');
+            gtag('config', '${SITE.googleAds.id}');
+            gtag('config', '${SITE.googleAds.id}/${SITE.googleAds.phoneConversionLabel}', {
+              'phone_conversion_number': '${SITE.phone.replace(/\s/g, "")}'
+            });
           `}
         </Script>
         <LocalBusinessJsonLd />

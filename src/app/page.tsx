@@ -110,8 +110,7 @@ export default function HomePage() {
           </p>
           <div className="hero-4 mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-8">
             {/* Mobile — CTA principal */}
-            <a
-              href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+            <PhoneLink
               className="group flex items-center gap-4 self-start border-l-4 border-amber-400 pl-4 transition hover:border-amber-300"
             >
               <span className="flex flex-col">
@@ -122,10 +121,11 @@ export default function HomePage() {
                   {SITE.phone}
                 </span>
               </span>
-            </a>
+            </PhoneLink>
             {/* Fixe dépôt — secondaire */}
-            <a
-              href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
+            <PhoneLink
+              phone={SITE.phoneLandline}
+              trackConversion={false}
               className="group flex items-center gap-3 self-start border-l-2 border-slate-600 pl-3 transition hover:border-slate-400"
             >
               <span className="flex flex-col">
@@ -136,7 +136,7 @@ export default function HomePage() {
                   {SITE.phoneLandline}
                 </span>
               </span>
-            </a>
+            </PhoneLink>
           </div>
         </div>
       </section>
@@ -315,8 +315,7 @@ export default function HomePage() {
               <p>Lun–Ven 8h–17h · Sam 8h–12h</p>
             </address>
             <div className="mt-8 flex flex-col gap-3">
-              <a
-                href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+              <PhoneLink
                 className="flex items-center gap-4 self-start border-l-4 border-amber-400 pl-4 transition hover:border-amber-300"
               >
                 <span className="flex flex-col">
@@ -327,9 +326,10 @@ export default function HomePage() {
                     {SITE.phone}
                   </span>
                 </span>
-              </a>
-              <a
-                href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
+              </PhoneLink>
+              <PhoneLink
+                phone={SITE.phoneLandline}
+                trackConversion={false}
                 className="flex items-center gap-4 self-start border-l-4 border-slate-700 pl-4 transition hover:border-slate-500"
               >
                 <span className="flex flex-col">
@@ -340,7 +340,7 @@ export default function HomePage() {
                     {SITE.phoneLandline}
                   </span>
                 </span>
-              </a>
+              </PhoneLink>
             </div>
 
             {/* Zones d'intervention — mention sobre, liens utiles pour le maillage */}

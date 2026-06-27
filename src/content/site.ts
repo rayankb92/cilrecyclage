@@ -7,6 +7,10 @@ export const SITE = {
   locale: "fr_FR",
   phone: "06 07 56 14 96",
   phoneLandline: "01 34 11 05 10",
+  googleAds: {
+    id: "AW-18269725493",
+    phoneConversionLabel: "vIpICPPt4cYcELXG14dE",
+  },
   email: "contact@valmetaux.fr",
   address: {
     streetAddress: "5 rue de l'ouest",

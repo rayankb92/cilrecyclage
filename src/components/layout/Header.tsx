@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ALL_SERVICES } from "@/content";
 import { SITE } from "@/content/site";
 import { InfoModal } from "@/components/layout/InfoModal";
+import { PhoneLink } from "@/components/ui/PhoneLink";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -132,8 +133,7 @@ export function Header() {
             </span>
           </button>
 
-          <a
-            href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+          <PhoneLink
             className="group flex shrink-0 items-center gap-2.5 rounded-xl border border-amber-400 px-4 py-2 transition hover:border-amber-300 hover:bg-amber-400/10"
             aria-label={`Appeler — ${SITE.phone}`}
           >
@@ -148,7 +148,7 @@ export function Header() {
             <span className="text-sm font-bold text-white transition group-hover:text-amber-400">
               Appeler
             </span>
-          </a>
+          </PhoneLink>
 
           {/* Burger — mobile seulement */}
           <button
