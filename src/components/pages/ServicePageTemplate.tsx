@@ -5,6 +5,7 @@ import { ALL_DEPARTMENTS, ALL_SERVICES } from "@/content";
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { SITE } from "@/content/site";
+import { PhoneLink } from "@/components/ui/PhoneLink";
 
 export function ServicePageTemplate({ content }: { content: ServiceContent }) {
   const breadcrumbItems = [
@@ -53,8 +54,7 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
             {content.hero.pitch}
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a
-              href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+            <PhoneLink
               className="inline-flex items-center gap-3 self-start border-l-2 border-amber-400 pl-4 transition hover:border-amber-300"
             >
               <div>
@@ -65,7 +65,7 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
                   {SITE.phone}
                 </span>
               </div>
-            </a>
+            </PhoneLink>
           </div>
         </div>
 
@@ -258,12 +258,11 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
             Réponse rapide, estimation immédiate par téléphone ou sur photo.
             Ouvert du lundi au vendredi.
           </p>
-          <a
-            href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+          <PhoneLink
             className="mt-8 inline-flex items-center gap-3 rounded-full bg-amber-500 px-10 py-4 text-lg font-black text-white shadow-xl transition hover:bg-amber-400 active:scale-95"
           >
             {SITE.phone}
-          </a>
+          </PhoneLink>
           <p className="mt-4 text-xs text-slate-600">
             {SITE.address.streetAddress} — {SITE.address.addressLocality}
           </p>

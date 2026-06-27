@@ -9,6 +9,7 @@ import {
   FaqPageJsonLd,
 } from "@/components/seo/JsonLd";
 import { SITE } from "@/content/site";
+import { PhoneLink } from "@/components/ui/PhoneLink";
 import { RichParagraph } from "@/lib/render-content";
 
 export function GuidePageTemplate({ guide }: { guide: GuideContent }) {
@@ -159,8 +160,7 @@ export function GuidePageTemplate({ guide }: { guide: GuideContent }) {
               <p className="mt-2 text-sm font-bold text-white">
                 Appelez directement le dépôt d&apos;Argenteuil
               </p>
-              <a
-                href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+              <PhoneLink
                 className="mt-4 flex items-center gap-3 border-l-2 border-amber-400 pl-3 transition hover:border-amber-300"
               >
                 <div>
@@ -171,7 +171,7 @@ export function GuidePageTemplate({ guide }: { guide: GuideContent }) {
                     {SITE.phone}
                   </span>
                 </div>
-              </a>
+              </PhoneLink>
               <p className="mt-3 text-xs text-slate-500">
                 Lun–Ven 8h–17h · Sam 8h–12h
               </p>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { NEARBY_DEPARTMENTS, EXTENDED_DEPARTMENTS } from "@/content";
 import { CORE_SERVICES, SITE } from "@/content/site";
 import { AnimateIn } from "@/components/ui/AnimateIn";
+import { PhoneLink } from "@/components/ui/PhoneLink";
 
 export const metadata: Metadata = {
   title: `${SITE.name} — Ferrailleur Argenteuil | Rachat Métaux Île-de-France`,
@@ -108,31 +109,31 @@ export default function HomePage() {
             sur chantier.
           </p>
           <div className="hero-4 mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-8">
-            {/* Fixe — CTA principal */}
+            {/* Mobile — CTA principal */}
             <a
-              href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
+              href={`tel:${SITE.phone.replace(/\s/g, "")}`}
               className="group flex items-center gap-4 self-start border-l-4 border-amber-400 pl-4 transition hover:border-amber-300"
             >
               <span className="flex flex-col">
                 <span className="text-xs font-semibold uppercase tracking-widest text-amber-400 group-hover:text-amber-300">
-                  Fixe dépôt
+                  Mobile
                 </span>
                 <span className="text-2xl font-black tracking-tight text-white sm:text-3xl">
-                  {SITE.phoneLandline}
+                  {SITE.phone}
                 </span>
               </span>
             </a>
-            {/* Mobile — secondaire */}
+            {/* Fixe dépôt — secondaire */}
             <a
-              href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+              href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
               className="group flex items-center gap-3 self-start border-l-2 border-slate-600 pl-3 transition hover:border-slate-400"
             >
               <span className="flex flex-col">
                 <span className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 group-hover:text-slate-400">
-                  Mobile
+                  Fixe dépôt
                 </span>
                 <span className="text-base font-bold text-slate-400 group-hover:text-slate-200">
-                  {SITE.phone}
+                  {SITE.phoneLandline}
                 </span>
               </span>
             </a>
@@ -178,12 +179,11 @@ export default function HomePage() {
               câbles et ferrailles — pesée immédiate, règlement par virement
               instantané (crédité en quelques secondes).
             </p>
-            <a
-              href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+            <PhoneLink
               className="mt-8 self-start border-b-2 border-amber-500 pb-0.5 text-sm font-bold text-slate-900 transition hover:border-amber-700 hover:text-amber-700"
             >
               Nous appeler — {SITE.phone} →
-            </a>
+            </PhoneLink>
           </AnimateIn>
         </div>
 
@@ -213,12 +213,11 @@ export default function HomePage() {
                 déposons des bennes, intervenons au camion-grue et évacuons vos
                 ferrailles directement sur site.
               </p>
-              <a
-                href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+              <PhoneLink
                 className="mt-8 self-start border-b-2 border-amber-400 pb-0.5 text-sm font-bold text-white transition hover:border-amber-300 hover:text-amber-300"
               >
                 Demander une benne — {SITE.phone} →
-              </a>
+              </PhoneLink>
             </AnimateIn>
           </div>
         </div>
@@ -317,28 +316,28 @@ export default function HomePage() {
             </address>
             <div className="mt-8 flex flex-col gap-3">
               <a
-                href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
+                href={`tel:${SITE.phone.replace(/\s/g, "")}`}
                 className="flex items-center gap-4 self-start border-l-4 border-amber-400 pl-4 transition hover:border-amber-300"
               >
                 <span className="flex flex-col">
                   <span className="text-xs font-semibold uppercase tracking-widest text-amber-400">
-                    Fixe dépôt
+                    Mobile
                   </span>
                   <span className="text-3xl font-black text-white">
-                    {SITE.phoneLandline}
+                    {SITE.phone}
                   </span>
                 </span>
               </a>
               <a
-                href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+                href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
                 className="flex items-center gap-4 self-start border-l-4 border-slate-700 pl-4 transition hover:border-slate-500"
               >
                 <span className="flex flex-col">
                   <span className="text-xs font-semibold uppercase tracking-widest text-slate-500">
-                    Mobile
+                    Fixe dépôt
                   </span>
                   <span className="text-xl font-black text-slate-300">
-                    {SITE.phone}
+                    {SITE.phoneLandline}
                   </span>
                 </span>
               </a>

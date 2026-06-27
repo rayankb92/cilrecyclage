@@ -4,6 +4,7 @@ import { ALL_SERVICES } from "@/content";
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
 import { BreadcrumbJsonLd, LocalBusinessJsonLd } from "@/components/seo/JsonLd";
 import { SITE } from "@/content/site";
+import { PhoneLink } from "@/components/ui/PhoneLink";
 import { RichParagraph } from "@/lib/render-content";
 
 // Services les plus pertinents pour une page ville (apport + enlèvement)
@@ -42,12 +43,11 @@ export function CityPageTemplate({ content }: { content: CityContent }) {
           <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-300">
             {content.hero.subheadline}
           </p>
-          <a
-            href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+          <PhoneLink
             className="mt-7 inline-block rounded-full bg-amber-500 px-7 py-3 text-base font-bold text-white shadow-lg transition hover:bg-amber-600 active:scale-95"
           >
             {SITE.phone}
-          </a>
+          </PhoneLink>
         </div>
       </section>
 

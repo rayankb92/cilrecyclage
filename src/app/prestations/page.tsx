@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ALL_SERVICES } from "@/content";
 import { SITE } from "@/content/site";
+import { PhoneLink } from "@/components/ui/PhoneLink";
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
 
@@ -113,8 +114,7 @@ export default function PrestationsPage() {
           <p className="mt-3 text-slate-400">
             Estimation rapide par téléphone ou sur photo, 6 jours sur 7.
           </p>
-          <a
-            href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+          <PhoneLink
             className="mt-7 inline-flex items-center gap-3 border-l-2 border-amber-400 pl-4 transition hover:border-amber-300"
           >
             <div className="text-left">
@@ -125,7 +125,7 @@ export default function PrestationsPage() {
                 {SITE.phone}
               </span>
             </div>
-          </a>
+          </PhoneLink>
         </div>
       </section>
     </>

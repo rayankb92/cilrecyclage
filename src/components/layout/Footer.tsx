@@ -26,20 +26,20 @@ export function Footer() {
             </p>
             <p>Lun–Ven 8h–17h · Sam 8h–12h</p>
             <a
-              href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
-              className="mt-2 inline-block font-bold text-amber-400 hover:text-amber-300"
-            >
-              {SITE.phoneLandline}
-            </a>
-            <span className="ml-2 text-xs text-slate-600">fixe</span>
-            <br />
-            <a
               href={`tel:${SITE.phone.replace(/\s/g, "")}`}
-              className="font-semibold text-slate-400 hover:text-amber-300"
+              className="mt-2 inline-block font-bold text-amber-400 hover:text-amber-300"
             >
               {SITE.phone}
             </a>
             <span className="ml-2 text-xs text-slate-600">mobile</span>
+            <br />
+            <a
+              href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
+              className="font-semibold text-slate-400 hover:text-amber-300"
+            >
+              {SITE.phoneLandline}
+            </a>
+            <span className="ml-2 text-xs text-slate-600">fixe</span>
             <br />
             <a
               href={`mailto:${SITE.email}`}

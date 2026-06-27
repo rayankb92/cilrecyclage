@@ -133,9 +133,9 @@ export function Header() {
           </button>
 
           <a
-            href={`tel:${SITE.phoneLandline.replace(/\s/g, "")}`}
+            href={`tel:${SITE.phone.replace(/\s/g, "")}`}
             className="group flex shrink-0 items-center gap-2.5 rounded-xl border border-amber-400 px-4 py-2 transition hover:border-amber-300 hover:bg-amber-400/10"
-            aria-label={`Appeler le dépôt — ${SITE.phoneLandline}`}
+            aria-label={`Appeler — ${SITE.phone}`}
           >
             <svg
               className="h-4 w-4 shrink-0 text-amber-400 transition group-hover:text-amber-300"
