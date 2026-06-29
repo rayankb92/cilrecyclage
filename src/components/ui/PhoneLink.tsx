@@ -6,6 +6,7 @@
  * - Envoie une conversion Google Ads au clic (numéro mobile par défaut)
  */
 
+import { track } from "@vercel/analytics";
 import { SITE } from "@/content/site";
 
 declare global {
@@ -44,6 +45,12 @@ export function PhoneLink({
         send_to: PHONE_CONVERSION_SEND_TO,
       });
     }
+
+    track("phone_click", {
+      phone_type: isPrimary ? "mobile" : "landline",
+      path: window.location.pathname,
+    });
+
     onClick?.(e);
   }
 
