@@ -71,7 +71,7 @@ export default function RootLayout({
             gtag('js', new Date());
             gtag('config', '${SITE.googleAds.id}');
             gtag('config', '${SITE.googleAds.id}/${SITE.googleAds.phoneConversionLabel}', {
-              'phone_conversion_number': '${SITE.phone.replace(/\s/g, "")}'
+              'phone_conversion_number': '${SITE.phone}'
             });
           `}
         </Script>
