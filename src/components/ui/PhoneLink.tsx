@@ -19,7 +19,7 @@ function normalizePhone(phone: string) {
   return phone.replace(/\s/g, "");
 }
 
-const PHONE_CONVERSION_SEND_TO = `${SITE.googleAds.id}/${SITE.googleAds.phoneConversionLabel}`;
+const PHONE_CONVERSION_SEND_TO = `${SITE.googleAds.adsId}/${SITE.googleAds.phoneConversionLabel}`;
 
 interface PhoneLinkProps extends Omit<React.ComponentPropsWithoutRef<"a">, "href"> {
   phone?: string;
