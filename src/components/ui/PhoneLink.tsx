@@ -43,6 +43,8 @@ export function PhoneLink({
     if (shouldTrack && typeof window.gtag === "function") {
       window.gtag("event", "conversion", {
         send_to: PHONE_CONVERSION_SEND_TO,
+        value: 1.0,
+        currency: "EUR",
       });
     }
 

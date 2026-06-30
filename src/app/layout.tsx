@@ -70,9 +70,6 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${SITE.googleAds.id}');
-            gtag('config', '${SITE.googleAds.id}/${SITE.googleAds.phoneConversionLabel}', {
-              'phone_conversion_number': '${SITE.phone}'
-            });
           `}
         </Script>
         <LocalBusinessJsonLd />
