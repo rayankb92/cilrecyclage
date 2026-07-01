@@ -10,6 +10,7 @@ export const SITE = {
   googleAds: {
     id: "GT-NFP5MXFC",
     adsId: "AW-18269725493",
+    ga4Id: "G-F8GGC9P4CS",
     phoneConversionLabel: "FFwQCNPGocgcELXG14dE",
   },
   email: "contact@valmetaux.fr",
