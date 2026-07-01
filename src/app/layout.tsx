@@ -5,7 +5,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { LocalBusinessJsonLd } from "@/components/seo/JsonLd";
 import { SITE } from "@/content/site";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
+import { GA4PageView } from "@/components/analytics/GA4PageView";
 import "./globals.css";
 
 const inter = Inter({
@@ -70,6 +71,7 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${SITE.googleAds.id}');
+            gtag('config', '${SITE.googleAds.adsId}');
             gtag('config', '${SITE.googleAds.ga4Id}');
           `}
         </Script>
@@ -77,6 +79,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <GA4PageView />
         <Analytics />
       </body>
     </html>
