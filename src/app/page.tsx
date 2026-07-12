@@ -8,15 +8,15 @@ import { AnimateIn } from "@/components/ui/AnimateIn";
 import { PhoneLink } from "@/components/ui/PhoneLink";
 
 export const metadata: Metadata = {
-  title: `${SITE.name} — Ferrailleur Villaines-sous-Bois | Rachat Metaux 95`,
+  title: `${SITE.name} — Ferrailleur Villaines-sous-Bois | Rachat Métaux 95`,
   description:
-    "CIL Recyclage, ferrailleur a Villaines-sous-Bois (95570). Rachat cuivre, laiton, aluminium, ferraille et metaux speciaux. Depot local, enlevement et intervention en Ile-de-France.",
+    "CIL Recyclage, ferrailleur à Villaines-sous-Bois (95570). Rachat cuivre, laiton, aluminium, ferraille et métaux spéciaux. Dépôt local, enlèvement et intervention en Île-de-France.",
 };
 
 const METAL_GRID = [
   {
     name: "Cuivre",
-    detail: "Millberry, cables, tuyauteries",
+    detail: "Millberry, câbles, tuyauteries",
     src: "/images/metaux/cuivre-neuf-millbery.webp",
   },
   {
@@ -26,12 +26,12 @@ const METAL_GRID = [
   },
   {
     name: "Aluminium",
-    detail: "Jantes, profiles, carters",
+    detail: "Jantes, profilés, carters",
     src: "/images/metaux/jantes-alu.webp",
   },
   {
     name: "Ferraille",
-    detail: "Structures, depose, chantier",
+    detail: "Structures, dépose, chantier",
     src: "/images/logistique/poutrelle.webp",
   },
 ];
@@ -45,7 +45,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden bg-[#232323]">
         <Image
           src="/images/logistique/chargement-grue-camion.webp"
-          alt="Camion-grue et manutention de metaux pour CIL Recyclage"
+          alt="Camion-grue et manutention de métaux pour CIL Recyclage"
           fill
           className="object-cover object-center"
           priority
@@ -61,19 +61,19 @@ export default function HomePage() {
             </p>
 
             <h1 className="hero-2 mt-6 max-w-3xl text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Ferrailleur et rachat de metaux en Val-d&apos;Oise et Ile-de-France
+              Ferrailleur et rachat de métaux en Val-d&apos;Oise et Île-de-France
             </h1>
 
             <p className="hero-3 mt-5 max-w-2xl text-base leading-7 text-slate-200 sm:text-lg">
-              CIL Recyclage vous accueille au depot de Villaines-sous-Bois pour
-              le rachat de cuivre, laiton, aluminium, ferraille et metaux
-              speciaux. Enlevement sur site, logistique chantier et intervention
-              sur l&apos;Ile-de-France.
+              CIL Recyclage vous accueille au dépôt de Villaines-sous-Bois pour
+              le rachat de cuivre, laiton, aluminium, ferraille et métaux
+              spéciaux. Enlèvement sur site, bennes et intervention en
+              Île-de-France.
             </p>
 
             <div className="hero-4 mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
               <PhoneLink className="inline-flex items-center justify-center rounded-full bg-[#F47A20] px-6 py-3 text-sm font-extrabold text-white transition hover:bg-[#D95F02]">
-                Appeler le depot — {SITE.phone}
+                Appeler le dépôt — {SITE.phone}
               </PhoneLink>
               <Link
                 href="/prestations"
@@ -96,15 +96,15 @@ export default function HomePage() {
               Particuliers
             </p>
             <h2 className="mt-3 text-2xl font-black leading-tight text-[#232323] sm:text-3xl">
-              Vendez vos metaux directement au depot
+              Vendez vos métaux directement au dépôt
             </h2>
           </AnimateIn>
           <AnimateIn delay={140}>
             <p className="mt-4 leading-7 text-[#6B7280]">
-              Vous videz un garage, renovez un pavillon ou remplacez une
-              installation de chauffage ? Apportez vos metaux au depot de
-              Villaines-sous-Bois pour une pesee immediate et un reglement par
-              virement instantane.
+              Vous videz un garage, rénovez un pavillon ou remplacez une
+              installation de chauffage ? Apportez vos métaux au dépôt de
+              Villaines-sous-Bois : pesée immédiate et règlement par virement
+              instantané.
             </p>
             <PhoneLink className="mt-8 self-start border-b-2 border-[#F47A20] pb-0.5 text-sm font-bold text-[#232323] transition hover:border-[#D95F02] hover:text-[#D95F02]">
               Nous appeler — {SITE.phone} →
@@ -115,7 +115,7 @@ export default function HomePage() {
         <div className="relative flex flex-col justify-center overflow-hidden px-8 py-16 sm:px-12 lg:px-16 lg:py-24">
           <Image
             src="/images/depot/balance.webp"
-            alt="Pesee et logistique metaux pour CIL Recyclage"
+            alt="Pesée et logistique métaux pour CIL Recyclage"
             fill
             className="object-cover object-center"
             sizes="(max-width: 1024px) 100vw, 50vw"
@@ -127,18 +127,18 @@ export default function HomePage() {
                 Artisans &amp; professionnels
               </p>
               <h2 className="mt-3 text-2xl font-black leading-tight text-white sm:text-3xl">
-                Enlevement, benne et logistique chantier
+                Enlèvement, benne et logistique chantier
               </h2>
             </AnimateIn>
             <AnimateIn delay={180}>
               <p className="mt-4 leading-7 text-slate-200">
-                CIL Recyclage accompagne les plombiers, electriciens,
-                entreprises de renovation et gestionnaires de site pour la
-                collecte, l&apos;evacuation et la valorisation des metaux sur
-                chantier en Val-d&apos;Oise et en Ile-de-France.
+                CIL Recyclage accompagne les plombiers, électriciens,
+                entreprises de rénovation et gestionnaires de site pour la
+                collecte, l&apos;évacuation et la valorisation des métaux sur
+                chantier en Val-d&apos;Oise et en Île-de-France.
               </p>
               <PhoneLink className="mt-8 self-start border-b-2 border-[#F47A20] pb-0.5 text-sm font-bold text-white transition hover:border-[#FFD7B5] hover:text-[#FFD7B5]">
-                Organiser un enlevement — {SITE.phone} →
+                Organiser un enlèvement — {SITE.phone} →
               </PhoneLink>
             </AnimateIn>
           </div>
@@ -150,10 +150,10 @@ export default function HomePage() {
           <AnimateIn className="mb-10 flex items-end justify-between gap-4">
             <div>
               <p className="text-[10px] font-black uppercase tracking-[0.25em] text-[#FFD7B5]">
-                Metaux valorises
+                Métaux valorisés
               </p>
               <h2 className="mt-2 text-2xl font-black text-white sm:text-3xl">
-                Les metaux que nous rachetons
+                Les métaux que nous rachetons
               </h2>
             </div>
             <p className="max-w-xs text-right text-sm text-slate-400">
@@ -194,7 +194,7 @@ export default function HomePage() {
               Prestations
             </p>
             <h2 className="mt-2 text-2xl font-black text-[#232323] sm:text-3xl">
-              Services au depot et sur site
+              Services au dépôt et sur site
             </h2>
           </AnimateIn>
 
@@ -224,13 +224,13 @@ export default function HomePage() {
                 Rayonnement
               </p>
               <h2 className="mt-2 text-2xl font-black text-[#232323] sm:text-3xl">
-                Un depot local avec intervention en Ile-de-France
+                Un dépôt local avec intervention en Île-de-France
               </h2>
               <p className="mt-4 max-w-2xl leading-7 text-[#6B7280]">
-                Notre ancrage principal reste le Val-d&apos;Oise, avec un
-                maillage local fort autour de Villaines-sous-Bois et des
-                interventions dans les departements voisins pour les volumes,
-                les chantiers et les demandes professionnelles.
+                Notre dépôt est implanté à Villaines-sous-Bois, au cœur du nord
+                du Val-d&apos;Oise. Nous intervenons aussi dans les départements
+                voisins pour les volumes importants, les chantiers et les
+                demandes professionnelles.
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 <Link
@@ -273,7 +273,7 @@ export default function HomePage() {
             <AnimateIn delay={120} className="mt-10 lg:mt-0">
               <div className="rounded-3xl bg-[#232323] p-6 text-white">
                 <p className="text-[10px] font-black uppercase tracking-[0.25em] text-[#FFD7B5]">
-                  Adresse depot
+                  Adresse dépôt
                 </p>
                 <address className="mt-4 not-italic text-sm leading-7 text-slate-200">
                   <p>{SITE.address.streetAddress}</p>
@@ -292,7 +292,7 @@ export default function HomePage() {
                       trackConversion={false}
                       className="inline-flex items-center justify-center rounded-full border border-white/15 px-5 py-3 text-sm font-bold text-white transition hover:bg-white/8"
                     >
-                      Fixe depot — {SITE.phoneLandline}
+                      Fixe dépôt — {SITE.phoneLandline}
                     </PhoneLink>
                   )}
                 </div>

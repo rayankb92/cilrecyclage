@@ -8,33 +8,33 @@ export const belloyEnFrance: CityContent = {
   phase: 1,
   meta: {
     title:
-      "Ferrailleur Belloy-en-France (95) - Rachat Metaux | CIL Recyclage",
+      "Ferrailleur Belloy-en-France (95) - Rachat Métaux | CIL Recyclage",
     description:
-      "Rachat de metaux a Belloy-en-France pres du parc de l'Orme : cuivre, laiton, aluminium, zinc, inox et ferraille. Depot CIL Recyclage a Villaines-sous-Bois.",
+      "Rachat de métaux à Belloy-en-France près du parc de l'Orme : cuivre, laiton, aluminium, zinc, inox et ferraille. Dépôt CIL Recyclage à Villaines-sous-Bois.",
   },
   hero: {
-    headline: "Rachat de metaux a Belloy-en-France pres du parc de l'Orme",
+    headline: "Rachat de métaux à Belloy-en-France près du parc de l'Orme",
     subheadline:
-      "CIL Recyclage intervient sur le bassin Belloy-Viarmes avec un depot proche, un tri clair des metaux et une logistique adaptee aux artisans comme aux particuliers.",
+      "Belloy-en-France et Villaines-sous-Bois font partie du même bassin local. Apportez vos métaux au dépôt ou demandez un enlèvement pour les lots plus volumineux.",
   },
   paragraphs: {
     proximite:
-      "Belloy-en-France fait partie du meme bassin de proximite que Villaines-sous-Bois et Viarmes. Cette coherence geographique rend les apports au depot credibles et pratiques, sans detour artificiel ni discours trop large.",
+      "Belloy-en-France est voisine de notre dépôt de Villaines-sous-Bois. La distance est courte, ce qui facilite les apports directs pour les particuliers comme pour les artisans du parc de l'Orme.",
     profilClientele:
-      "La commune melange habitat pavillonnaire, petites entreprises et activites de zone. Les besoins les plus frequents concernent les chantiers de renovation, la maintenance technique, les depots d'ateliers et les evacuations ponctuelles de metaux valorisables.",
+      "La commune mêle habitat pavillonnaire, petites entreprises et activités de zone. Les demandes les plus courantes viennent des chantiers de rénovation, de la maintenance technique, des dépôts d'ateliers et des évacuations ponctuelles de métaux valorisables.",
     metauxPrioritaires:
-      "A Belloy-en-France, nous traitons surtout le **cuivre**, le **laiton**, l'**aluminium**, l'**inox leger**, le **zinc** et la **ferraille** de chantier. Les lots mixtes d'artisans peuvent egalement etre orientes vers un tri plus fin avant valorisation.",
+      "À Belloy-en-France, nous rachetons surtout le **cuivre**, le **laiton**, l'**aluminium**, l'**inox léger**, le **zinc** et la **ferraille** de chantier. Les lots mixtes d'artisans peuvent être triés plus finement avant valorisation.",
     evacuationMetaux:
-      "Les particuliers peuvent venir au depot avec leurs metaux tries. Pour les professionnels ou les lots plus encombrants, nous evaluons la faisabilite d'un enlèvement ou d'une solution logistique adaptee au chantier et au tonnage.",
+      "Les particuliers peuvent venir au dépôt avec leurs métaux triés. Pour les professionnels ou les lots plus encombrants, nous évaluons la faisabilité d'un enlèvement selon le chantier et le tonnage.",
     avantagesConcurrentiel:
-      "L'interet de Belloy-en-France tient a sa coherence economique avec le parc de l'Orme et au fait que CIL Recyclage est deja positionne sur ce bassin local. Le discours y est plus fort qu'une page generic sur une commune eloignee.",
+      "Notre dépôt est à proximité immédiate de Belloy-en-France. Vous bénéficiez d'un interlocuteur local, d'une pesée transparente et d'un paiement par virement instantané dès la validation du lot.",
   },
   internalLinks: {
     department: { label: "Val-d'Oise (95)", slug: "ferrailleur-val-doise-95" },
     nearbyCities: [
       { label: "Viarmes", slug: "ferrailleur-viarmes" },
-      { label: "Montsoult", slug: "ferrailleur-montsoult" },
-      { label: "Luzarches", slug: "ferrailleur-luzarches" },
+      { label: "Maffliers", slug: "ferrailleur-maffliers" },
+      { label: "Presles", slug: "ferrailleur-presles" },
     ],
   },
 };

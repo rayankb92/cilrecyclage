@@ -8,33 +8,33 @@ export const luzarches: CityContent = {
   phase: 1,
   meta: {
     title:
-      "Ferrailleur Luzarches (95) - Rachat Metaux et Ferraille | CIL Recyclage",
+      "Ferrailleur Luzarches (95) - Rachat Métaux et Ferraille | CIL Recyclage",
     description:
-      "Rachat de metaux a Luzarches pour maisons anciennes, artisans et renovations : cuivre, zinc, laiton, alu, radiateurs et ferraille. CIL Recyclage, depot a Villaines-sous-Bois.",
+      "Rachat de métaux à Luzarches pour maisons anciennes, artisans et rénovations : cuivre, zinc, laiton, alu, radiateurs et ferraille. CIL Recyclage, dépôt à Villaines-sous-Bois.",
   },
   hero: {
-    headline: "Rachat de metaux a Luzarches pour renovations et habitat ancien",
+    headline: "Rachat de métaux à Luzarches pour rénovations et habitat ancien",
     subheadline:
-      "Depuis Villaines-sous-Bois, CIL Recyclage dessert Luzarches avec un angle local clair : maisons, artisans, depose technique et valorisation des metaux issus des travaux.",
+      "Depuis Villaines-sous-Bois, CIL Recyclage dessert Luzarches pour les apports au dépôt, les déposes techniques et la valorisation des métaux issus des travaux.",
   },
   paragraphs: {
     proximite:
-      "Luzarches constitue un pole local identifiable dans le nord du Val-d'Oise. La ville s'insere logiquement dans notre maillage autour de Villaines-sous-Bois, Viarmes et Belloy-en-France, avec une zone de chalandise defendable et lisible.",
+      "Luzarches est un pôle local du nord du Val-d'Oise, bien relié à notre dépôt de Villaines-sous-Bois. La commune fait partie de notre zone de desserte habituelle, aux côtés de Viarmes et Belloy-en-France.",
     profilClientele:
-      "Le tissu local combine habitat individuel, renovation de maisons, petits chantiers et activite artisanale. Nous y parlons surtout aux couvreurs-zingueurs, plombiers, electriciens, renovateurs energetiques et particuliers qui trient leurs metaux apres travaux.",
+      "Le tissu local combine habitat individuel, rénovation de maisons, petits chantiers et activité artisanale. Nous y accueillons couvreurs-zingueurs, plombiers, électriciens, rénovateurs énergétiques et particuliers qui trient leurs métaux après travaux.",
     metauxPrioritaires:
-      "A Luzarches, les metaux les plus naturels sont le **zinc** de toiture, le **cuivre**, le **laiton**, l'**aluminium**, les **chaudieres et radiateurs** ainsi que la **ferraille** issue de depose et de remise en etat.",
+      "À Luzarches, les métaux les plus courants sont le **zinc** de toiture, le **cuivre**, le **laiton**, l'**aluminium**, les **chaudières et radiateurs** ainsi que la **ferraille** issue de dépose et de remise en état.",
     evacuationMetaux:
-      "Les apports au depot conviennent bien aux lots tries et aux chantiers de taille classique. Pour les demandes plus techniques ou les volumes plus lourds, nous pouvons organiser une intervention adaptee au contexte du site.",
+      "Les apports au dépôt conviennent aux lots triés et aux chantiers de taille classique. Pour les demandes plus techniques ou les volumes plus lourds, nous organisons une intervention adaptée au contexte du site.",
     avantagesConcurrentiel:
-      "Luzarches apporte une centralite locale interessante au cluster CIL. La ville permet de capter une demande moins industrielle que Domont, mais tres pertinente pour les metaux de renovation et les depots d'artisans.",
+      "Luzarches est une commune où la rénovation génère beaucoup de métaux valorisables. CIL Recyclage vous offre un dépôt proche, une expertise sur les alliages courants et un règlement immédiat par virement.",
   },
   internalLinks: {
     department: { label: "Val-d'Oise (95)", slug: "ferrailleur-val-doise-95" },
     nearbyCities: [
-      { label: "Viarmes", slug: "ferrailleur-viarmes" },
-      { label: "Belloy-en-France", slug: "ferrailleur-belloy-en-france" },
-      { label: "Domont", slug: "ferrailleur-domont" },
+      { label: "Presles", slug: "ferrailleur-presles" },
+      { label: "Chaumontel", slug: "ferrailleur-chaumontel" },
+      { label: "Asnières-sur-Oise", slug: "ferrailleur-asnieres-sur-oise" },
     ],
   },
 };

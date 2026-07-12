@@ -8,33 +8,33 @@ export const montsoult: CityContent = {
   phase: 1,
   meta: {
     title:
-      "Ferrailleur Montsoult (95) - Enlevement et Rachat Metaux | CIL Recyclage",
+      "Ferrailleur Montsoult (95) - Enlèvement et Rachat Métaux | CIL Recyclage",
     description:
-      "Rachat de metaux et ferraille a Montsoult : cuivre, aluminium, zinc, structures metalliques et lots chantier. CIL Recyclage intervient autour de la Croix Verte.",
+      "Rachat de métaux et ferraille à Montsoult : cuivre, aluminium, zinc, structures métalliques et lots chantier. CIL Recyclage intervient autour de la Croix Verte.",
   },
   hero: {
-    headline: "Enlevement de ferraille et rachat de metaux a Montsoult",
+    headline: "Enlèvement de ferraille et rachat de métaux à Montsoult",
     subheadline:
-      "Secteur Croix Verte, RD301 et flux chantier : CIL Recyclage accompagne Montsoult pour les apports au depot et les besoins metalliques lies aux travaux.",
+      "Secteur Croix Verte, RD301 : CIL Recyclage prend en charge vos apports au dépôt et vos enlèvements de ferraille ou de métaux issus des travaux.",
   },
   paragraphs: {
     proximite:
-      "Montsoult se situe sur un axe cle pour notre maillage local. Entre Villaines-sous-Bois, la Croix Verte et les connexions RD301, la commune s'inscrit naturellement dans notre zone de desserte prioritaire du nord du 95.",
+      "Montsoult est bien relié à notre dépôt de Villaines-sous-Bois via la Croix Verte et la RD301. C'est une commune que nous desservons régulièrement, que ce soit pour des apports directs ou des enlèvements sur chantier.",
     profilClientele:
-      "Le secteur attire a la fois des particuliers en renovation, des artisans du second oeuvre et des structures qui gerent des chantiers plus techniques. C'est une commune adaptee a un discours melant depot local, enlèvement et logistique metal.",
+      "Le secteur accueille des particuliers en rénovation, des artisans du second œuvre et des entreprises qui gèrent des chantiers plus techniques. Montsoult est une commune où nous intervenons autant au dépôt qu'en enlèvement.",
     metauxPrioritaires:
-      "A Montsoult, les metaux les plus coherents sont la **ferraille de renovation**, les **poutrelles et structures acier**, le **cuivre**, l'**aluminium** de menuiserie, le **zinc** et certains **moteurs** ou equipements metalliques issus de depose.",
+      "À Montsoult, les métaux les plus courants sont la **ferraille de rénovation**, les **poutrelles et structures acier**, le **cuivre**, l'**aluminium** de menuiserie, le **zinc** et certains **moteurs** ou équipements métalliques issus de dépose.",
     evacuationMetaux:
-      "Selon le volume, la demande peut etre traitee par apport direct au depot ou par organisation d'un enlèvement. Le secteur se prete particulierement bien aux besoins chantier et aux lots plus lourds qu'un simple depose de garage.",
+      "Selon le volume, nous traitons votre demande par apport direct au dépôt ou par enlèvement sur site. Le secteur se prête particulièrement bien aux besoins chantier et aux lots plus lourds qu'un simple dépôt de garage.",
     avantagesConcurrentiel:
-      "Montsoult nous permet de capter un profil de demande plus chantier et plus logistique que Viarmes ou Belloy, tout en restant dans un rayon parfaitement defendable depuis le depot de Villaines-sous-Bois.",
+      "CIL Recyclage gère aussi bien les petits apports que les chantiers avec des volumes importants. Depuis Villaines-sous-Bois, nous intervenons à Montsoult avec le matériel adapté au tonnage et à l'accès du site.",
   },
   internalLinks: {
     department: { label: "Val-d'Oise (95)", slug: "ferrailleur-val-doise-95" },
     nearbyCities: [
+      { label: "Attainville", slug: "ferrailleur-attainville" },
+      { label: "Saint-Martin-du-Tertre", slug: "ferrailleur-saint-martin-du-tertre" },
       { label: "Baillet-en-France", slug: "ferrailleur-baillet-en-france" },
-      { label: "Domont", slug: "ferrailleur-domont" },
-      { label: "Viarmes", slug: "ferrailleur-viarmes" },
     ],
   },
 };

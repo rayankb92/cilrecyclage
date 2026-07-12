@@ -8,33 +8,33 @@ export const domont: CityContent = {
   phase: 1,
   meta: {
     title:
-      "Ferrailleur Domont (95) - Rachat Metaux et Enlevement | CIL Recyclage",
+      "Ferrailleur Domont (95) - Rachat Métaux et Enlèvement | CIL Recyclage",
     description:
-      "Rachat de metaux a Domont pour artisans, PME et chantiers : cuivre, laiton, cables, aluminium, radiateurs et ferraille. Depot CIL Recyclage a Villaines-sous-Bois.",
+      "Rachat de métaux à Domont pour artisans, PME et chantiers : cuivre, laiton, câbles, aluminium, radiateurs et ferraille. Dépôt CIL Recyclage à Villaines-sous-Bois.",
   },
   hero: {
-    headline: "Ferrailleur a Domont pour artisans, PME et renovations",
+    headline: "Ferrailleur à Domont pour artisans, PME et rénovations",
     subheadline:
-      "CIL Recyclage accompagne Domont avec une logique terrain : depot local, enlèvement selon volume et valorisation des metaux issus des travaux et de l'activite artisanale.",
+      "Depuis Villaines-sous-Bois, CIL Recyclage prend en charge les apports au dépôt, les enlèvements sur chantier et la valorisation des métaux pour les artisans et PME de Domont.",
   },
   paragraphs: {
     proximite:
-      "Domont n'est pas une simple page de proximite immediate, mais une extension tres solide du bassin local CIL. La connexion par la RD301 et la logique Croix Verte rendent cette ville defendable commercialement depuis Villaines-sous-Bois.",
+      "Domont est accessible depuis notre dépôt via la RD301 et la Croix Verte. C'est une commune que nous desservons régulièrement, aussi bien pour les apports directs que pour les enlèvements sur site.",
     profilClientele:
-      "Le profil de Domont est plus profond que celui d'une petite commune residentielle. On y trouve a la fois des particuliers en renovation, des artisans installes, des PME, des commerces techniques et des chantiers qui generent des volumes metalliques reguliers.",
+      "Domont combine particuliers en rénovation, artisans installés, PME, commerces techniques et chantiers qui génèrent des volumes métalliques réguliers. C'est un profil varié que nous accompagnons au dépôt comme sur site.",
     metauxPrioritaires:
-      "A Domont, nous mettons en avant le **cuivre**, le **laiton**, les **cables**, l'**aluminium**, les **radiateurs**, la **ferraille de chantier** et les equipements metalliques issus des remplacements techniques ou des debarras professionnels.",
+      "À Domont, nous rachetons le **cuivre**, le **laiton**, les **câbles**, l'**aluminium**, les **radiateurs**, la **ferraille de chantier** et les équipements métalliques issus des remplacements techniques ou des débarras professionnels.",
     evacuationMetaux:
-      "Le secteur se prete bien aux demandes hybrides : apport au depot pour les lots tries, organisation d'enlevement pour les besoins de chantier, et solutions logistiques pour les professionnels qui accumulent des volumes sur site.",
+      "Apport au dépôt pour les lots triés, enlèvement pour les besoins de chantier, benne pour les professionnels qui accumulent des volumes sur site : nous adaptons la solution à votre situation.",
     avantagesConcurrentiel:
-      "Domont est probablement la page a plus fort potentiel de demande dans le cluster initial. Pour CIL Recyclage, l'enjeu est de rester tres concret : depot reel, zone d'intervention credible et discours utile pour artisans et PME.",
+      "CIL Recyclage dispose d'un dépôt réel à Villaines-sous-Bois et d'une capacité d'enlèvement pour les chantiers de Domont. Vous traitez directement avec nous : pesée transparente, prix au cours du jour et virement instantané.",
   },
   internalLinks: {
     department: { label: "Val-d'Oise (95)", slug: "ferrailleur-val-doise-95" },
     nearbyCities: [
+      { label: "Ézanville", slug: "ferrailleur-ezanville" },
+      { label: "Attainville", slug: "ferrailleur-attainville" },
       { label: "Montsoult", slug: "ferrailleur-montsoult" },
-      { label: "Baillet-en-France", slug: "ferrailleur-baillet-en-france" },
-      { label: "Luzarches", slug: "ferrailleur-luzarches" },
     ],
   },
 };

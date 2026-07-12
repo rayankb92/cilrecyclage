@@ -37,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/${city.slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly",
-    priority: city.phase === 1 ? 0.8 : 0.6,
+    priority: city.phase === 1 ? 0.8 : city.phase === 2 ? 0.7 : 0.6,
   }));
 
   const prestationsIndex: MetadataRoute.Sitemap = [
