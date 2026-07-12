@@ -10,10 +10,7 @@ export function LocalBusinessJsonLd({
   city,
   pageUrl,
 }: LocalBusinessJsonLdProps) {
-  const telephones = [SITE.phone, SITE.phoneLandline].filter(
-    (value, index, array): value is string =>
-      Boolean(value) && array.indexOf(value) === index,
-  );
+  const telephones = [SITE.phone];
 
   const schema = {
     "@context": "https://schema.org",

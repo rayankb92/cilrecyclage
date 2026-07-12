@@ -21,9 +21,6 @@ interface InfoModalProps {
 }
 
 export function InfoModal({ onClose }: InfoModalProps) {
-  const hasSecondaryPhone =
-    SITE.phoneLandline && SITE.phoneLandline !== SITE.phone;
-
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -135,7 +132,7 @@ export function InfoModal({ onClose }: InfoModalProps) {
           </div>
 
           {/* CTAs téléphone */}
-          <div className={`grid gap-2 pt-4 ${hasSecondaryPhone ? "grid-cols-2" : "grid-cols-1"}`}>
+          <div className="grid gap-2 pt-4 grid-cols-1">
             <PhoneLink
               className="flex flex-col items-center justify-center gap-1 rounded-xl bg-[#F47A20] py-3 text-center transition hover:bg-[#D95F02]"
             >
@@ -144,18 +141,6 @@ export function InfoModal({ onClose }: InfoModalProps) {
               </span>
               <span className="text-sm font-black text-white">{SITE.phone}</span>
             </PhoneLink>
-            {hasSecondaryPhone && (
-              <PhoneLink
-                phone={SITE.phoneLandline}
-                trackConversion={false}
-                className="flex flex-col items-center justify-center gap-1 rounded-xl border border-slate-200 bg-slate-50 py-3 text-center transition hover:border-[#F47A20] hover:bg-white"
-              >
-                <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
-                  Fixe dépôt
-                </span>
-                <span className="text-sm font-black text-slate-800">{SITE.phoneLandline}</span>
-              </PhoneLink>
-            )}
           </div>
           {SITE.email && (
             <a

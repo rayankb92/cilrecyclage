@@ -205,22 +205,6 @@ export default function InfosPratiquesPage() {
                   <path d="M10 7h4M9 17h6" />
                 </svg>
               </PhoneLink>
-              {SITE.phoneLandline && (
-                <PhoneLink
-                  phone={SITE.phoneLandline}
-                  trackConversion={false}
-                  className="flex items-center justify-between rounded-xl border border-slate-200 px-5 py-3 transition hover:border-[#FFD7B5]"
-                >
-                  <span className="flex flex-col">
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Fixe dépôt</span>
-                    <span className="font-black text-slate-800">{SITE.phoneLandline}</span>
-                  </span>
-                  <svg className="h-5 w-5 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-                    <path d="M7 5h10v14H7z" />
-                    <path d="M9 9h6M9 13h6" />
-                  </svg>
-                </PhoneLink>
-              )}
               {SITE.email && (
                 <a
                   href={`mailto:${SITE.email}`}

@@ -5,9 +5,6 @@ import { PRIORITY_METALS, SITE } from "@/content/site";
 import { PhoneLink } from "@/components/ui/PhoneLink";
 
 export function Footer() {
-  const hasSecondaryPhone =
-    SITE.phoneLandline && SITE.phoneLandline !== SITE.phone;
-
   return (
     <footer className="border-t border-[#232323] bg-[#121212] text-[#A3A3A3]">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-4">
@@ -36,19 +33,6 @@ export function Footer() {
               {SITE.phone}
             </PhoneLink>
             <span className="ml-2 text-xs text-[#6B7280]">contact</span>
-            {hasSecondaryPhone && (
-              <>
-                <br />
-                <PhoneLink
-                  phone={SITE.phoneLandline}
-                  trackConversion={false}
-                  className="font-semibold text-[#A3A3A3] hover:text-[#FFD7B5]"
-                >
-                  {SITE.phoneLandline}
-                </PhoneLink>
-                <span className="ml-2 text-xs text-[#6B7280]">fixe</span>
-              </>
-            )}
             {SITE.email && (
               <>
                 <br />

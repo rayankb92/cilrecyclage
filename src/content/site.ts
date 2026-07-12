@@ -6,7 +6,6 @@ export const SITE = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.cilrecyclage.fr",
   locale: "fr_FR",
   phone: "01 34 71 94 63",
-  phoneLandline: null,
   logoPath: "/cilrecyclage-logo-nobg.png",
   googleAds: {
     id: "GT-NFP5MXFC",
@@ -22,7 +21,7 @@ export const SITE = {
     addressRegion: "Île-de-France",
     addressCountry: "FR",
   },
-  geo: null,
+  geo: null as { latitude: number; longitude: number } | null,
   openingHours: "Mo-Fr 08:00-18:00, Sa 08:00-12:00",
 } as const;
 
