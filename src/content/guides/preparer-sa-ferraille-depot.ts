@@ -13,9 +13,9 @@ export const preparerSaFerrailleDepot: GuideContent = {
   imageAlt: "Préparation d'un lot de cuivre mêlé avant apport en dépôt",
   meta: {
     title:
-      "Comment Préparer sa Ferraille avant le Dépôt ? Conseils Pratiques | VALMETAUX",
+      "Comment Préparer sa Ferraille avant le Dépôt ? Conseils Pratiques | CIL Recyclage",
     description:
-      "Trier, séparer et préparer votre ferraille avant de venir au dépôt VALMETAUX d'Argenteuil. Conseils concrets pour gagner du temps et obtenir le meilleur prix de rachat.",
+      "Trier, séparer et préparer votre ferraille avant de venir au dépôt CIL Recyclage de Villaines-sous-Bois. Conseils concrets pour gagner du temps et obtenir le meilleur prix de rachat.",
   },
   sections: [
     {
@@ -65,7 +65,7 @@ export const preparerSaFerrailleDepot: GuideContent = {
     {
       question: "Dois-je prendre rendez-vous pour apporter ma ferraille ?",
       answer:
-        "Non, l'apport au dépôt VALMETAUX d'Argenteuil se fait sans rendez-vous, du lundi au vendredi de 8h à 17h et le samedi de 8h à 12h. Pour les volumes importants (> 500 kg) ou si vous venez avec un camion, appelez-nous avant pour que nous préparions votre accueil.",
+        "Non, l'apport au dépôt CIL Recyclage de Villaines-sous-Bois se fait sans rendez-vous, du lundi au vendredi de 8h à 18h et le samedi de 8h à 12h. Pour les volumes importants (> 500 kg) ou si vous venez avec un camion, appelez-nous avant pour que nous préparions votre accueil.",
     },
     {
       question: "Que faire si je ne sais pas identifier un métal ?",
@@ -80,7 +80,7 @@ export const preparerSaFerrailleDepot: GuideContent = {
     {
       question: "Puis-je apporter des métaux mélangés sans les trier ?",
       answer:
-        "Oui. VALMETAUX accepte les lots non triés, mais une décote est appliquée pour couvrir le coût du tri sur site. Pour obtenir le meilleur prix, un tri minimal (ferreux vs non-ferreux) suffit à améliorer significativement votre valorisation.",
+        "Oui. CIL Recyclage accepte les lots non triés, mais une décote est appliquée pour couvrir le coût du tri sur site. Pour obtenir le meilleur prix, un tri minimal (ferreux vs non-ferreux) suffit à améliorer significativement votre valorisation.",
     },
   ],
   relatedSlugs: [

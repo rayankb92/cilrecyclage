@@ -10,10 +10,10 @@ export const virementInstantaneLoi: GuideContent = {
   dateModified: "2026-06-01",
   readingTime: 4,
   image: "/images/depot/balance.webp",
-  imageAlt: "Balance certifiée et règlement par virement — VALMETAUX Argenteuil",
+  imageAlt: "Balance certifiée et règlement par virement — CIL Recyclage Villaines-sous-Bois",
   meta: {
     title:
-      "Rachat Métaux : Paiement par Virement Instantané — Réglementation 2026 | VALMETAUX",
+      "Rachat Métaux : Paiement par Virement Instantané — Réglementation 2026 | CIL Recyclage",
     description:
       "Pourquoi le paiement en espèces est interdit pour la vente de ferraille ? Tout savoir sur le virement bancaire instantané pour le rachat de métaux en France.",
   },
@@ -31,7 +31,7 @@ export const virementInstantaneLoi: GuideContent = {
     {
       heading: "Le virement instantané : comment ça fonctionne concrètement",
       content:
-        "Le virement SEPA instantané est un protocole européen standardisé. Pour recevoir un virement instantané de VALMETAUX, il vous suffit de communiquer votre **IBAN** (numéro de compte bancaire au format FR76…). Aucune application ni compte spécial requis. Les principales banques françaises (BNP, Crédit Agricole, Société Générale, La Banque Postale, néobanques) sont toutes compatibles depuis 2023. Le virement est effectué immédiatement après la pesée et validation du bon de cession.",
+        "Le virement SEPA instantané est un protocole européen standardisé. Pour recevoir un virement instantané de CIL Recyclage, il vous suffit de communiquer votre **IBAN** (numéro de compte bancaire au format FR76…). Aucune application ni compte spécial requis. Les principales banques françaises (BNP, Crédit Agricole, Société Générale, La Banque Postale, néobanques) sont toutes compatibles depuis 2023. Le virement est effectué immédiatement après la pesée et validation du bon de cession.",
       subsections: [
         {
           heading: "Délai de réception",
@@ -41,7 +41,7 @@ export const virementInstantaneLoi: GuideContent = {
         {
           heading: "Que faire si votre banque n'accepte pas les virements instantanés ?",
           content:
-            "Toutes les banques de détail françaises sont désormais obligées d'accepter les virements instantanés entrants (règlement européen depuis janvier 2025). Si vous rencontrez un problème, vérifiez que votre IBAN est correct et contactez votre banque. En dernier recours, VALMETAUX peut émettre un virement standard (1-3 jours ouvrés).",
+            "Toutes les banques de détail françaises sont désormais obligées d'accepter les virements instantanés entrants (règlement européen depuis janvier 2025). Si vous rencontrez un problème, vérifiez que votre IBAN est correct et contactez votre banque. En dernier recours, CIL Recyclage peut émettre un virement standard (1-3 jours ouvrés).",
         },
       ],
     },
@@ -59,9 +59,9 @@ export const virementInstantaneLoi: GuideContent = {
         "Non. Depuis la loi du 11 juillet 2016, le paiement en espèces pour l'achat de métaux ferreux et non-ferreux est strictement interdit en France, quelle que soit la somme. Tout paiement doit se faire par virement bancaire ou chèque barré.",
     },
     {
-      question: "Combien de temps prend un virement bancaire de VALMETAUX ?",
+      question: "Combien de temps prend un virement bancaire de CIL Recyclage ?",
       answer:
-        "VALMETAUX règle par virement instantané SEPA. Les fonds sont crédités sur votre compte en moins de 10 secondes après la validation de la transaction, 7 jours sur 7. Vous pouvez vérifier la réception sur votre application bancaire avant de quitter le dépôt.",
+        "CIL Recyclage règle par virement instantané SEPA. Les fonds sont crédités sur votre compte en moins de 10 secondes après la validation de la transaction, 7 jours sur 7. Vous pouvez vérifier la réception sur votre application bancaire avant de quitter le dépôt.",
     },
     {
       question:
@@ -72,7 +72,7 @@ export const virementInstantaneLoi: GuideContent = {
     {
       question: "Dois-je fournir des documents pour vendre ma ferraille ?",
       answer:
-        "Oui. Conformément à la réglementation, VALMETAUX est tenu de recueillir une pièce d'identité et les coordonnées bancaires (IBAN) du vendeur pour chaque transaction. Pour les professionnels, un justificatif de l'entreprise (SIRET) peut être demandé.",
+        "Oui. Conformément à la réglementation, CIL Recyclage est tenu de recueillir une pièce d'identité et les coordonnées bancaires (IBAN) du vendeur pour chaque transaction. Pour les professionnels, un justificatif de l'entreprise (SIRET) peut être demandé.",
     },
   ],
   relatedSlugs: [

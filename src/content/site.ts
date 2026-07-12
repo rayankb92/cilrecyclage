@@ -2,7 +2,7 @@ import type { MetalItem, ServiceItem } from "./types";
 
 export const SITE = {
   name: "CIL Recyclage",
-  tagline: "Ferrailleur et rachat de metaux en Val-d'Oise et Ile-de-France",
+  tagline: "Ferrailleur et rachat de métaux en Val-d'Oise et Île-de-France",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.cilrecyclage.fr",
   locale: "fr_FR",
   phone: "01 34 71 94 63",

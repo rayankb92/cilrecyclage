@@ -10,10 +10,10 @@ export const prixCuivreCoursOfficiel: GuideContent = {
   dateModified: "2026-06-01",
   readingTime: 6,
   image: "/images/metaux/cuivre-neuf-millbery.webp",
-  imageAlt: "Cuivre Millberry neuf — prix au kilo rachat VALMETAUX",
+  imageAlt: "Cuivre Millberry neuf — prix au kilo rachat CIL Recyclage",
   meta: {
     title:
-      "Prix du Cuivre au Kilo en 2026 : Cours LME et Rachat en IDF | VALMETAUX",
+      "Prix du Cuivre au Kilo en 2026 : Cours LME et Rachat en IDF | CIL Recyclage",
     description:
       "Comment est calculé le prix de rachat du cuivre en 2026 ? Cours LME, qualités Millberry et mêlé, décotes appliquées — tout comprendre avant de vendre votre cuivre en Île-de-France.",
   },
@@ -46,9 +46,9 @@ export const prixCuivreCoursOfficiel: GuideContent = {
       ],
     },
     {
-      heading: "Comment VALMETAUX calcule votre prix de rachat",
+      heading: "Comment CIL Recyclage calcule votre prix de rachat",
       content:
-        "Le prix proposé à notre dépôt d'Argenteuil est calculé en trois étapes : (1) **identification de la qualité** du cuivre par notre équipe, (2) **pesée certifiée** sur nos balances homologuées, (3) application du **cours du jour**, mis à jour quotidiennement selon le LME converti en euros. Vous recevez un bordereau détaillé par qualité avant le règlement. Aucun minimum de quantité n'est requis pour l'apport au dépôt.",
+        "Le prix proposé à notre dépôt de Villaines-sous-Bois est calculé en trois étapes : (1) **identification de la qualité** du cuivre par notre équipe, (2) **pesée certifiée** sur nos balances homologuées, (3) application du **cours du jour**, mis à jour quotidiennement selon le LME converti en euros. Vous recevez un bordereau détaillé par qualité avant le règlement. Aucun minimum de quantité n'est requis pour l'apport au dépôt.",
     },
     {
       heading: "Conseils pour maximiser la valeur de votre cuivre",
@@ -60,7 +60,7 @@ export const prixCuivreCoursOfficiel: GuideContent = {
     {
       question: "Quel est le prix du kilo de cuivre aujourd'hui ?",
       answer:
-        "Le prix du cuivre varie chaque jour selon le cours du LME (London Metal Exchange). Pour connaître le cours du jour exact appliqué au dépôt VALMETAUX d'Argenteuil, appelez-nous directement. En 2024-2025, les prix de rachat du cuivre Millberry se situaient entre 6,50 et 8,50 €/kg selon le cours LME du jour.",
+        "Le prix du cuivre varie chaque jour selon le cours du LME (London Metal Exchange). Pour connaître le cours du jour exact appliqué à notre dépôt de Villaines-sous-Bois, appelez-nous directement. En 2024-2025, les prix de rachat du cuivre Millberry se situaient entre 6,50 et 8,50 €/kg selon le cours LME du jour.",
     },
     {
       question:
@@ -71,12 +71,12 @@ export const prixCuivreCoursOfficiel: GuideContent = {
     {
       question: "Peut-on vendre du cuivre sans le dénuder ?",
       answer:
-        "Oui, VALMETAUX rachète les câbles avec gaine. Cependant, une décote est appliquée pour compenser le coût du dénudage. Si vous pouvez dénuder vos câbles avant de venir, vous obtiendrez un meilleur prix. Nous pouvons vous conseiller sur la méthode avant votre déplacement.",
+        "Oui, CIL Recyclage rachète les câbles avec gaine. Cependant, une décote est appliquée pour compenser le coût du dénudage. Si vous pouvez dénuder vos câbles avant de venir, vous obtiendrez un meilleur prix. Nous pouvons vous conseiller sur la méthode avant votre déplacement.",
     },
     {
       question: "Y a-t-il un minimum de quantité pour vendre du cuivre ?",
       answer:
-        "Non. VALMETAUX rachète le cuivre dès le premier kilogramme. Apportez vos chutes directement à notre dépôt d'Argenteuil sans rendez-vous. Pour les volumes supérieurs à 50 kg, appelez-nous pour préparer votre accueil.",
+        "Non. CIL Recyclage rachète le cuivre dès le premier kilogramme. Apportez vos chutes directement à notre dépôt de Villaines-sous-Bois sans rendez-vous. Pour les volumes supérieurs à 50 kg, appelez-nous pour préparer votre accueil.",
     },
   ],
   relatedSlugs: [

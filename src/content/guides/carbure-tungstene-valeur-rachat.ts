@@ -10,10 +10,10 @@ export const carbureValeureRachat: GuideContent = {
   dateModified: "2026-06-01",
   readingTime: 5,
   image: "/images/metaux/carbure.webp",
-  imageAlt: "Plaquettes de coupe en carbure de tungstène usées — rachat VALMETAUX",
+  imageAlt: "Plaquettes de coupe en carbure de tungstène usées — rachat CIL Recyclage",
   meta: {
     title:
-      "Rachat Carbure de Tungstène : Prix et Guide de Valorisation | VALMETAUX IDF",
+      "Rachat Carbure de Tungstène : Prix et Guide de Valorisation | CIL Recyclage IDF",
     description:
       "Le carbure de tungstène se rachète entre 8 et 25 €/kg selon la teneur. Forets, plaquettes CNMG, fraises — guide complet sur le rachat des outils carbure en Île-de-France.",
   },
@@ -41,7 +41,7 @@ export const carbureValeureRachat: GuideContent = {
         "Le carbure de tungstène se distingue facilement : il est **très dense** (1 plaquette CNMG 12 pèse ~15 g, soit 3 fois plus qu'une plaquette cermet de même taille), sa couleur est **gris foncé métallique**, et il est **extrêmement dur** — impossible à rayer avec un couteau ordinaire. Les inscriptions sur les plaquettes (CNMG, WNMG, APKT, TPMT) et la mention du fabricant (Sandvik, Kennametal, Iscar, Walter) confirment généralement la nature carbure.",
     },
     {
-      heading: "Ce que VALMETAUX rachète en carbure",
+      heading: "Ce que CIL Recyclage rachète en carbure",
       content:
         "Nous rachetons tous les formats de carbure de tungstène usé : **plaquettes amovibles** (neuves ou usées), **forets et fraises monoblocs**, **baguettes et barreaux carbure**, **pastilles d'usure**, **carbure concassé**, **bout de forets cassés**. Aucun minimum de quantité. Pour les lots importants, envoyez-nous une photo ou appelez avant de venir pour une première estimation.",
     },
@@ -55,12 +55,12 @@ export const carbureValeureRachat: GuideContent = {
     {
       question: "Quel est le prix de rachat du carbure de tungstène au kilo ?",
       answer:
-        "En 2025-2026, VALMETAUX rachète le carbure de tungstène entre 8 et 25 €/kg selon la qualité : plaquettes de coupe propres (15-25 €/kg), forets monoblocs (12-20 €/kg), carbure mixte ou concassé (8-15 €/kg). Appelez-nous pour le cours du jour exact.",
+        "En 2025-2026, CIL Recyclage rachète le carbure de tungstène entre 8 et 25 €/kg selon la qualité : plaquettes de coupe propres (15-25 €/kg), forets monoblocs (12-20 €/kg), carbure mixte ou concassé (8-15 €/kg). Appelez-nous pour le cours du jour exact.",
     },
     {
       question: "Puis-je vendre des plaquettes carbure neuves inutilisées ?",
       answer:
-        "Oui. Les plaquettes neuves non utilisées se valorisent généralement au même cours ou légèrement supérieur aux plaquettes usées propres. Apportez-les directement au dépôt d'Argenteuil.",
+        "Oui. Les plaquettes neuves non utilisées se valorisent généralement au même cours ou légèrement supérieur aux plaquettes usées propres. Apportez-les directement à notre dépôt de Villaines-sous-Bois.",
     },
     {
       question: "Comment transporter les outils carbure en toute sécurité ?",
@@ -68,9 +68,9 @@ export const carbureValeureRachat: GuideContent = {
         "Les plaquettes carbure peuvent être transportées dans des boîtes en carton, des sacs ou des bocaux. Évitez de les mélanger avec d'autres métaux — séparez-les dans un contenant distinct pour simplifier l'identification et obtenir le meilleur prix.",
     },
     {
-      question: "VALMETAUX rachète-t-il le carbure dans toute l'Île-de-France ?",
+      question: "CIL Recyclage rachète-t-il le carbure dans toute l'Île-de-France ?",
       answer:
-        "Pour les petits lots, l'apport au dépôt d'Argenteuil (95100) est préférable. Pour les gros volumes d'outils carbure issus d'ateliers d'usinage (Essonne, Seine-et-Marne, etc.), nous pouvons organiser un enlèvement sur site.",
+        "Pour les petits lots, l'apport au dépôt de Villaines-sous-Bois (95570) est préférable. Pour les gros volumes d'outils carbure issus d'ateliers d'usinage (Essonne, Seine-et-Marne, etc.), nous pouvons organiser un enlèvement sur site.",
     },
   ],
   relatedSlugs: [

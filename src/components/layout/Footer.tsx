@@ -17,8 +17,8 @@ export function Footer() {
             className="mb-4 h-auto w-36"
           />
           <p className="text-sm leading-6">
-            Depot de rachat de metaux a Villaines-sous-Bois. Cuivre, laiton,
-            aluminium, ferraille et metaux speciaux pour particuliers,
+            Dépôt de rachat de métaux à Villaines-sous-Bois. Cuivre, laiton,
+            aluminium, ferraille et métaux spéciaux pour particuliers,
             artisans et professionnels.
           </p>
           <address className="mt-4 not-italic space-y-1 text-sm">

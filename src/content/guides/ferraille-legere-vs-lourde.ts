@@ -10,12 +10,12 @@ export const ferrailleLegereVsLourde: GuideContent = {
   dateModified: "2026-06-01",
   readingTime: 4,
   image: "/images/logistique/poutrelle.webp",
-  imageAlt: "Poutrelles en acier — ferraille lourde prête au recyclage VALMETAUX",
+  imageAlt: "Poutrelles en acier — ferraille lourde prête au recyclage CIL Recyclage",
   meta: {
     title:
-      "Ferraille Légère (Platin) vs Ferraille Lourde : Prix et Différences | VALMETAUX IDF",
+      "Ferraille Légère (Platin) vs Ferraille Lourde : Prix et Différences | CIL Recyclage IDF",
     description:
-      "Comprendre la différence entre ferraille légère (platin) et ferraille lourde en Île-de-France. Prix de rachat, exemples concrets, logistique d'enlèvement avec VALMETAUX.",
+      "Comprendre la différence entre ferraille légère (platin) et ferraille lourde en Île-de-France. Prix de rachat, exemples concrets, logistique d'enlèvement avec CIL Recyclage.",
   },
   sections: [
     {
@@ -65,14 +65,14 @@ export const ferrailleLegereVsLourde: GuideContent = {
     {
       heading: "Implications logistiques : quel matériel pour l'enlèvement ?",
       content:
-        "Pour la **ferraille légère** en volume modéré (< 500 kg), l'apport direct au dépôt d'Argenteuil est la solution la plus simple. Un véhicule utilitaire ou une remorque suffit. Pour les **volumes importants ou la ferraille lourde** (poutrelles, machines, structures), VALMETAUX dispose d'un [camion-grue qui intervient sur site](/prestations/enlevement-chantier) en Île-de-France. Inutile de prévoir une grue de votre côté — on s'en charge.",
+        "Pour la **ferraille légère** en volume modéré (< 500 kg), l'apport direct au dépôt de Villaines-sous-Bois est la solution la plus simple. Un véhicule utilitaire ou une remorque suffit. Pour les **volumes importants ou la ferraille lourde** (poutrelles, machines, structures), CIL Recyclage dispose d'un [camion-grue qui intervient sur site](/prestations/enlevement-chantier) en Île-de-France. Inutile de prévoir une grue de votre côté — on s'en charge.",
     },
   ],
   faq: [
     {
       question: "Comment savoir si ma ferraille est légère ou lourde ?",
       answer:
-        "Le test le plus simple : si vous pouvez plier ou déformer la pièce à la main, c'est du platin (ferraille légère). Si la pièce est rigide, dense et épaisse de plus de 3 mm, c'est de la ferraille lourde. En cas de doute, envoyez une photo à VALMETAUX pour une évaluation rapide.",
+        "Le test le plus simple : si vous pouvez plier ou déformer la pièce à la main, c'est du platin (ferraille légère). Si la pièce est rigide, dense et épaisse de plus de 3 mm, c'est de la ferraille lourde. En cas de doute, envoyez une photo à CIL Recyclage pour une évaluation rapide.",
     },
     {
       question: "Peut-on mélanger ferraille légère et lourde dans le même lot ?",
@@ -82,12 +82,12 @@ export const ferrailleLegereVsLourde: GuideContent = {
     {
       question: "Quel est le prix de la ferraille lourde au kilo en 2026 ?",
       answer:
-        "Les prix varient selon les cours : en 2025-2026, la ferraille lourde se valorise entre 0,13 et 0,20 €/kg. Appelez VALMETAUX pour le cours du jour exact.",
+        "Les prix varient selon les cours : en 2025-2026, la ferraille lourde se valorise entre 0,13 et 0,20 €/kg. Appelez CIL Recyclage pour le cours du jour exact.",
     },
     {
       question: "Acceptez-vous les radiateurs en fonte ?",
       answer:
-        "Oui. Les radiateurs en fonte anciens constituent une ferraille valorisable. Ils sont rachetés en tant que fonte séparément de l'acier. Apportez-les directement au dépôt d'Argenteuil — pas de minimum de quantité.",
+        "Oui. Les radiateurs en fonte anciens constituent une ferraille valorisable. Ils sont rachetés en tant que fonte séparément de l'acier. Apportez-les directement au dépôt de Villaines-sous-Bois — pas de minimum de quantité.",
     },
   ],
   relatedSlugs: [
