@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { AdvantagesFlex } from "@/components/home/AdvantagesFlex";
 import { ALL_CITIES, NEARBY_DEPARTMENTS, EXTENDED_DEPARTMENTS } from "@/content";
 import { CORE_SERVICES, SITE } from "@/content/site";
 import { AnimateIn } from "@/components/ui/AnimateIn";
@@ -32,45 +33,6 @@ const METAL_GRID = [
     name: "Ferraille",
     detail: "Structures, depose, chantier",
     src: "/images/logistique/poutrelle.webp",
-  },
-];
-
-const REASSURANCE = [
-  {
-    label: "Depot local",
-    detail: "Villaines-sous-Bois · 95570",
-    icon: (
-      <svg viewBox="0 2 20 20" fill="currentColor" className="h-5 w-5 text-[#F47A20]" aria-hidden="true">
-        <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-      </svg>
-    ),
-  },
-  {
-    label: "Virement instantane",
-    detail: "Paiement trace et rapide",
-    icon: (
-      <svg viewBox="0 -2 20 20" fill="currentColor" className="h-5 w-5 text-[#F47A20]" aria-hidden="true">
-        <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
-      </svg>
-    ),
-  },
-  {
-    label: "Bascule certifiee",
-    detail: "Pesee transparente",
-    icon: (
-      <svg viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5 text-[#F47A20]" aria-hidden="true">
-        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-      </svg>
-    ),
-  },
-  {
-    label: "Interventions IDF",
-    detail: "95, 92, 93, 94, 91, 77",
-    icon: (
-      <svg viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5 text-[#F47A20]" aria-hidden="true">
-        <path d="M10 2a1 1 0 011 1v6h6a1 1 0 110 2h-6v6a1 1 0 11-2 0v-6H3a1 1 0 110-2h6V3a1 1 0 011-1z" />
-      </svg>
-    ),
   },
 ];
 
@@ -125,24 +87,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-[#D9DDE3] bg-white">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 px-4 sm:px-6 lg:grid-cols-4">
-          {REASSURANCE.map((item, i) => (
-            <div
-              key={i}
-              className={`reassurance-${i + 1} flex items-center gap-3 border-[#D9DDE3] px-3 py-4 odd:border-r nth-[n+3]:border-t lg:border-r lg:nth-[n+3]:border-t-0 lg:last:border-r-0`}
-            >
-              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#FFD7B5]">
-                {item.icon}
-              </span>
-              <div>
-                <p className="text-xs font-extrabold text-[#232323]">{item.label}</p>
-                <p className="text-[11px] text-[#6B7280]">{item.detail}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      <AdvantagesFlex />
 
       <section className="grid lg:grid-cols-2">
         <div className="flex flex-col justify-center bg-white px-8 py-16 sm:px-12 lg:px-16 lg:py-24">
