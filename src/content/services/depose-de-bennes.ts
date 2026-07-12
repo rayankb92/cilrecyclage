@@ -5,63 +5,63 @@ export const deposeDeBennes: ServiceContent = {
   nav: "Dépose de bennes",
   meta: {
     title:
-      "Dépose de Bennes Ferrailles en Île-de-France — Gratuit selon tonnage | VALMETAUX",
+      "Dépose de Bennes Ferrailles en Île-de-France | CIL Recyclage",
     description:
-      "VALMETAUX met à disposition des bennes ferrailles sur vos chantiers et sites industriels en IDF. Pose et rotation gratuites selon tonnage. 77, 91, 94 et petite couronne.",
+      "CIL Recyclage met à disposition des bennes ferrailles sur vos chantiers, sites industriels et ateliers. Dépose, rotation, pesée et valorisation selon le tonnage et la qualité du lot.",
   },
   hero: {
     eyebrow: "Prestation",
     headline: "Bennes Ferrailles sur Vos Sites en Île-de-France",
     pitch:
-      "Flux continus de ferrailles sur vos chantiers ou en usine ? Nous déposons des bennes adaptées à votre cadence de production de déchets métalliques, avec rotation programmée selon votre rythme.",
+      "Pour les flux réguliers de métaux et ferrailles, nous mettons en place des bennes adaptées à votre site, à votre cadence et à la nature des matières à évacuer.",
     image: "/images/logistique/benne-rempli.webp",
-    imageAlt: "Benne ferrailles et poutrelles sur site — VALMETAUX",
+    imageAlt: "Benne ferrailles et poutrelles sur site pour CIL Recyclage",
   },
   targets: {
     professionnels: [
       "Entreprises du BTP avec flux régulier de ferrailles de chantier",
       "Usines et ateliers produisant des rebuts métalliques en continu",
-      "Gestionnaires d'entrepôts logistiques avec structures métalliques en rotation",
-      "Démolisseurs et recycleurs cherchant un partenaire de longue durée",
+      "Gestionnaires de sites logistiques ou techniques",
+      "Démolisseurs et entreprises cherchant un partenaire de rotation durable",
     ],
   },
   steps: [
     {
       title: "Définition du besoin",
       description:
-        "Volume estimé par semaine ou par mois, type de ferraille dominant, contraintes d'accès au site. On choisit ensemble la taille de benne adaptée (de 7 m³ à 30 m³).",
+        "Nous cadrons ensemble le volume, la fréquence de rotation, la place disponible et le type de métaux attendu afin de choisir la benne la plus adaptée.",
     },
     {
       title: "Dépose et mise en place",
       description:
-        "Livraison de la benne sur votre site en Île-de-France. Positionnement stratégique selon vos flux de production et les contraintes d'accès au camion.",
+        "La benne est déposée sur site avec un positionnement cohérent pour votre exploitation et pour l'accès au camion lors des rotations.",
     },
     {
       title: "Rotations selon votre cadence",
       description:
-        "Quand la benne est pleine (ou selon un calendrier défini), nous intervenons pour la remplacer. Pesée à chaque rotation avec bordereau de pesée — rachat selon cours du jour.",
+        "Une fois la benne pleine, ou selon un calendrier défini, nous organisons son enlèvement puis sa rotation. Chaque passage donne lieu à une pesée et à une valorisation du lot.",
     },
   ],
   keyPoints: [
     {
       title: "Tailles de 7 m³ à 30 m³",
       description:
-        "Bennes adaptées à tous les volumes : petite benne pour un atelier, grande benne ouverte pour un chantier de démolition.",
+        "Le format de benne est ajusté au volume produit, au site et au rythme de remplissage pour éviter les surcoûts inutiles.",
     },
     {
-      title: "Gratuité sous condition de tonnage",
+      title: "Rotation planifiée",
       description:
-        "La pose et la rotation peuvent être entièrement gratuites en fonction du tonnage et de la qualité des métaux récupérés. Contactez-nous pour une simulation.",
+        "Les rotations peuvent être planifiées à la demande ou selon une fréquence régulière pour sécuriser les flux métalliques du site.",
     },
     {
-      title: "Bordereaux de pesée à chaque rotation",
+      title: "Pesée et traçabilité",
       description:
-        "Traçabilité complète : un bordereau de pesée est remis à chaque enlèvement pour votre comptabilité matière et vos obligations réglementaires.",
+        "Chaque enlèvement donne lieu à une pesée du lot et à une traçabilité minimale utile pour votre suivi matière.",
     },
     {
-      title: "Couverture grande couronne incluse",
+      title: "Valorisation du contenu",
       description:
-        "Nous livrons des bennes jusqu'en Seine-et-Marne (77), Essonne (91) et Val-de-Marne (94) — pas seulement la petite couronne.",
+        "La logique n'est pas seulement logistique : les métaux récupérés sont valorisés selon leur nature, leur qualité et leur tonnage.",
     },
   ],
   relatedSlugs: [

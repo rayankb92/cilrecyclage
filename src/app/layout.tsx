@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Inter } from "next/font/google";
+import { Manrope } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { LocalBusinessJsonLd } from "@/components/seo/JsonLd";
@@ -9,8 +9,8 @@ import { Analytics } from "@vercel/analytics/next";
 import { GA4PageView } from "@/components/analytics/GA4PageView";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
   display: "swap",
 });
@@ -18,11 +18,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} — Ferrailleur Argenteuil | Rachat Métaux Île-de-France`,
+    default: `${SITE.name} — Ferrailleur Villaines-sous-Bois | Rachat Metaux 95`,
     template: `%s | ${SITE.name}`,
   },
   description:
-    "VALMETAUX, ferrailleur à Argenteuil (95100). Rachat cuivre, laiton, aluminium, ferraille et métaux spéciaux. Dépose de bennes, enlèvement camion-grue en Île-de-France.",
+    "CIL Recyclage, ferrailleur a Villaines-sous-Bois (95570). Rachat cuivre, laiton, aluminium, ferraille et metaux speciaux. Depot local, enlevement et interventions en Ile-de-France.",
   icons: {
     icon: "/images/favicon/favicon.ico",
     shortcut: "/images/favicon/favicon-96x96.png",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: SITE.locale,
     siteName: SITE.name,
-    title: `${SITE.name} — Ferrailleur Argenteuil`,
+    title: `${SITE.name} — Ferrailleur Villaines-sous-Bois`,
     description:
-      "Rachat de métaux et ferraille en Île-de-France. Dépôt à Argenteuil, intervention 95, 92, 78, 93.",
+      "Rachat de metaux et ferraille en Val-d'Oise et Ile-de-France. Depot a Villaines-sous-Bois, intervention 95, 92, 93, 94, 91 et 77.",
   },
   robots: {
     index: true,
@@ -59,7 +59,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`${inter.variable} h-full antialiased`}>
+    <html lang="fr" className={`${manrope.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-white text-zinc-900">
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${SITE.googleAds.id}`}

@@ -19,11 +19,11 @@ export function DepartmentPageTemplate({
   return (
     <>
       {/* ── HERO ── */}
-      <section className="bg-slate-900 px-4 py-14 sm:px-6">
+      <section className="bg-[#121212] px-4 py-14 sm:px-6">
         <div className="mx-auto max-w-4xl">
           <BreadcrumbJsonLd items={breadcrumbItems} />
           <Breadcrumb items={breadcrumbItems} />
-          <p className="mt-4 text-xs font-bold uppercase tracking-widest text-amber-400">
+          <p className="mt-4 text-xs font-bold uppercase tracking-widest text-[#F47A20]">
             Ferrailleur {content.nom} — Département {content.code}
           </p>
           <h1 className="mt-3 text-3xl font-extrabold leading-tight text-white sm:text-4xl">
@@ -33,7 +33,7 @@ export function DepartmentPageTemplate({
             {content.hero.subheadline}
           </p>
           <PhoneLink
-            className="mt-7 inline-block rounded-full bg-amber-500 px-7 py-3 text-base font-bold text-white shadow-lg transition hover:bg-amber-600 active:scale-95"
+            className="mt-7 inline-block rounded-full bg-[#F47A20] px-7 py-3 text-base font-bold text-white shadow-lg transition hover:bg-[#D95F02] active:scale-95"
           >
             {SITE.phone}
           </PhoneLink>
@@ -85,7 +85,7 @@ export function DepartmentPageTemplate({
               <li key={city.slug}>
                 <Link
                   href={`/${city.slug}`}
-                  className="font-semibold text-amber-600 hover:text-amber-800"
+                  className="font-semibold text-[#F47A20] hover:text-[#D95F02]"
                 >
                   → Ferrailleur {city.label}
                 </Link>
@@ -97,7 +97,7 @@ export function DepartmentPageTemplate({
               Retrouvez notre{" "}
               <Link
                 href="/"
-                className="font-semibold text-amber-600 hover:text-amber-800"
+                className="font-semibold text-[#F47A20] hover:text-[#D95F02]"
               >
                 {content.internalLinks.home.label}
               </Link>
@@ -107,7 +107,7 @@ export function DepartmentPageTemplate({
               Département voisin :{" "}
               <Link
                 href={`/${content.internalLinks.neighborDept.slug}`}
-                className="font-semibold text-amber-600 hover:text-amber-800"
+                className="font-semibold text-[#F47A20] hover:text-[#D95F02]"
               >
                 {content.internalLinks.neighborDept.label}
               </Link>

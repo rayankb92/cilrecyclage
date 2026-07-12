@@ -8,8 +8,7 @@ import Link from "next/link";
 import { SITE } from "@/content/site";
 import { PhoneLink } from "@/components/ui/PhoneLink";
 
-// const MAPS_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${SITE.address.streetAddress}, ${SITE.address.postalCode} ${SITE.address.addressLocality}`)}`;
-const MAPS_LINK='https://maps.app.goo.gl/rpUUrJfLqfCcunwW8'
+const MAPS_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${SITE.address.streetAddress}, ${SITE.address.postalCode} ${SITE.address.addressLocality}`)}`;
 
 const HORAIRES = [
   { jour: "Lun – Ven", heures: "08h – 17h" },
@@ -22,6 +21,9 @@ interface InfoModalProps {
 }
 
 export function InfoModal({ onClose }: InfoModalProps) {
+  const hasSecondaryPhone =
+    SITE.phoneLandline && SITE.phoneLandline !== SITE.phone;
+
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -42,7 +44,7 @@ export function InfoModal({ onClose }: InfoModalProps) {
       className="fixed inset-0 z-50 flex items-center justify-center p-4"
       role="dialog"
       aria-modal="true"
-      aria-label="Informations pratiques VALMETAUX"
+      aria-label={`Informations pratiques ${SITE.name}`}
     >
       {/* Overlay */}
       <div
@@ -54,21 +56,21 @@ export function InfoModal({ onClose }: InfoModalProps) {
       <div className="relative z-10 w-full max-w-sm overflow-hidden rounded-2xl bg-white shadow-2xl">
 
         {/* Header */}
-        <div className="flex items-start justify-between bg-slate-900 px-5 py-4">
+        <div className="flex items-start justify-between bg-[#232323] px-5 py-4">
           <div>
-            <p className="text-[10px] font-bold uppercase tracking-widest text-amber-400">
-              Dépôt VALMETAUX
+            <p className="text-[10px] font-bold uppercase tracking-widest text-[#F47A20]">
+              Dépôt {SITE.name}
             </p>
             <p className="mt-0.5 text-base font-black text-white">
               {SITE.address.addressLocality}{" "}
-              <span className="font-normal text-slate-400">
+              <span className="font-normal text-[#A3A3A3]">
                 ({SITE.address.postalCode})
               </span>
             </p>
           </div>
           <button
             onClick={onClose}
-            className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-700 text-xs text-slate-400 transition hover:bg-slate-600 hover:text-white"
+            className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#121212] text-xs text-[#A3A3A3] transition hover:bg-black hover:text-white"
             aria-label="Fermer"
           >
             ✕
@@ -117,57 +119,60 @@ export function InfoModal({ onClose }: InfoModalProps) {
               href={MAPS_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="group mt-3 flex w-full items-center gap-3 rounded-xl border border-amber-400 px-4 py-3 transition hover:bg-amber-400/10"
+              className="group mt-3 flex w-full items-center gap-3 rounded-xl border border-[#F47A20] px-4 py-3 transition hover:bg-[#FFD7B5]/30"
             >
-              <svg className="h-5 w-5 shrink-0 text-amber-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <svg className="h-5 w-5 shrink-0 text-[#F47A20]" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
               </svg>
               <span className="flex flex-col">
                 <span className="text-sm font-bold text-slate-900">Lancer la navigation</span>
                 <span className="text-xs text-slate-500">{SITE.address.streetAddress}, {SITE.address.addressLocality}</span>
               </span>
-              <svg className="ml-auto h-4 w-4 shrink-0 text-amber-400 transition group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <svg className="ml-auto h-4 w-4 shrink-0 text-[#F47A20] transition group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
             </a>
           </div>
 
           {/* CTAs téléphone */}
-          <div className="grid grid-cols-2 gap-2 pt-4">
+          <div className={`grid gap-2 pt-4 ${hasSecondaryPhone ? "grid-cols-2" : "grid-cols-1"}`}>
             <PhoneLink
-              className="flex flex-col items-center justify-center gap-1 rounded-xl bg-amber-500 py-3 text-center transition hover:bg-amber-600"
+              className="flex flex-col items-center justify-center gap-1 rounded-xl bg-[#F47A20] py-3 text-center transition hover:bg-[#D95F02]"
             >
-              <span className="text-[10px] font-bold uppercase tracking-widest text-amber-100">
-                Mobile
+              <span className="text-[10px] font-bold uppercase tracking-widest text-[#FFD7B5]">
+                Contact
               </span>
               <span className="text-sm font-black text-white">{SITE.phone}</span>
             </PhoneLink>
-            <PhoneLink
-              phone={SITE.phoneLandline}
-              trackConversion={false}
-              className="flex flex-col items-center justify-center gap-1 rounded-xl border border-slate-200 bg-slate-50 py-3 text-center transition hover:border-amber-300 hover:bg-white"
-            >
-              <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
-                Fixe dépôt
-              </span>
-              <span className="text-sm font-black text-slate-800">{SITE.phoneLandline}</span>
-            </PhoneLink>
+            {hasSecondaryPhone && (
+              <PhoneLink
+                phone={SITE.phoneLandline}
+                trackConversion={false}
+                className="flex flex-col items-center justify-center gap-1 rounded-xl border border-slate-200 bg-slate-50 py-3 text-center transition hover:border-[#F47A20] hover:bg-white"
+              >
+                <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                  Fixe dépôt
+                </span>
+                <span className="text-sm font-black text-slate-800">{SITE.phoneLandline}</span>
+              </PhoneLink>
+            )}
           </div>
-          {/* Email */}
-          <a
-            href={`mailto:${SITE.email}`}
-            className="mt-2 flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-slate-50 py-2.5 text-sm text-slate-500 transition hover:border-slate-300 hover:text-slate-800"
-          >
-            <span>✉️</span>
-            <span className="text-xs">{SITE.email}</span>
-          </a>
+          {SITE.email && (
+            <a
+              href={`mailto:${SITE.email}`}
+              className="mt-2 flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-slate-50 py-2.5 text-sm text-slate-500 transition hover:border-slate-300 hover:text-slate-800"
+            >
+              <span>✉️</span>
+              <span className="text-xs">{SITE.email}</span>
+            </a>
+          )}
 
           {/* Lien page complète */}
           <div className="pt-4">
             <Link
               href="/infos-pratiques"
               onClick={onClose}
-              className="block text-center text-xs font-semibold text-slate-400 transition hover:text-amber-600"
+              className="block text-center text-xs font-semibold text-slate-400 transition hover:text-[#D95F02]"
             >
               Toutes les infos pratiques →
             </Link>

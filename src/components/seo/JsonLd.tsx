@@ -10,6 +10,11 @@ export function LocalBusinessJsonLd({
   city,
   pageUrl,
 }: LocalBusinessJsonLdProps) {
+  const telephones = [SITE.phone, SITE.phoneLandline].filter(
+    (value, index, array): value is string =>
+      Boolean(value) && array.indexOf(value) === index,
+  );
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -17,9 +22,9 @@ export function LocalBusinessJsonLd({
     name: SITE.name,
     description: SITE.tagline,
     url: pageUrl ?? SITE.url,
-    telephone: [SITE.phone, SITE.phoneLandline],
-    email: SITE.email,
-    image: `${SITE.url}/logo-valmetaux.png`,
+    telephone: telephones,
+    email: SITE.email ?? undefined,
+    image: `${SITE.url}${SITE.logoPath}`,
     address: {
       "@type": "PostalAddress",
       streetAddress: SITE.address.streetAddress,
@@ -28,11 +33,13 @@ export function LocalBusinessJsonLd({
       addressRegion: SITE.address.addressRegion,
       addressCountry: SITE.address.addressCountry,
     },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: SITE.geo.latitude,
-      longitude: SITE.geo.longitude,
-    },
+    geo: SITE.geo
+      ? {
+          "@type": "GeoCoordinates",
+          latitude: SITE.geo.latitude,
+          longitude: SITE.geo.longitude,
+        }
+      : undefined,
     openingHours: SITE.openingHours,
     areaServed: city
       ? {
@@ -76,7 +83,7 @@ export function ArticleJsonLd({ guide }: { guide: GuideContent }) {
       url: SITE.url,
       logo: {
         "@type": "ImageObject",
-        url: `${SITE.url}/logo-valmetaux.png`,
+        url: `${SITE.url}${SITE.logoPath}`,
       },
     },
     mainEntityOfPage: {

@@ -20,7 +20,7 @@ function parseInlineLinks(text: string): ReactNode[] {
       <Link
         key={`${match.index}-${label}`}
         href={normalizedHref}
-        className="font-medium text-amber-700 underline decoration-amber-300 underline-offset-2 hover:text-amber-900"
+        className="font-medium text-[#F47A20] underline decoration-[#FFD7B5] underline-offset-2 hover:text-[#D95F02]"
       >
         {label}
       </Link>,

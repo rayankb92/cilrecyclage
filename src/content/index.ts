@@ -13,32 +13,12 @@ import { recyclageFerrailles } from "./services/recyclage-ferrailles";
 import { recyclageMetauxNonFerreux } from "./services/recyclage-metaux-non-ferreux";
 import { recyclageMetauxSpeciaux } from "./services/recyclage-metaux-speciaux";
 
-import { argenteuil } from "./cities/argenteuil";
-import { bezons } from "./cities/bezons";
-import { carrieresSurSeine } from "./cities/carrieres-sur-seine";
-import { chatou } from "./cities/chatou";
-import { colombes } from "./cities/colombes";
-import { conflansSainteHonorine } from "./cities/conflans-sainte-honorine";
-import { cormeillesEnParisis } from "./cities/cormeilles-en-parisis";
-import { deuilLaBarre } from "./cities/deuil-la-barre";
-import { eaubonne } from "./cities/eaubonne";
-import { epinaySurSeine } from "./cities/epinay-sur-seine";
-import { ermont } from "./cities/ermont";
-import { franconville } from "./cities/franconville";
-import { herblaySurSeine } from "./cities/herblay-sur-seine";
-import { houilles } from "./cities/houilles";
-import { lePlessisBouchard } from "./cities/le-plessis-bouchard";
-import { maisonsLaffitte } from "./cities/maisons-laffitte";
-import { montesson } from "./cities/montesson";
-import { montignyLesCormeilles } from "./cities/montigny-les-cormeilles";
-import { montmorency } from "./cities/montmorency";
-import { rueilMalmaison } from "./cities/rueil-malmaison";
-import { saintDenis } from "./cities/saint-denis";
-import { saintGratien } from "./cities/saint-gratien";
-import { saintLeuLaForet } from "./cities/saint-leu-la-foret";
-import { sannois } from "./cities/sannois";
-import { sartrouville } from "./cities/sartrouville";
-import { taverny } from "./cities/taverny";
+import { bailletEnFrance } from "./cities/baillet-en-france";
+import { belloyEnFrance } from "./cities/belloy-en-france";
+import { domont } from "./cities/domont";
+import { luzarches } from "./cities/luzarches";
+import { montsoult } from "./cities/montsoult";
+import { viarmes } from "./cities/viarmes";
 
 import { essonne91 } from "./departments/essonne-91";
 import { hautsDeSeine92 } from "./departments/hauts-de-seine-92";
@@ -49,35 +29,12 @@ import { valDeMarne94 } from "./departments/val-de-marne-94";
 import { yvelines78 } from "./departments/yvelines-78";
 
 export const ALL_CITIES: CityContent[] = [
-  // Phase 1
-  argenteuil,
-  sannois,
-  cormeillesEnParisis,
-  sartrouville,
-  houilles,
-  franconville,
-  ermont,
-  eaubonne,
-  colombes,
-  bezons,
-  // Phase 2
-  montignyLesCormeilles,
-  herblaySurSeine,
-  taverny,
-  saintLeuLaForet,
-  montmorency,
-  chatou,
-  carrieresSurSeine,
-  epinaySurSeine,
-  // Phase 3
-  maisonsLaffitte,
-  montesson,
-  rueilMalmaison,
-  conflansSainteHonorine,
-  deuilLaBarre,
-  lePlessisBouchard,
-  saintGratien,
-  saintDenis,
+  viarmes,
+  belloyEnFrance,
+  montsoult,
+  bailletEnFrance,
+  domont,
+  luzarches,
 ];
 
 // Départements proches du dépôt — affichés dans la navigation principale

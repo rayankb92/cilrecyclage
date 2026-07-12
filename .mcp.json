@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "google-ads-mcp": {
+      "command": "pipx",
+      "args": ["run", "--spec", "git+https://github.com/googleads/google-ads-mcp.git", "google-ads-mcp"],
+      "env": {
+        "GOOGLE_PROJECT_ID": "valmetaux-ads",
+        "GOOGLE_ADS_DEVELOPER_TOKEN": "GaHuyfwEITxw127mw-uh6g",
+        "GOOGLE_APPLICATION_CREDENTIALS": "/Users/rayan/.config/gcloud/application_default_credentials.json"
+      }
+    }
+  }
+}

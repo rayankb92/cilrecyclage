@@ -34,11 +34,11 @@ export function GuidePageTemplate({ guide }: { guide: GuideContent }) {
       {guide.faq.length > 0 && <FaqPageJsonLd faq={guide.faq} />}
 
       {/* ── HERO ── */}
-      <section className="border-b border-slate-800 bg-slate-950 px-4 py-12 sm:px-6">
+      <section className="border-b border-[#232323] bg-[#121212] px-4 py-12 sm:px-6">
         <div className="mx-auto max-w-4xl">
           <Breadcrumb items={breadcrumbItems} />
           <div className="mt-5 flex items-center gap-3">
-            <span className="rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-amber-400">
+            <span className="rounded-full border border-[#F47A20]/30 bg-[#F47A20]/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-[#F47A20]">
               {guide.category}
             </span>
             <span className="text-xs text-slate-500">
@@ -96,7 +96,7 @@ export function GuidePageTemplate({ guide }: { guide: GuideContent }) {
                       {section.subsections.map((sub, j) => (
                         <div
                           key={j}
-                          className="border-l-2 border-amber-400 pl-5"
+                          className="border-l-2 border-[#F47A20] pl-5"
                         >
                           <h3 className="mb-2 font-bold text-slate-900">
                             {sub.heading}
@@ -122,13 +122,13 @@ export function GuidePageTemplate({ guide }: { guide: GuideContent }) {
                   {guide.faq.map((item, i) => (
                     <details
                       key={i}
-                      className="group rounded-xl border border-slate-200 bg-slate-50 open:border-amber-200 open:bg-amber-50"
+                      className="group rounded-xl border border-slate-200 bg-slate-50 open:border-[#FFD7B5] open:bg-[#FFF3E8]"
                     >
                       <summary className="cursor-pointer list-none px-5 py-4 font-bold text-slate-900 [&::-webkit-details-marker]:hidden">
                         <span className="flex items-center justify-between gap-3">
                           {item.question}
                           <svg
-                            className="h-4 w-4 shrink-0 text-amber-500 transition-transform group-open:rotate-180"
+                            className="h-4 w-4 shrink-0 text-[#F47A20] transition-transform group-open:rotate-180"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                           >
@@ -153,18 +153,18 @@ export function GuidePageTemplate({ guide }: { guide: GuideContent }) {
           {/* Sidebar */}
           <aside className="mt-12 space-y-6 lg:mt-0">
             {/* CTA téléphone */}
-            <div className="rounded-2xl bg-slate-950 p-6">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-amber-400">
+            <div className="rounded-2xl bg-[#121212] p-6">
+              <p className="text-[10px] font-bold uppercase tracking-widest text-[#F47A20]">
                 Besoin d&apos;un prix ?
               </p>
               <p className="mt-2 text-sm font-bold text-white">
-                Appelez directement le dépôt d&apos;Argenteuil
+                Appelez directement le dépôt de Villaines-sous-Bois
               </p>
               <PhoneLink
-                className="mt-4 flex items-center gap-3 border-l-2 border-amber-400 pl-3 transition hover:border-amber-300"
+                className="mt-4 flex items-center gap-3 border-l-2 border-[#F47A20] pl-3 transition hover:border-[#D95F02]"
               >
                 <div>
-                  <span className="block text-[10px] font-semibold uppercase tracking-wider text-amber-400">
+                  <span className="block text-[10px] font-semibold uppercase tracking-wider text-[#F47A20]">
                     Appeler
                   </span>
                   <span className="block font-black text-white">
@@ -188,9 +188,9 @@ export function GuidePageTemplate({ guide }: { guide: GuideContent }) {
                     <li key={service.slug}>
                       <Link
                         href={`/prestations/${service.slug}`}
-                        className="flex items-center gap-2 text-sm font-semibold text-slate-800 hover:text-amber-700"
+                        className="flex items-center gap-2 text-sm font-semibold text-slate-800 hover:text-[#D95F02]"
                       >
-                        <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-amber-400" />
+                        <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#F47A20]" />
                         {service.nav}
                       </Link>
                     </li>
@@ -210,7 +210,7 @@ export function GuidePageTemplate({ guide }: { guide: GuideContent }) {
                     <li key={g.slug}>
                       <Link
                         href={`/guides/${g.slug}`}
-                        className="block text-sm font-semibold leading-5 text-slate-800 hover:text-amber-700"
+                        className="block text-sm font-semibold leading-5 text-slate-800 hover:text-[#D95F02]"
                       >
                         {g.title}
                       </Link>

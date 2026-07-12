@@ -5,70 +5,69 @@ export const recyclageMetauxSpeciaux: ServiceContent = {
   nav: "Métaux spéciaux",
   meta: {
     title:
-      "Rachat Métaux Spéciaux : Carbure, Titane, Nickel, Catalyseurs | VALMETAUX IDF",
+      "Rachat Métaux Spéciaux : Carbure, Titane, Nickel, Catalyseurs | CIL Recyclage",
     description:
-      "VALMETAUX rachète vos métaux spéciaux et alliages nobles en IDF : carbure de tungstène, titane, nickel, Inconel, pots catalytiques. Analyse précise, meilleur cours.",
+      "CIL Recyclage rachète vos métaux spéciaux et alliages à haute valeur : carbure de tungstène, titane, nickel, Inconel, catalyseurs. Analyse précise et valorisation dédiée.",
   },
   hero: {
     eyebrow: "Prestation",
     headline: "Recyclage de Métaux Spéciaux et Alliages à Haute Valeur",
     pitch:
-      "Carbure de tungstène, titane, nickel, catalyseurs — VALMETAUX est l'un des rares ferrailleurs en IDF à proposer un rachat dédié aux métaux à haute valeur technologique. Analyse précise de la composition, prix au gramme ou au kilo.",
+      "Carbure de tungstène, titane, nickel, Inconel, catalyseurs ou alliages techniques : nous prenons en charge les lots qui demandent plus qu'une simple pesée globale.",
     image: "/images/metaux/carbure.webp",
-    imageAlt: "Plaquettes et outils en carbure de tungstène — VALMETAUX",
+    imageAlt: "Plaquettes et outils en carbure de tungstène chez CIL Recyclage",
   },
   targets: {
     particuliers: [
-      "Vieux outils de bricolage en carbure (forets, fraises) accumulés au garage",
-      "Pots catalytiques de voiture ou moto à remplacer",
-      "Bijoux et objets en alliages nobles (contactez-nous pour identification)",
-      "Matériel d'atelier amateur hors service contenant des inserts carbure",
+      "Outils contenant du carbure : forets, fraises, plaquettes, inserts",
+      "Pots catalytiques à faire identifier avant valorisation",
+      "Petits lots d'atelier ou de bricolage avec alliages techniques",
     ],
     professionnels: [
-      "Ateliers d'usinage : plaquettes de coupe, forets carbure, outils monoblocs hors service",
-      "Industries high-tech : rebuts en titane, nickel, Inconel, tantale",
-      "Automobile : pots catalytiques en fin de vie (platine, palladium, rhodium)",
-      "Électronique : cartes électroniques, connecteurs en alliages nobles",
-      "Aéronautique : chutes et rebuts en alliages certifiés",
+      "Ateliers d'usinage : plaquettes de coupe, forets carbure, outils usés",
+      "Industries techniques : titane, nickel, Inconel, tantale et alliages spécifiques",
+      "Automobile : catalyseurs et éléments à métaux précieux",
+      "Électronique et connectique : lots contenant des alliages nobles ou spéciaux",
+      "Sous-traitants aéronautiques ou de précision : chutes et rebuts identifiés",
     ],
   },
   steps: [
     {
       title: "Analyse et identification de la composition",
       description:
-        "Contrairement aux métaux courants, les alliages spéciaux nécessitent une identification précise. Décrivez vos matériaux ou envoyez-nous des photos — nous vous orientons vers la catégorie et le cours correspondant.",
+        "Les métaux spéciaux ne se valorisent pas comme un lot standard. Nous identifions d'abord la famille du matériau afin de préparer une valorisation adaptée.",
     },
     {
-      title: "Pesée au gramme pour les hautes valeurs",
+      title: "Évaluation selon la nature du lot",
       description:
-        "Carbure, platine, palladium — ces métaux sont pesés au gramme sur des balances de précision. Chaque lot est évalué séparément selon sa composition exacte.",
+        "Selon les matériaux, l'évaluation se fait au kilo, au gramme ou par catégorie technique. Les lots sont traités séparément pour rester cohérents.",
     },
     {
       title: "Paiement sécurisé, traçabilité complète",
       description:
-        "Règlement par virement instantané avec bordereau de suivi. Pour les entreprises soumises à des obligations de traçabilité des déchets, nous fournissons les documents réglementaires.",
+        "Après validation, le règlement est effectué par virement instantané. Pour les entreprises, la traçabilité documentaire peut être intégrée selon le besoin.",
     },
   ],
   keyPoints: [
     {
       title: "Carbure de tungstène",
       description:
-        "Plaquettes CNMG, forets monoblocs, fraises usées — le carbure se valorise au kilo avec une cotation dédiée bien au-dessus des métaux courants.",
+        "Plaquettes, forets monoblocs, fraises et inserts usés : le carbure fait l'objet d'une valorisation dédiée, distincte des métaux courants.",
     },
     {
       title: "Alliages complexes",
       description:
-        "Nickel, titane, Inconel, Monel, tantale — pour les ateliers aéronautiques et de précision. Analyse de la nuance avant cotation.",
+        "Titane, nickel, Inconel, Monel, tantale : ces nuances demandent une identification sérieuse avant toute cotation.",
     },
     {
       title: "Pots catalytiques",
       description:
-        "Platine, palladium, rhodium présents dans les catalyseurs automobiles. Valeur variable selon le type de véhicule et l'état du catalyseur.",
+        "Les catalyseurs ont une valeur variable selon le type, la référence et l'état du lot. Une vérification est nécessaire avant tout rachat.",
     },
     {
-      title: "Documents BSD sur demande",
+      title: "Traçabilité pro",
       description:
-        "Bordereau de Suivi des Déchets fourni sur demande pour les entreprises soumises à des obligations réglementaires de traçabilité.",
+        "Pour les entreprises et ateliers soumis à des exigences de suivi, CIL Recyclage peut intégrer les documents nécessaires au traitement du lot.",
     },
   ],
   relatedSlugs: [

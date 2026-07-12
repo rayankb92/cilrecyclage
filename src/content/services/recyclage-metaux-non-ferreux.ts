@@ -5,69 +5,69 @@ export const recyclageMetauxNonFerreux: ServiceContent = {
   nav: "Métaux non ferreux",
   meta: {
     title:
-      "Rachat Métaux Non Ferreux : Cuivre, Laiton, Zinc, Plomb en IDF | VALMETAUX",
+      "Rachat Métaux Non Ferreux : Cuivre, Laiton, Zinc, Plomb | CIL Recyclage",
     description:
-      "VALMETAUX rachète vos métaux non ferreux au cours du jour : cuivre Millberry, laiton, aluminium, zinc, plomb. Expertise artisans électriciens, plombiers, couvreurs IDF.",
+      "CIL Recyclage valorise vos métaux non ferreux au cours du jour : cuivre, laiton, aluminium, zinc et plomb. Dépôt à Villaines-sous-Bois, artisans et particuliers bienvenus.",
   },
   hero: {
     eyebrow: "Prestation",
     headline: "Experts en Métaux Non Ferreux : Cuivre, Laiton, Alu, Zinc",
     pitch:
-      "Les métaux non ferreux représentent la plus haute valeur au kilo. Électriciens, plombiers, couvreurs — VALMETAUX maximise la valorisation de vos chutes de chantier grâce à une identification précise de chaque alliage.",
+      "Les métaux non ferreux sont souvent les lots les plus valorisés au kilo. Nous les trions précisément pour proposer un rachat cohérent, au dépôt comme sur chantier.",
     image: "/images/metaux/laiton.webp",
-    imageAlt: "Laiton et métaux non ferreux — VALMETAUX Argenteuil",
+    imageAlt: "Laiton et métaux non ferreux chez CIL Recyclage",
   },
   targets: {
     particuliers: [
-      "Tuyauterie cuivre ancienne issue d'une rénovation de plomberie",
+      "Tuyauterie cuivre issue d'une rénovation de plomberie",
       "Câbles électriques gainés ou dénudés",
       "Gouttières et descentes zinc ou plomb",
-      "Radiateurs aluminium ou en fonte",
+      "Radiateurs aluminium, menuiseries et petits lots triés",
     ],
     professionnels: [
-      "Électriciens : câbles cuivre Millberry, câbles alu, chemins de câbles",
+      "Électriciens : câbles cuivre, Millberry, chemins de câbles, alu",
       "Plombiers : tuyaux cuivre, raccords laiton, chauffe-eau, robinetterie",
-      "Couvreurs : chutes zinc, plomb de soudure, cuivre de couverture",
-      "Climaticiens : cuivre de circuit frigorifique, condenseurs alu",
+      "Couvreurs : chutes zinc, plomb, cuivre de couverture",
+      "Climaticiens et frigoristes : cuivre technique, condenseurs aluminium",
     ],
   },
   steps: [
     {
       title: "Identification et tri par alliage",
       description:
-        "Chaque métal non ferreux est identifié séparément : cuivre Millberry, cuivre mêlé, laiton, alu série 1000, alu mêlé, zinc... Le tri précis est la clé d'une valorisation maximale.",
+        "Chaque famille est triée séparément : cuivre, laiton, aluminium, zinc, plomb. Cette étape permet d'éviter les mélanges qui tirent la valorisation vers le bas.",
     },
     {
       title: "Cotation au cours du jour",
       description:
-        "Nos prix sont mis à jour selon les cours du LME. Pour les volumes importants, appelez-nous avant de venir — on vous donne une estimation par téléphone ou sur photo.",
+        "Le prix dépend de la nature du lot, de sa propreté et du cours du jour. Pour les volumes importants, une première estimation peut être faite sur photos.",
     },
     {
       title: "Règlement immédiat",
       description:
-        "Virement instantané dès la pesée au dépôt. Pour les enlèvements sur chantier, règlement le jour même de l'intervention.",
+        "Le règlement se fait par virement instantané après pesée et validation du lot, au dépôt ou après enlèvement selon le cas.",
     },
   ],
   keyPoints: [
     {
-      title: "Cuivre — La valeur la plus haute",
+      title: "Cuivre",
       description:
-        "Cuivre Millberry (câbles neufs dénudés), cuivre mêlé (câbles divers), cuivre de toiture — chaque qualité a son propre cours.",
+        "Millberry, cuivre mêlé, tuyauterie, chutes propres ou techniques : chaque qualité est distinguée séparément.",
     },
     {
-      title: "Laiton & Zinc",
+      title: "Laiton, zinc, plomb",
       description:
-        "Robinetterie laiton, gouttières zinc, plomb de soudure. Métaux à fort volume chez les plombiers et couvreurs.",
+        "Robinetterie, raccords, gouttières, chutes de couverture et plomb technique : ces lots sont fréquents chez les artisans du bâtiment.",
     },
     {
       title: "Aluminium",
       description:
-        "Jantes, profilés, câbles alu, cadres de fenêtres. L'alu est léger mais très valorisé — même les petits volumes méritent d'être triés.",
+        "Jantes, profilés, cadres, tôles, câbles alu : même les petits lots gagnent à être triés correctement avant passage au dépôt.",
     },
     {
-      title: "Identification gratuite",
+      title: "Tri et conseil",
       description:
-        "Un doute sur la nature d'un alliage ? Envoyez une photo ou venez au dépôt — on identifie et on vous conseille sans engagement.",
+        "En cas de doute sur la nature d'un alliage ou d'un lot mixte, CIL Recyclage peut orienter le tri avant le déplacement ou l'enlèvement.",
     },
   ],
   relatedSlugs: [

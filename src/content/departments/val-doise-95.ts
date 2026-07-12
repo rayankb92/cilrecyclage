@@ -6,49 +6,40 @@ export const valDoise95: DepartmentContent = {
   code: "95",
   meta: {
     title:
-      "Ferrailleur Val-d'Oise (95) — Rachat Métaux & Bennes Chantier | VALMETAUX",
+      "Ferrailleur Val-d'Oise (95) - Rachat Metaux et Ferraille | CIL Recyclage",
     description:
-      "VALMETAUX, ferrailleur basé à Argenteuil, intervient dans tout le Val-d'Oise (95) : rachat cuivre, laiton, aluminium, dépose de bennes et enlèvement camion-grue.",
+      "CIL Recyclage accompagne le nord du Val-d'Oise (95) depuis Villaines-sous-Bois : rachat de metaux, depot local, enlèvement et logistique pour artisans, particuliers et PME.",
   },
   hero: {
-    headline: "Rachat de Métaux et Ferrailleur dans le Val-d'Oise (95)",
+    headline: "Rachat de metaux et ferrailleur dans le Val-d'Oise (95)",
     subheadline:
-      "Depuis notre dépôt d'Argenteuil, nous couvrons l'ensemble du 95 pour le rachat de métaux, la dépose de bennes et l'évacuation de ferrailles sur chantier.",
+      "Depuis notre depot de Villaines-sous-Bois, nous desservons en priorite le nord et le nord-est du 95 pour le rachat de metaux, les apports au depot et les besoins de logistique metal.",
   },
   paragraphs: {
     intro:
-      "Vous êtes un particulier en rénovation de pavillon ou un artisan sur un chantier dans le Val-d'Oise ? **VALMETAUX** se déplace dans tout le département pour récupérer et valoriser vos matières au meilleur cours du jour. Notre implantation à Argenteuil nous confère une légitimité géographique incontestable sur le 95 — un avantage direct face aux acteurs sur-optimisés hors zone.",
+      "Le Val-d'Oise reste le coeur de zone de CIL Recyclage, avec un ancrage tres fort autour de **Villaines-sous-Bois**, **Viarmes**, **Belloy-en-France**, **Montsoult**, **Baillet-en-France**, **Domont** et **Luzarches**. Nous accueillons au depot les particuliers et artisans qui viennent vendre leurs metaux, tout en restant capables d'organiser une logistique adaptee pour les besoins de chantier et les volumes plus importants.",
     profilZone:
-      "Le Val-d'Oise combine de vastes secteurs pavillonnaires (Cormeilles, Houilles, Franconville, Sannois) et des zones d'activité artisanales denses. Les rénovations thermiques génèrent un flux régulier de cuivre de plomberie, de radiateurs en fonte ou en aluminium, et de zinc de toiture. Les chantiers de déconstruction produisent des poutrelles IPN et du platin en volume.",
+      "Le nord du 95 combine plusieurs profils complementaires : des communes pavillonnaires ou les renovations de maisons generent du cuivre, du zinc, des radiateurs et de la ferraille, mais aussi un tissu d'artisans, de PME et de zones d'activite reliees au bassin Carnelle Pays-de-France et aux axes D909, RD301, N104 et A16.",
     metauxDominants:
-      "Nous rachetons l'ensemble de vos métaux ferreux et non ferreux dans le Val-d'Oise. Le tissu local génère en priorité le **cuivre de dépose** (Millberry, câbles, chutes de plomberie), le **laiton** de robinetterie, l'**aluminium** AGS et les **radiateurs** cuivre/alu ou fonte. Pour les professionnels du bâtiment, nous valorisons aussi le zinc de toiture et les ferrailles lourdes de chantier.",
+      "Dans cette partie du Val-d'Oise, les lots les plus frequents concernent le **cuivre de depose**, le **laiton** de plomberie, l'**aluminium** de menuiserie, le **zinc** de toiture, les **radiateurs**, les **cables** et la **ferraille** issue de renovation, de depose technique ou de chantier.",
     logistique:
-      "Notre service de [dépose de bennes](/logistique-chantier/depose-de-bennes/) couvre les communes du Val Parisis et de l'Est du département. Pour les volumes importants, nos camions-grues assurent l'enlèvement de poutrelles et de structures métalliques lourdes sans effort pour le client.",
+      "L'apport direct au depot de Villaines-sous-Bois reste la solution la plus simple pour les lots tries et les volumes courants. Pour les chantiers, depots techniques ou accumulations de ferraille plus lourdes, nous pouvons orienter vers un enlèvement ou une solution de logistique metal adaptee selon le tonnage et la nature des matieres.",
     interDept:
-      "Vous avez également des chantiers de l'autre côté de la Seine ? Découvrez notre service d'achat de métaux dans les [Hauts-de-Seine (92)](/ferrailleur-hauts-de-seine-92/) ou contactez directement notre [centre de récupération à Argenteuil](/).",
+      "Pour mieux comprendre notre bassin local, consultez aussi notre page [rachat de metaux Carnelle Pays-de-France](/rachat-metaux-carnelle-pays-de-france/). Nous intervenons egalement plus largement en Ile-de-France quand le besoin terrain et la logistique le justifient.",
   },
   internalLinks: {
-    home: { label: "Centre de récupération à Argenteuil", slug: "" },
+    home: { label: "Depot de Villaines-sous-Bois", slug: "" },
     cities: [
-      { label: "Argenteuil", slug: "ferrailleur-argenteuil" },
-      { label: "Sannois", slug: "ferrailleur-sannois" },
-      { label: "Cormeilles-en-Parisis", slug: "ferrailleur-cormeilles-en-parisis" },
-      { label: "Franconville", slug: "ferrailleur-franconville" },
-      { label: "Ermont", slug: "ferrailleur-ermont" },
-      { label: "Eaubonne", slug: "ferrailleur-eaubonne" },
-      { label: "Bezons", slug: "ferrailleur-bezons" },
-      { label: "Montigny-lès-Cormeilles", slug: "ferrailleur-montigny-les-cormeilles" },
-      { label: "Herblay-sur-Seine", slug: "ferrailleur-herblay-sur-seine" },
-      { label: "Taverny", slug: "ferrailleur-taverny" },
-      { label: "Saint-Leu-la-Forêt", slug: "ferrailleur-saint-leu-la-foret" },
-      { label: "Montmorency", slug: "ferrailleur-montmorency" },
-      { label: "Deuil-la-Barre", slug: "ferrailleur-deuil-la-barre" },
-      { label: "Le Plessis-Bouchard", slug: "ferrailleur-le-plessis-bouchard" },
-      { label: "Saint-Gratien", slug: "ferrailleur-saint-gratien" },
+      { label: "Viarmes", slug: "ferrailleur-viarmes" },
+      { label: "Belloy-en-France", slug: "ferrailleur-belloy-en-france" },
+      { label: "Montsoult", slug: "ferrailleur-montsoult" },
+      { label: "Baillet-en-France", slug: "ferrailleur-baillet-en-france" },
+      { label: "Domont", slug: "ferrailleur-domont" },
+      { label: "Luzarches", slug: "ferrailleur-luzarches" },
     ],
     neighborDept: {
-      label: "Hauts-de-Seine (92)",
-      slug: "ferrailleur-hauts-de-seine-92",
+      label: "Seine-Saint-Denis (93)",
+      slug: "ferrailleur-seine-saint-denis-93",
     },
   },
 };

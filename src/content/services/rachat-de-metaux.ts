@@ -5,69 +5,69 @@ export const rachatDeMetaux: ServiceContent = {
   nav: "Rachat de métaux",
   meta: {
     title:
-      "Rachat de Métaux au Meilleur Cours — Cuivre, Laiton, Alu | VALMETAUX Argenteuil",
+      "Rachat de Métaux au Meilleur Cours — Cuivre, Laiton, Alu | CIL Recyclage",
     description:
-      "VALMETAUX rachète vos métaux au cours du jour : cuivre, laiton, aluminium, zinc, plomb, inox. Pesée certifiée, virement instantané. Apport au dépôt ou enlèvement IDF.",
+      "CIL Recyclage rachète vos métaux au cours du jour : cuivre, laiton, aluminium, zinc, plomb, inox. Pesée certifiée, virement instantané. Dépôt à Villaines-sous-Bois et enlèvement en Île-de-France.",
   },
   hero: {
     eyebrow: "Prestation",
     headline: "Rachat de Métaux au Meilleur Cours du Jour",
     pitch:
-      "Artisan, particulier ou entreprise — apportez vos métaux au dépôt d'Argenteuil ou faites appel à notre service d'enlèvement. Prix indexés sur les cours officiels, pesée certifiée, virement instantané dès la pesée.",
+      "Particulier, artisan ou professionnel : apportez vos métaux au dépôt de Villaines-sous-Bois ou demandez un enlèvement pour les volumes importants. Prix clairs, pesée certifiée et règlement par virement instantané.",
     image: "/images/metaux/cuivre-neuf-millbery.webp",
-    imageAlt: "Cuivre neuf Millberry prêt au rachat — VALMETAUX",
+    imageAlt: "Cuivre neuf Millberry prêt au rachat chez CIL Recyclage",
   },
   targets: {
     particuliers: [
-      "Vieux câbles électriques ou tuyauterie cuivre dans votre cave ou garage",
-      "Robinetterie laiton, radiateurs fonte ou alu à évacuer",
-      "Pièces et ferrailles diverses en fin de vie",
-      "Pas de minimum de quantité pour l'apport au dépôt",
+      "Câbles électriques, tuyauterie cuivre, robinetterie laiton",
+      "Radiateurs fonte ou aluminium issus de rénovation",
+      "Pièces métalliques, chutes et petits lots à valoriser",
+      "Apport direct au dépôt sans minimum bloquant",
     ],
     professionnels: [
-      "Chutes de chantier cuivre et laiton (plombiers, électriciens)",
-      "Rebuts de production en aluminium ou inox (ateliers, usines)",
-      "Stocks obsolètes ou fin de série à valoriser",
-      "Enlèvement sur site pour les volumes importants",
+      "Chutes de chantier cuivre et laiton pour plombiers et électriciens",
+      "Rebuts d'atelier en aluminium, inox ou métaux mélangés",
+      "Stocks obsolètes, fins de série et lots industriels",
+      "Enlèvement sur site pour les tonnages importants",
     ],
   },
   steps: [
     {
       title: "Contactez-nous ou venez directement",
       description:
-        "Pour les petites quantités, présentez-vous directement à notre dépôt d'Argenteuil avec vos métaux. Pour les gros volumes, appelez-nous pour planifier un enlèvement sur votre site en IDF.",
+        "Pour les petites quantités, présentez-vous directement au dépôt de Villaines-sous-Bois avec vos métaux. Pour les gros volumes, nous préparons un enlèvement sur site après échange téléphonique ou sur photos.",
     },
     {
       title: "Pesée certifiée sur balance homologuée",
       description:
-        "Vos métaux sont triés par nature et pesés sur nos balances homologuées. Chaque type de métal est identifié et valorisé séparément pour vous assurer le meilleur prix total.",
+        "Vos métaux sont triés par nature et pesés sur une balance homologuée. Chaque catégorie est identifiée séparément pour vous proposer une valorisation claire et cohérente.",
     },
     {
       title: "Virement instantané dès la pesée",
       description:
-        "Le règlement s'effectue par virement bancaire instantané, conformément à la législation en vigueur. Vous recevez les fonds directement sur votre compte, tracé et sécurisé.",
+        "Le règlement s'effectue par virement bancaire instantané, conformément à la réglementation en vigueur. Le paiement est tracé, rapide et sécurisé.",
     },
   ],
   keyPoints: [
     {
       title: "Prix indexés LME",
       description:
-        "Nos cours sont alignés sur le London Metal Exchange, référence mondiale. Pas de marge cachée : vous êtes payé au juste prix du marché.",
+        "Les cours suivent les marchés de référence et la qualité réelle du lot. L'objectif est de proposer un prix lisible, sans discours flou ni valorisation globale approximative.",
     },
     {
-      title: "Pesée 100 % transparente",
+      title: "Pesée transparente",
       description:
-        "Balances homologuées et contrôlées. Vous assistez à la pesée et recevez un bordereau détaillé par type de métal.",
+        "La pesée est réalisée au dépôt sur matériel certifié, avec séparation par famille de métaux pour éviter les décotes inutiles.",
     },
     {
       title: "Virement instantané",
       description:
-        "Règlement par virement bancaire instantané le jour même, conforme à la loi de 2016 encadrant les transactions sur métaux recyclés.",
+        "Le règlement se fait par virement instantané dès validation du lot, dans le respect de la législation applicable au rachat de métaux.",
     },
     {
-      title: "Identification gratuite",
+      title: "Dépôt et enlèvement",
       description:
-        "Vous ne savez pas ce que vous avez ? Envoyez-nous une photo par téléphone pour une première estimation avant de vous déplacer.",
+        "CIL Recyclage travaille à la fois au comptoir pour les apports directs et sur site pour les demandes professionnelles ou les volumes plus importants.",
     },
   ],
   relatedSlugs: [

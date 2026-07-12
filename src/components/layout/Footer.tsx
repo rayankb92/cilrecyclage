@@ -5,20 +5,24 @@ import { PRIORITY_METALS, SITE } from "@/content/site";
 import { PhoneLink } from "@/components/ui/PhoneLink";
 
 export function Footer() {
+  const hasSecondaryPhone =
+    SITE.phoneLandline && SITE.phoneLandline !== SITE.phone;
+
   return (
-    <footer className="border-t border-slate-800 bg-slate-900 text-slate-400">
+    <footer className="border-t border-[#232323] bg-[#121212] text-[#A3A3A3]">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-4">
         <div className="md:col-span-1">
           <Image
-            src="/logo-valmetaux.png"
-            alt="VALMETAUX"
-            width={120}
-            height={78}
-            className="mb-4"
+            src={SITE.logoPath}
+            alt={SITE.name}
+            width={180}
+            height={72}
+            className="mb-4 h-auto w-36"
           />
           <p className="text-sm leading-6">
-            Centre de récupération de métaux à Argenteuil. Rachat cuivre,
-            laiton, aluminium, ferraille et métaux spéciaux.
+            Depot de rachat de metaux a Villaines-sous-Bois. Cuivre, laiton,
+            aluminium, ferraille et metaux speciaux pour particuliers,
+            artisans et professionnels.
           </p>
           <address className="mt-4 not-italic space-y-1 text-sm">
             <p>{SITE.address.streetAddress}</p>
@@ -27,27 +31,35 @@ export function Footer() {
             </p>
             <p>Lun–Ven 8h–17h · Sam 8h–12h</p>
             <PhoneLink
-              className="mt-2 inline-block font-bold text-amber-400 hover:text-amber-300"
+              className="mt-2 inline-block font-bold text-[#F47A20] hover:text-[#FFD7B5]"
             >
               {SITE.phone}
             </PhoneLink>
-            <span className="ml-2 text-xs text-slate-600">mobile</span>
-            <br />
-            <PhoneLink
-              phone={SITE.phoneLandline}
-              trackConversion={false}
-              className="font-semibold text-slate-400 hover:text-amber-300"
-            >
-              {SITE.phoneLandline}
-            </PhoneLink>
-            <span className="ml-2 text-xs text-slate-600">fixe</span>
-            <br />
-            <a
-              href={`mailto:${SITE.email}`}
-              className="text-amber-400 hover:text-amber-300"
-            >
-              {SITE.email}
-            </a>
+            <span className="ml-2 text-xs text-[#6B7280]">contact</span>
+            {hasSecondaryPhone && (
+              <>
+                <br />
+                <PhoneLink
+                  phone={SITE.phoneLandline}
+                  trackConversion={false}
+                  className="font-semibold text-[#A3A3A3] hover:text-[#FFD7B5]"
+                >
+                  {SITE.phoneLandline}
+                </PhoneLink>
+                <span className="ml-2 text-xs text-[#6B7280]">fixe</span>
+              </>
+            )}
+            {SITE.email && (
+              <>
+                <br />
+                <a
+                  href={`mailto:${SITE.email}`}
+                  className="text-[#F47A20] hover:text-[#FFD7B5]"
+                >
+                  {SITE.email}
+                </a>
+              </>
+            )}
           </address>
         </div>
 
@@ -58,16 +70,16 @@ export function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             {NEARBY_DEPARTMENTS.map((dept) => (
               <li key={dept.slug}>
-                <Link href={`/${dept.slug}`} className="hover:text-amber-400">
+                <Link href={`/${dept.slug}`} className="hover:text-[#F47A20]">
                   Ferrailleur {dept.nom} ({dept.code})
                 </Link>
               </li>
             ))}
           </ul>
-          <ul className="mt-3 space-y-2 border-t border-slate-800 pt-3 text-sm">
+          <ul className="mt-3 space-y-2 border-t border-[#232323] pt-3 text-sm">
             {EXTENDED_DEPARTMENTS.map((dept) => (
               <li key={dept.slug}>
-                <Link href={`/${dept.slug}`} className="hover:text-amber-400">
+                <Link href={`/${dept.slug}`} className="hover:text-[#F47A20]">
                   Ferrailleur {dept.nom} ({dept.code})
                 </Link>
               </li>
@@ -79,10 +91,18 @@ export function Footer() {
           <h2 className="text-sm font-bold uppercase tracking-wider text-white">
             Communes couvertes
           </h2>
+          <div className="mt-4">
+            <Link
+              href="/rachat-metaux-carnelle-pays-de-france"
+              className="text-sm font-semibold text-[#F47A20] hover:text-[#FFD7B5]"
+            >
+              Bassin Carnelle Pays-de-France
+            </Link>
+          </div>
           <ul className="mt-4 space-y-2 text-sm">
             {ALL_CITIES.map((city) => (
               <li key={city.slug}>
-                <Link href={`/${city.slug}`} className="hover:text-amber-400">
+                <Link href={`/${city.slug}`} className="hover:text-[#F47A20]">
                   {city.ville}
                 </Link>
               </li>
@@ -102,9 +122,9 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-slate-800 px-4 py-4 text-center text-xs text-slate-600 sm:px-6">
-        © {new Date().getFullYear()} {SITE.name} — Ferrailleur Argenteuil,
-        Île-de-France
+      <div className="border-t border-[#232323] px-4 py-4 text-center text-xs text-[#6B7280] sm:px-6">
+        © {new Date().getFullYear()} {SITE.name} — Ferrailleur
+        Villaines-sous-Bois, Île-de-France
       </div>
     </footer>
   );

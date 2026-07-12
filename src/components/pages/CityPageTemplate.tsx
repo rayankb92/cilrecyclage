@@ -31,10 +31,10 @@ export function CityPageTemplate({ content }: { content: CityContent }) {
       <BreadcrumbJsonLd items={breadcrumbItems} />
 
       {/* ── HERO ── */}
-      <section className="bg-slate-900 px-4 py-14 sm:px-6">
+      <section className="bg-[#121212] px-4 py-14 sm:px-6">
         <div className="mx-auto max-w-4xl">
           <Breadcrumb items={breadcrumbItems} />
-          <p className="mt-4 text-xs font-bold uppercase tracking-widest text-amber-400">
+          <p className="mt-4 text-xs font-bold uppercase tracking-widest text-[#F47A20]">
             Ferrailleur {content.ville} · {content.departement}
           </p>
           <h1 className="mt-3 text-3xl font-extrabold leading-tight text-white sm:text-4xl">
@@ -44,7 +44,7 @@ export function CityPageTemplate({ content }: { content: CityContent }) {
             {content.hero.subheadline}
           </p>
           <PhoneLink
-            className="mt-7 inline-block rounded-full bg-amber-500 px-7 py-3 text-base font-bold text-white shadow-lg transition hover:bg-amber-600 active:scale-95"
+            className="mt-7 inline-block rounded-full bg-[#F47A20] px-7 py-3 text-base font-bold text-white shadow-lg transition hover:bg-[#D95F02] active:scale-95"
           >
             {SITE.phone}
           </PhoneLink>
@@ -94,7 +94,7 @@ export function CityPageTemplate({ content }: { content: CityContent }) {
           {content.paragraphs.avantagesConcurrentiel && (
             <section>
               <h2 className="mb-4 text-xl font-bold text-slate-900 sm:text-2xl">
-                Pourquoi choisir VALMETAUX à {content.ville}
+                Pourquoi faire appel à CIL Recyclage à {content.ville}
               </h2>
               <RichParagraph text={content.paragraphs.avantagesConcurrentiel} />
             </section>
@@ -111,7 +111,7 @@ export function CityPageTemplate({ content }: { content: CityContent }) {
               <li key={service.slug}>
                 <Link
                   href={`/prestations/${service.slug}`}
-                  className="block rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-800 transition hover:border-amber-300 hover:text-amber-700"
+                  className="block rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-800 transition hover:border-[#FFD7B5] hover:text-[#D95F02]"
                 >
                   {service.nav}
                   <span className="mt-1 block text-xs font-normal text-slate-400 line-clamp-2">
@@ -132,7 +132,7 @@ export function CityPageTemplate({ content }: { content: CityContent }) {
             <li>
               <Link
                 href={`/${content.internalLinks.department.slug}`}
-                className="font-semibold text-amber-600 hover:text-amber-800"
+                className="font-semibold text-[#F47A20] hover:text-[#D95F02]"
               >
                 → Ferrailleur {content.internalLinks.department.label}
               </Link>
@@ -141,7 +141,7 @@ export function CityPageTemplate({ content }: { content: CityContent }) {
               <li key={city.slug}>
                 <Link
                   href={`/${city.slug}`}
-                  className="font-semibold text-amber-600 hover:text-amber-800"
+                  className="font-semibold text-[#F47A20] hover:text-[#D95F02]"
                 >
                   → Ferrailleur {city.label}
                 </Link>
@@ -152,9 +152,9 @@ export function CityPageTemplate({ content }: { content: CityContent }) {
             Retrouvez notre{" "}
             <Link
               href="/"
-              className="font-semibold text-amber-600 hover:text-amber-800"
+              className="font-semibold text-[#F47A20] hover:text-[#D95F02]"
             >
-              centre de récupération à Argenteuil
+              dépôt de Villaines-sous-Bois
             </Link>
             .
           </p>

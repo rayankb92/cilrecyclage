@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 };
 
 const CATEGORY_COLORS: Record<string, string> = {
-  "Marché des métaux": "text-amber-600 bg-amber-50 border-amber-200",
+  "Marché des métaux": "text-[#D95F02] bg-[#FFF3E8] border-[#FFD7B5]",
   "Conseils pratiques": "text-emerald-700 bg-emerald-50 border-emerald-200",
   "Réglementation": "text-blue-700 bg-blue-50 border-blue-200",
 };
@@ -31,10 +31,10 @@ export default function GuidesPage() {
       <BreadcrumbJsonLd items={breadcrumbItems} />
 
       {/* Header */}
-      <section className="border-b border-slate-800 bg-slate-950 px-4 py-14 sm:px-6">
+      <section className="border-b border-[#232323] bg-[#121212] px-4 py-14 sm:px-6">
         <div className="mx-auto max-w-5xl">
           <Breadcrumb items={breadcrumbItems} />
-          <p className="mt-5 text-xs font-bold uppercase tracking-widest text-amber-400">
+          <p className="mt-5 text-xs font-bold uppercase tracking-widest text-[#F47A20]">
             Base de connaissances
           </p>
           <h1 className="mt-3 text-3xl font-extrabold text-white sm:text-4xl">
@@ -54,7 +54,7 @@ export default function GuidesPage() {
             <Link
               key={guide.slug}
               href={`/guides/${guide.slug}`}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:border-amber-300 hover:shadow-lg"
+              className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:border-[#FFD7B5] hover:shadow-lg"
             >
               {/* Image */}
               {guide.image && (
@@ -85,14 +85,14 @@ export default function GuidesPage() {
                   </span>
                 </div>
 
-                <h2 className="mt-3 text-base font-bold leading-snug text-slate-900 group-hover:text-amber-700">
+                <h2 className="mt-3 text-base font-bold leading-snug text-slate-900 group-hover:text-[#D95F02]">
                   {guide.title}
                 </h2>
                 <p className="mt-2 line-clamp-3 text-sm leading-6 text-slate-500">
                   {guide.excerpt}
                 </p>
 
-                <span className="mt-4 text-xs font-bold text-amber-600 group-hover:underline">
+                <span className="mt-4 text-xs font-bold text-[#F47A20] group-hover:underline">
                   Lire le guide →
                 </span>
               </div>
@@ -102,9 +102,9 @@ export default function GuidesPage() {
       </section>
 
       {/* CTA bas de page */}
-      <section className="bg-slate-950 py-14">
+      <section className="bg-[#121212] py-14">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <p className="text-xs font-bold uppercase tracking-widest text-amber-400">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#F47A20]">
             Une question sur votre lot ?
           </p>
           <h2 className="mt-3 text-2xl font-extrabold text-white">
@@ -115,10 +115,10 @@ export default function GuidesPage() {
             logistique et la réglementation.
           </p>
           <PhoneLink
-            className="mt-7 inline-flex items-center gap-3 border-l-2 border-amber-400 pl-4 transition hover:border-amber-300"
+            className="mt-7 inline-flex items-center gap-3 border-l-2 border-[#F47A20] pl-4 transition hover:border-[#D95F02]"
           >
             <div className="text-left">
-              <span className="block text-[10px] font-bold uppercase tracking-widest text-amber-400">
+              <span className="block text-[10px] font-bold uppercase tracking-widest text-[#F47A20]">
                 Appeler
               </span>
               <span className="block text-2xl font-black text-white">

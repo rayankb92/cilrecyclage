@@ -7,6 +7,27 @@ import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { SITE } from "@/content/site";
 import { PhoneLink } from "@/components/ui/PhoneLink";
 
+function AudienceIcon({ kind }: { kind: "particuliers" | "professionnels" }) {
+  if (kind === "particuliers") {
+    return (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5 text-[#F47A20]" aria-hidden="true">
+        <path d="M4 20h16" />
+        <path d="M7 20v-8l5-4 5 4v8" />
+        <path d="M10 20v-5h4v5" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5 text-[#F47A20]" aria-hidden="true">
+      <path d="M3 19h18" />
+      <path d="M5 19V9h14v10" />
+      <path d="M9 9V5h6v4" />
+      <path d="M10 13h4M10 16h4" />
+    </svg>
+  );
+}
+
 export function ServicePageTemplate({ content }: { content: ServiceContent }) {
   const breadcrumbItems = [
     { label: "Accueil", href: "/" },
@@ -27,7 +48,7 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
       <BreadcrumbJsonLd items={breadcrumbItems} />
 
       {/* ── HERO ── full-bleed image + overlay texte, identique homepage */}
-      <section className="relative min-h-[520px] overflow-hidden bg-slate-950 lg:min-h-[600px]">
+      <section className="relative min-h-[520px] overflow-hidden bg-[#121212] lg:min-h-[600px]">
         {/* Image de fond plein format */}
         <Image
           src={content.hero.image}
@@ -38,13 +59,13 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
           priority
         />
         {/* Dégradé sombre pour lisibilité du texte */}
-        <div className="absolute inset-0 bg-linear-to-r from-slate-950/90 via-slate-950/70 to-slate-950/20" />
-        <div className="absolute inset-0 bg-linear-to-t from-slate-950/80 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-r from-[#121212]/90 via-[#121212]/72 to-[#121212]/20" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#121212]/82 via-transparent to-transparent" />
 
         {/* Contenu */}
         <div className="relative z-10 mx-auto flex min-h-[520px] max-w-6xl flex-col justify-end px-4 pb-14 pt-10 sm:px-6 lg:min-h-[600px] lg:justify-center lg:pb-0">
           <Breadcrumb items={breadcrumbItems} />
-          <p className="mt-5 text-xs font-bold uppercase tracking-widest text-amber-400">
+          <p className="mt-5 text-xs font-bold uppercase tracking-widest text-[#F47A20]">
             {content.hero.eyebrow}
           </p>
           <h1 className="mt-3 max-w-2xl text-3xl font-extrabold leading-tight text-white sm:text-4xl lg:text-5xl">
@@ -55,10 +76,10 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <PhoneLink
-              className="inline-flex items-center gap-3 self-start border-l-2 border-amber-400 pl-4 transition hover:border-amber-300"
+              className="inline-flex items-center gap-3 self-start border-l-2 border-[#F47A20] pl-4 transition hover:border-[#D95F02]"
             >
               <div>
-                <span className="block text-[10px] font-bold uppercase tracking-widest text-amber-400">
+                <span className="block text-[10px] font-bold uppercase tracking-widest text-[#F47A20]">
                   Appeler maintenant
                 </span>
                 <span className="block text-xl font-black text-white">
@@ -70,7 +91,7 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
         </div>
 
         {/* Ligne accent bas */}
-        <div className="absolute bottom-0 left-0 h-px w-full bg-linear-to-r from-transparent via-amber-500/50 to-transparent" />
+        <div className="absolute bottom-0 left-0 h-px w-full bg-linear-to-r from-transparent via-[#F47A20]/50 to-transparent" />
       </section>
 
       {/* ── POUR QUI ── */}
@@ -90,8 +111,8 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
               {content.targets.particuliers && (
                 <div className="rounded-2xl border border-slate-200 bg-slate-50 p-8">
                   <div className="mb-4 flex items-center gap-3">
-                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-100 text-xl">
-                      🏠
+                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#FFD7B5]">
+                      <AudienceIcon kind="particuliers" />
                     </span>
                     <h3 className="text-lg font-bold text-slate-900">
                       Particuliers
@@ -100,7 +121,7 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
                   <ul className="space-y-3">
                     {content.targets.particuliers.map((item, i) => (
                       <li key={i} className="flex items-start gap-2 text-slate-700">
-                        <span className="mt-1 text-amber-500">✓</span>
+                        <span className="mt-1 text-[#F47A20]">✓</span>
                         {item}
                       </li>
                     ))}
@@ -108,10 +129,10 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
                 </div>
               )}
               {content.targets.professionnels && (
-                <div className="rounded-2xl border border-slate-800 bg-slate-900 p-8">
+                <div className="rounded-2xl border border-[#232323] bg-[#232323] p-8">
                   <div className="mb-4 flex items-center gap-3">
-                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-500/20 text-xl">
-                      🏭
+                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#FFD7B5]">
+                      <AudienceIcon kind="professionnels" />
                     </span>
                     <h3 className="text-lg font-bold text-white">
                       Professionnels
@@ -120,7 +141,7 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
                   <ul className="space-y-3">
                     {content.targets.professionnels.map((item, i) => (
                       <li key={i} className="flex items-start gap-2 text-slate-300">
-                        <span className="mt-1 text-amber-400">✓</span>
+                        <span className="mt-1 text-[#F47A20]">✓</span>
                         {item}
                       </li>
                     ))}
@@ -133,9 +154,9 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
       )}
 
       {/* ── COMMENT ÇA MARCHE ── */}
-      <section className="bg-slate-950 py-16">
+      <section className="bg-[#121212] py-16">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <p className="mb-2 text-center text-xs font-bold uppercase tracking-widest text-amber-400">
+          <p className="mb-2 text-center text-xs font-bold uppercase tracking-widest text-[#F47A20]">
             Processus
           </p>
           <h2 className="mb-12 text-center text-2xl font-extrabold text-white sm:text-3xl">
@@ -143,14 +164,14 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
           </h2>
           <div className="relative">
             {/* Ligne verticale de connexion (desktop) */}
-            <div className="absolute left-6 top-6 hidden h-full w-px bg-slate-800 lg:block" />
+            <div className="absolute left-6 top-6 hidden h-full w-px bg-[#232323] lg:block" />
             <div className="space-y-8">
               {content.steps.map((step, i) => (
                 <div
                   key={i}
                   className="relative flex gap-6 lg:items-start"
                 >
-                  <div className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-amber-400/40 bg-slate-900 text-lg font-black text-amber-400">
+                  <div className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[#F47A20]/40 bg-[#232323] text-lg font-black text-[#F47A20]">
                     {i + 1}
                   </div>
                   <div className="pb-2 pt-2">
@@ -178,9 +199,9 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
             {content.keyPoints.map((point, i) => (
               <div
                 key={i}
-                className="group rounded-2xl border border-slate-100 bg-slate-50 p-6 transition hover:border-amber-200 hover:bg-amber-50"
+                className="group rounded-2xl border border-slate-100 bg-slate-50 p-6 transition hover:border-[#FFD7B5] hover:bg-[#FFF3E8]"
               >
-                <div className="mb-1 h-1 w-8 rounded-full bg-amber-400 transition group-hover:w-12" />
+                <div className="mb-1 h-1 w-8 rounded-full bg-[#F47A20] transition group-hover:w-12" />
                 <h3 className="mt-4 font-bold text-slate-900">{point.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
                   {point.description}
@@ -203,15 +224,15 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
                 <Link
                   key={service.slug}
                   href={`/prestations/${service.slug}`}
-                  className="group flex flex-col rounded-xl border border-slate-200 bg-white p-6 transition hover:border-amber-300 hover:shadow-md"
+                  className="group flex flex-col rounded-xl border border-slate-200 bg-white p-6 transition hover:border-[#FFD7B5] hover:shadow-md"
                 >
-                  <span className="text-sm font-bold text-slate-900 group-hover:text-amber-700">
+                  <span className="text-sm font-bold text-slate-900 group-hover:text-[#D95F02]">
                     {service.nav}
                   </span>
                   <span className="mt-1 text-xs text-slate-500">
                     {service.hero.pitch.slice(0, 80)}…
                   </span>
-                  <span className="mt-4 text-xs font-semibold text-amber-600 group-hover:underline">
+                  <span className="mt-4 text-xs font-semibold text-[#F47A20] group-hover:underline">
                     Voir la prestation →
                   </span>
                 </Link>
@@ -236,7 +257,7 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
               <Link
                 key={dept.slug}
                 href={`/${dept.slug}`}
-                className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-amber-300 hover:bg-amber-50 hover:text-amber-800"
+                className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#FFD7B5] hover:bg-[#FFF3E8] hover:text-[#D95F02]"
               >
                 {dept.nom} ({dept.code})
               </Link>
@@ -246,20 +267,20 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
       </section>
 
       {/* ── CTA FINAL ── */}
-      <section className="bg-slate-950 py-16">
+      <section className="bg-[#121212] py-16">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <p className="text-xs font-bold uppercase tracking-widest text-amber-400">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#F47A20]">
             Prêt à valoriser vos métaux ?
           </p>
           <h2 className="mt-3 text-2xl font-extrabold text-white sm:text-3xl">
-            Appelez directement le dépôt d&apos;Argenteuil
+            Appelez directement le dépôt de Villaines-sous-Bois
           </h2>
           <p className="mt-4 text-slate-400">
-            Réponse rapide, estimation immédiate par téléphone ou sur photo.
-            Ouvert du lundi au vendredi.
+            Réponse rapide, estimation par téléphone ou sur photos, et
+            orientation vers le dépôt ou l&apos;intervention adaptée.
           </p>
           <PhoneLink
-            className="mt-8 inline-flex items-center gap-3 rounded-full bg-amber-500 px-10 py-4 text-lg font-black text-white shadow-xl transition hover:bg-amber-400 active:scale-95"
+            className="mt-8 inline-flex items-center gap-3 rounded-full bg-[#F47A20] px-10 py-4 text-lg font-black text-white shadow-xl transition hover:bg-[#D95F02] active:scale-95"
           >
             {SITE.phone}
           </PhoneLink>

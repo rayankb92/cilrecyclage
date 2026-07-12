@@ -5,68 +5,68 @@ export const recyclageFerrailles: ServiceContent = {
   nav: "Recyclage ferrailles",
   meta: {
     title:
-      "Recyclage Ferraille Lourde et Légère en Île-de-France | VALMETAUX",
+      "Recyclage Ferraille Lourde et Légère en Île-de-France | CIL Recyclage",
     description:
-      "Ferrailleur professionnel en IDF : recyclage de ferraille lourde (poutrelles, fonte) et légère (platin, tôles). Enlèvement camion-grue, virement instantané. 95, 92, 78, 93, 77, 91, 94.",
+      "CIL Recyclage prend en charge la ferraille lourde et légère en Val-d'Oise et en Île-de-France : poutrelles, fonte, platin, tôles, structures métalliques. Enlèvement, dépôt et virement instantané.",
   },
   hero: {
     eyebrow: "Prestation",
-    headline: "Recyclage de Ferrailles : Volumes Lourds et Légères en IDF",
+    headline: "Recyclage de Ferrailles : Volumes Lourds et Légers",
     pitch:
-      "Chantier de démolition, rénovation industrielle, garagiste — nous traitons tous les types d'acier et de fonte. Camion-grue, bennes, intervention rapide dans toute l'Île-de-France.",
+      "Chantier, atelier, rénovation, démolition ou débarras métallique : nous valorisons tous les types de ferrailles avec une logistique adaptée au volume et au mode d'accès.",
     image: "/images/logistique/poutrelle.webp",
-    imageAlt: "Poutrelles et ferraille lourde prêtes au recyclage — VALMETAUX",
+    imageAlt: "Poutrelles et ferraille lourde prêtes au recyclage chez CIL Recyclage",
   },
   targets: {
     particuliers: [
-      "Vieux appareils électroménagers (lave-linge, four, radiateurs)",
-      "Ferraille de garage : vélos, portails, mobilier métal",
-      "Structures légères à évacuer avant travaux",
+      "Ferraille de garage, portails, grillages, mobilier métallique",
+      "Radiateurs, petits équipements et structures à déposer avant travaux",
+      "Lots métalliques issus de rénovation ou de débarras",
     ],
     professionnels: [
-      "Chantiers BTP : ferraille de béton armé, poutrelles IPN/IPE, coffrages",
-      "Démolition : structures métalliques, charpentes, machines HS",
-      "Garagistes : carters, boîtes de vitesses, jantes, essieux",
-      "Usines : rebuts de production acier, font de machines en fin de vie",
+      "Chantiers BTP : ferraille de démolition, poutrelles, éléments acier",
+      "Ateliers et usines : chutes métalliques, machines hors service, fonte",
+      "Garagistes : essieux, carters, boîtes, jantes et pièces mécaniques",
+      "Sites industriels : structures métalliques et volumes à évacuer proprement",
     ],
   },
   steps: [
     {
       title: "Évaluation du volume et du type de ferraille",
       description:
-        "Décrivez-nous ou envoyez des photos de votre ferraille. On évalue le volume, le type (ferraille légère platin, lourde, fonte) et on planifie l'intervention adaptée.",
+        "Après un échange téléphonique ou sur photos, nous identifions le type de ferraille, le volume estimé et la meilleure solution : apport, enlèvement ou benne.",
     },
     {
       title: "Enlèvement sur site avec le matériel adapté",
       description:
-        "Camion plateau pour les petits volumes, camion-grue pour les structures lourdes. Nous intervenons directement sur votre chantier, entrepôt ou atelier sans contrainte de manutention de votre côté.",
+        "Selon le lot, nous organisons un chargement au dépôt, une intervention sur chantier ou un enlèvement avec le matériel adapté aux structures lourdes.",
     },
     {
       title: "Pesée et virement instantané",
       description:
-        "Pesée à notre dépôt ou sur site selon le volume. Règlement par virement instantané le jour de l'enlèvement pour les professionnels.",
+        "Les métaux récupérés sont pesés et valorisés selon leur nature. Le règlement est ensuite effectué par virement instantané.",
     },
   ],
   keyPoints: [
     {
       title: "Ferraille légère (platin)",
       description:
-        "Électroménager, tôles fines, vélos, mobilier, pièces détachées légères. Prise en charge dès les petits volumes.",
+        "Tôles, portails, cadres, pièces métalliques, équipements légers : ces lots peuvent être regroupés, triés et valorisés proprement.",
     },
     {
       title: "Ferraille lourde",
       description:
-        "Poutrelles IPN/IPE, structures de charpente, poutres et colonnes métalliques. Camion-grue disponible pour l'extraction.",
+        "Poutrelles, charpentes, structures acier, fonte et pièces massives : prise en charge avec une logistique pensée pour les charges encombrantes.",
     },
     {
       title: "Fonte et mécanique",
       description:
-        "Radiateurs fonte, moteurs hors service, boîtes de vitesses, carters — valorisés séparément pour optimiser votre rachat.",
+        "Radiateurs fonte, ensembles mécaniques, moteurs et pièces métalliques sont séparés pour une valorisation plus cohérente.",
     },
     {
-      title: "Couverture IDF complète",
+      title: "Dépôt et intervention",
       description:
-        "Nous intervenons dans les 7 départements IDF : 95, 92, 78, 93, 77, 91, 94 — planification sous 24/48h pour les volumes importants.",
+        "CIL Recyclage travaille depuis Villaines-sous-Bois avec une couverture Val-d'Oise et Île-de-France pour les demandes en volume ou les chantiers.",
     },
   ],
   relatedSlugs: ["enlevement-chantier", "depose-de-bennes", "rachat-de-metaux"],

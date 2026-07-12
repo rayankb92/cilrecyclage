@@ -1,30 +1,28 @@
 import type { MetalItem, ServiceItem } from "./types";
 
 export const SITE = {
-  name: "VALMETAUX",
-  tagline: "Rachat de métaux et ferrailleur en Île-de-France",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.valmetaux.fr",
+  name: "CIL Recyclage",
+  tagline: "Ferrailleur et rachat de metaux en Val-d'Oise et Ile-de-France",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.cilrecyclage.fr",
   locale: "fr_FR",
-  phone: "06 07 56 14 96",
-  phoneLandline: "01 34 11 05 10",
+  phone: "01 34 71 94 63",
+  phoneLandline: null,
+  logoPath: "/cilrecyclage-logo-nobg.png",
   googleAds: {
     id: "GT-NFP5MXFC",
     adsId: "AW-18269725493",
     ga4Id: "G-F8GGC9P4CS",
     phoneConversionLabel: "FFwQCNPGocgcELXG14dE",
   },
-  email: "contact@valmetaux.fr",
+  email: null,
   address: {
-    streetAddress: "5 rue de l'ouest",
-    addressLocality: "Argenteuil",
-    postalCode: "95100",
+    streetAddress: "Rte de Viarmes CD 909",
+    addressLocality: "Villaines-sous-Bois",
+    postalCode: "95570",
     addressRegion: "Île-de-France",
     addressCountry: "FR",
   },
-  geo: {
-    latitude: 48.9472,
-    longitude: 2.2467,
-  },
+  geo: null,
   openingHours: "Mo-Fr 08:00-18:00, Sa 08:00-12:00",
 } as const;
 
