@@ -37,9 +37,6 @@ const METAL_GRID = [
 ];
 
 export default function HomePage() {
-  const hasSecondaryPhone =
-    SITE.phoneLandline && SITE.phoneLandline !== SITE.phone;
-
   return (
     <>
       <section className="relative overflow-hidden bg-[#232323]">
@@ -286,15 +283,6 @@ export default function HomePage() {
                   <PhoneLink className="inline-flex items-center justify-center rounded-full bg-[#F47A20] px-5 py-3 text-sm font-extrabold text-white transition hover:bg-[#D95F02]">
                     Contact — {SITE.phone}
                   </PhoneLink>
-                  {hasSecondaryPhone && (
-                    <PhoneLink
-                      phone={SITE.phoneLandline}
-                      trackConversion={false}
-                      className="inline-flex items-center justify-center rounded-full border border-white/15 px-5 py-3 text-sm font-bold text-white transition hover:bg-white/8"
-                    >
-                      Fixe dépôt — {SITE.phoneLandline}
-                    </PhoneLink>
-                  )}
                 </div>
               </div>
             </AnimateIn>
