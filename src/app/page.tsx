@@ -58,7 +58,7 @@ export default function HomePage() {
             </p>
 
             <h1 className="hero-2 mt-6 max-w-3xl text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Ferrailleur et rachat de métaux en Val-d&apos;Oise et Île-de-France
+              Ferrailleur et rachat de métaux en Île-de-France
             </h1>
 
             <p className="hero-3 mt-5 max-w-2xl text-base leading-7 text-slate-200 sm:text-lg">
