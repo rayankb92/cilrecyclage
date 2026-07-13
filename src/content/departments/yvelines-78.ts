@@ -23,7 +23,7 @@ export const yvelines78: DepartmentContent = {
     metauxDominants:
       "Nous rachetons l'ensemble de vos métaux ferreux et non ferreux dans les Yvelines. Le profil pavillonnaire du département met en avant le **cuivre** de dépose, le **zinc** de toiture (couvreurs), le **laiton** de plomberie, les **radiateurs** fonte et aluminium, ainsi que l'**aluminium** (jantes, menuiseries). Les rénovations de chauffage produisent régulièrement des chaudières en fonte et des tuyauteries en cuivre épais.",
     logistique:
-      "Nous assurons la [dépose de bennes](/logistique-chantier/depose-de-bennes/) et l'[enlèvement camion-grue](/logistique-chantier/enlevement-camion-grue/) dans les Yvelines. Pour les petits lots, l'apport au dépôt de Villaines-sous-Bois reste la solution la plus rapide.",
+      "Nous assurons la [dépose de bennes](/prestations/depose-de-bennes) et l'[enlèvement chantier](/prestations/enlevement-chantier) dans les Yvelines. Pour les petits lots, l'apport au dépôt de Villaines-sous-Bois reste la solution la plus rapide.",
     interDept:
       "Vos chantiers se situent aussi dans les Hauts-de-Seine ou le Val-d'Oise ? Consultez nos pages [Hauts-de-Seine (92)](/ferrailleur-hauts-de-seine-92/) et [Val-d'Oise (95)](/ferrailleur-val-doise-95/), ou apportez directement vos métaux à notre [dépôt de Villaines-sous-Bois](/).",
   },

@@ -26,7 +26,7 @@ export const valDeMarne94: DepartmentContent = {
     metauxDominants:
       "Nous rachetons l'ensemble de vos métaux ferreux et non ferreux dans le Val-de-Marne. Le tissu urbain dense génère du **cuivre** de dépose (plomberie, câbles), du **laiton** de robinetterie, des **radiateurs** fonte et aluminium, de la **ferraille légère** (platin) et des **moteurs électriques**. Les zones industrielles de Vitry et d'Ivry produisent également de l'acier lourd et des alliages.",
     logistique:
-      "Nous assurons la [dépose de bennes](/logistique-chantier/depose-de-bennes/) et l'[enlèvement camion-grue](/logistique-chantier/enlevement-camion-grue/) dans tout le 94. La densité urbaine du département est maîtrisée par notre logistique adaptée aux interventions en milieu contraint.",
+      "Nous assurons la [dépose de bennes](/prestations/depose-de-bennes) et l'[enlèvement chantier](/prestations/enlevement-chantier) dans tout le 94. La densité urbaine du département est maîtrisée par notre logistique adaptée aux interventions en milieu contraint.",
     interDept:
       "Nos interventions couvrent également la [Seine-Saint-Denis (93)](/ferrailleur-seine-saint-denis-93/) et la [Seine-et-Marne (77)](/ferrailleur-seine-et-marne-77/) pour vos chantiers multi-sites. Retrouvez notre [dépôt de Villaines-sous-Bois](/).",
   },

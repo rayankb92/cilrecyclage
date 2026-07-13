@@ -23,7 +23,7 @@ export const hautsDeSeine92: DepartmentContent = {
     metauxDominants:
       "Nous rachetons l'ensemble de vos métaux ferreux et non ferreux dans les Hauts-de-Seine. Le tissu local met en avant le **cuivre** de plomberie et les câbles électriques, le **laiton** de robinetterie, l'**aluminium** (jantes, carters) et les **radiateurs** cuivre/aluminium. Pour les chantiers de rénovation lourde, nous valorisons les poutrelles IPN/IPE et le platin en volume.",
     logistique:
-      "Pour les volumes importants, nous mettons à votre disposition notre service de [dépose de bennes](/logistique-chantier/depose-de-bennes/) et nos camions-grues pour l'enlèvement de structures lourdes depuis les chantiers denses du département.",
+      "Pour les volumes importants, nous mettons à votre disposition notre service de [dépose de bennes](/prestations/depose-de-bennes) et notre solution d'[enlèvement chantier](/prestations/enlevement-chantier) pour évacuer les structures lourdes depuis les chantiers denses du département.",
     interDept:
       "Vous avez également des chantiers ou des besoins d'évacuation en Seine-Saint-Denis ? Découvrez notre service d'achat de métaux en [Seine-Saint-Denis (93)](/ferrailleur-seine-saint-denis-93/) ou revenez à notre page principale [Val-d'Oise (95)](/ferrailleur-val-doise-95/).",
   },

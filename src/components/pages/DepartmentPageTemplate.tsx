@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { DepartmentContent } from "@/content/types";
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
-import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
+import { BreadcrumbJsonLd, FaqPageJsonLd } from "@/components/seo/JsonLd";
 import { SITE } from "@/content/site";
 import { PhoneLink } from "@/components/ui/PhoneLink";
 import { RichParagraph } from "@/lib/render-content";
@@ -15,9 +15,25 @@ export function DepartmentPageTemplate({
     { label: "Accueil", href: "/" },
     { label: `${content.nom} (${content.code})` },
   ];
+  const faq = [
+    {
+      question: `CIL Recyclage intervient-il dans le ${content.nom} (${content.code}) ?`,
+      answer: `Oui, CIL Recyclage intervient dans le ${content.nom} (${content.code}) pour le rachat de métaux, l'évacuation de ferrailles et les besoins logistiques selon les volumes et la nature du chantier.`,
+    },
+    {
+      question: `Quels métaux sont rachetés dans le ${content.code} ?`,
+      answer: `Dans le ${content.code}, CIL Recyclage rachète les métaux ferreux et non ferreux comme le cuivre, le laiton, l'aluminium, la ferraille, l'inox, le zinc, le plomb et certains lots techniques selon les apports.`,
+    },
+    {
+      question: `Peut-on aussi passer par le dépôt de Villaines-sous-Bois depuis le ${content.code} ?`,
+      answer: `Oui, le dépôt principal de CIL Recyclage se trouve à Villaines-sous-Bois. Selon votre situation, l'apport direct au dépôt ou une intervention sur site peut être proposée.`,
+    },
+  ];
 
   return (
     <>
+      <FaqPageJsonLd faq={faq} />
+
       {/* ── HERO ── */}
       <section className="bg-[#121212] px-4 py-14 sm:px-6">
         <div className="mx-auto max-w-4xl">

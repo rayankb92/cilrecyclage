@@ -26,7 +26,7 @@ export const essonne91: DepartmentContent = {
     metauxDominants:
       "Nous rachetons l'ensemble de vos métaux ferreux et non ferreux en Essonne. Le profil industriel du département met en avant les **métaux spéciaux** (carbure de tungstène, plaquettes d'usinage, alliages), le **cuivre** de câblage industriel, l'**aluminium** de production, l'**inox** de cuisine professionnelle et les **moteurs électriques** issus des équipements en fin de vie.",
     logistique:
-      "Nous intervenons pour l'enlèvement de ferrailles industrielles, la reprise de machines hors service et la [dépose de bennes](/logistique-chantier/depose-de-bennes/) sur vos sites du 91. Notre camion-grue prend en charge les charges lourdes sans manutention de votre part.",
+      "Nous intervenons pour l'enlèvement de ferrailles industrielles, la reprise de machines hors service et la [dépose de bennes](/prestations/depose-de-bennes) sur vos sites du 91. Notre solution d'[enlèvement chantier](/prestations/enlevement-chantier) prend en charge les charges lourdes sans manutention de votre part.",
     interDept:
       "Nous couvrons également le [Val-de-Marne (94)](/ferrailleur-val-de-marne-94/) pour les chantiers limitrophes. Retrouvez notre [dépôt de Villaines-sous-Bois](/) ou consultez notre page [Val-d'Oise (95)](/ferrailleur-val-doise-95/).",
   },

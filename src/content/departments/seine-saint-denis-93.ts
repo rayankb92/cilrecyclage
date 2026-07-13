@@ -23,7 +23,7 @@ export const seineSaintDenis93: DepartmentContent = {
     metauxDominants:
       "Nous rachetons l'ensemble de vos métaux ferreux et non ferreux en Seine-Saint-Denis. La nature mixte du département — habitat ancien, zones artisanales, sites industriels — génère du **cuivre** (câbles, chutes de plomberie), du **laiton**, de l'**aluminium**, des **moteurs électriques**, de la **fonte** de chauffage et des **métaux spéciaux** pour les ateliers. Les démolitions partielles produisent des poutrelles et du platin en volume.",
     logistique:
-      "Pour les chantiers à fort tonnage, nous proposons la [dépose de bennes](/logistique-chantier/depose-de-bennes/), l'[enlèvement camion-grue](/logistique-chantier/enlevement-camion-grue/) et la découpe sur site avant évacuation des ferrailles.",
+      "Pour les chantiers à fort tonnage, nous proposons la [dépose de bennes](/prestations/depose-de-bennes), l'[enlèvement chantier](/prestations/enlevement-chantier) et la découpe sur site avant évacuation des ferrailles.",
     interDept:
       "Vos opérations se poursuivent dans les Hauts-de-Seine ou le Val-d'Oise ? Découvrez nos pages [Hauts-de-Seine (92)](/ferrailleur-hauts-de-seine-92/) et [Val-d'Oise (95)](/ferrailleur-val-doise-95/), ou apportez directement vos métaux à notre [dépôt de Villaines-sous-Bois](/).",
   },

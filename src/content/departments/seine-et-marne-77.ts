@@ -26,7 +26,7 @@ export const seineEtMarne77: DepartmentContent = {
     metauxDominants:
       "Nous rachetons l'ensemble de vos métaux ferreux et non ferreux en Seine-et-Marne. Les zones industrielles du 77 génèrent des **ferrailles lourdes** (poutrelles, structures acier), du **cuivre** de dépose industrielle, de l'**aluminium** de production, des **moteurs électriques** et des **métaux spéciaux** (carbure, alliages) pour les ateliers d'usinage de précision.",
     logistique:
-      "Notre flotte de camions-grues intervient dans tout le département pour l'enlèvement de structures métalliques lourdes, de machines industrielles et de gros volumes de ferrailles. Pour les chantiers à flux continus, nous proposons la [dépose de bennes](/logistique-chantier/depose-de-bennes/) en Seine-et-Marne avec rotation selon vos besoins.",
+      "Notre flotte intervient dans tout le département pour l'enlèvement de structures métalliques lourdes, de machines industrielles et de gros volumes de ferrailles. Pour les chantiers à flux continus, nous proposons la [dépose de bennes](/prestations/depose-de-bennes) et l'[enlèvement chantier](/prestations/enlevement-chantier) en Seine-et-Marne avec rotation selon vos besoins.",
     interDept:
       "Nos interventions couvrent également le [Val-de-Marne (94)](/ferrailleur-val-de-marne-94/) et l'[Essonne (91)](/ferrailleur-essonne-91/) pour les chantiers multi-sites. Retrouvez notre [dépôt de Villaines-sous-Bois](/).",
   },

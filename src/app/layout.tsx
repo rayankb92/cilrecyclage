@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Manrope } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { LocalBusinessJsonLd } from "@/components/seo/JsonLd";
 import { SITE } from "@/content/site";
 import { Analytics } from "@vercel/analytics/next";
-import { GA4PageView } from "@/components/analytics/GA4PageView";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -48,9 +46,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  verification: {
-    google: "7twX9AEQq0d3Is-XQ47YJBKi3NtHrNJ6eA1o279goNg",
-  },
 };
 
 export default function RootLayout({
@@ -61,25 +56,10 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${manrope.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-white text-zinc-900">
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${SITE.googleAds.id}`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-ads" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${SITE.googleAds.id}');
-            gtag('config', '${SITE.googleAds.adsId}');
-            gtag('config', '${SITE.googleAds.ga4Id}');
-          `}
-        </Script>
         <LocalBusinessJsonLd />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        <GA4PageView />
         <Analytics />
       </body>
     </html>

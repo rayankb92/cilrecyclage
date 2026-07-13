@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { ServiceContent } from "@/content/types";
 import { ALL_DEPARTMENTS, ALL_SERVICES } from "@/content";
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
-import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
+import { BreadcrumbJsonLd, FaqPageJsonLd } from "@/components/seo/JsonLd";
 import { SITE } from "@/content/site";
 import { PhoneLink } from "@/components/ui/PhoneLink";
 
@@ -38,6 +38,20 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
   const relatedServices = ALL_SERVICES.filter((s) =>
     content.relatedSlugs.includes(s.slug),
   );
+  const faq = [
+    {
+      question: `En quoi consiste la prestation ${content.nav.toLowerCase()} ?`,
+      answer: `${content.nav} chez CIL Recyclage correspond à une prestation terrain ou dépôt organisée depuis Villaines-sous-Bois pour trier, collecter, évacuer et valoriser les métaux selon le type de lot.`,
+    },
+    {
+      question: `Qui peut demander la prestation ${content.nav.toLowerCase()} ?`,
+      answer: `La prestation ${content.nav.toLowerCase()} s'adresse aux particuliers, artisans et professionnels selon la nature des métaux, le volume à traiter et les contraintes logistiques du site.`,
+    },
+    {
+      question: `Comment contacter CIL Recyclage pour ${content.nav.toLowerCase()} ?`,
+      answer: `Pour ${content.nav.toLowerCase()}, le plus direct est d'appeler CIL Recyclage au ${SITE.phone} afin de valider le dépôt, l'enlèvement ou la mise en place logistique adaptée.`,
+    },
+  ];
 
   const hasBothTargets = Boolean(
     content.targets.particuliers && content.targets.professionnels,
@@ -46,6 +60,7 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
   return (
     <>
       <BreadcrumbJsonLd items={breadcrumbItems} />
+      <FaqPageJsonLd faq={faq} />
 
       {/* ── HERO ── full-bleed image + overlay texte, identique homepage */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#121212] lg:min-h-[600px]">
@@ -285,7 +300,10 @@ export function ServicePageTemplate({ content }: { content: ServiceContent }) {
             {SITE.phone}
           </PhoneLink>
           <p className="mt-4 text-xs text-slate-600">
-            {SITE.address.streetAddress} — {SITE.address.addressLocality}
+            {SITE.address.streetAddress} — {SITE.address.addressLocality} · {SITE.landmarkName}
+          </p>
+          <p className="mt-1 text-xs text-[#FFD7B5]">
+            {SITE.accessNote}
           </p>
         </div>
       </section>

@@ -11,13 +11,43 @@ export function LocalBusinessJsonLd({
   pageUrl,
 }: LocalBusinessJsonLdProps) {
   const telephones = [SITE.phone];
+  const mapQuery = encodeURIComponent(
+    [
+      SITE.address.streetAddress,
+      SITE.address.postalCode,
+      SITE.address.addressLocality,
+      SITE.address.addressCountry,
+    ].join(", "),
+  );
+  const areaServed = city
+    ? [
+        {
+          "@type": "City",
+          name: city,
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "Val-d'Oise",
+        },
+      ]
+    : [
+        {
+          "@type": "AdministrativeArea",
+          name: "Val-d'Oise",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "Île-de-France",
+        },
+      ];
 
   const schema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "RecyclingCenter"],
     "@id": `${SITE.url}/#localbusiness`,
     name: SITE.name,
     description: SITE.tagline,
+    disambiguatingDescription: `${SITE.name}, ${SITE.address.streetAddress}, ${SITE.address.postalCode} ${SITE.address.addressLocality}. ${SITE.accessNote}.`,
     url: pageUrl ?? SITE.url,
     telephone: telephones,
     email: SITE.email ?? undefined,
@@ -38,17 +68,20 @@ export function LocalBusinessJsonLd({
         }
       : undefined,
     openingHours: SITE.openingHours,
-    areaServed: city
-      ? {
-          "@type": "City",
-          name: city,
-        }
-      : {
-          "@type": "AdministrativeArea",
-          name: "Île-de-France",
-        },
+    areaServed,
+    hasMap: `https://www.google.com/maps/search/?api=1&query=${mapQuery}`,
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: SITE.phone,
+        contactType: "customer service",
+        areaServed: ["Val-d'Oise", "Île-de-France"],
+        availableLanguage: ["fr"],
+      },
+    ],
+    knowsLanguage: ["fr"],
     priceRange: "€€",
-    sameAs: [],
+    sameAs: SITE.sameAs.length > 0 ? SITE.sameAs : undefined,
   };
 
   return (

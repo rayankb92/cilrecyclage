@@ -7,13 +7,10 @@ export const SITE = {
   locale: "fr_FR",
   phone: "01 34 71 94 63",
   logoPath: "/cilrecyclage-logo-nobg.png",
-  googleAds: {
-    id: "GT-NFP5MXFC",
-    adsId: "AW-18269725493",
-    ga4Id: "G-F8GGC9P4CS",
-    phoneConversionLabel: "FFwQCNPGocgcELXG14dE",
-  },
   email: null,
+  sameAs: [] as string[],
+  landmarkName: "GAMM VERT",
+  accessNote: "Accès via le parking GAMM VERT",
   address: {
     streetAddress: "Rte de Viarmes CD 909",
     addressLocality: "Villaines-sous-Bois",
@@ -21,32 +18,35 @@ export const SITE = {
     addressRegion: "Île-de-France",
     addressCountry: "FR",
   },
-  geo: null as { latitude: number; longitude: number } | null,
+  geo: {
+    latitude: 49.07551712402592,
+    longitude: 2.3451932937873186,
+  },
   openingHours: "Mo-Fr 08:00-18:00, Sa 08:00-12:00",
 } as const;
 
 export const CORE_SERVICES: ServiceItem[] = [
   {
     name: "Rachat de métaux",
-    slug: "rachat-metaux",
+    slug: "rachat-de-metaux",
     description:
       "Valorisation de vos métaux ferreux et non ferreux au cours du jour : cuivre, laiton, aluminium, inox, plomb, zinc et métaux spéciaux.",
   },
   {
     name: "Dépose de bennes",
-    slug: "logistique-chantier/depose-de-bennes",
+    slug: "depose-de-bennes",
     description:
       "Mise à disposition de bennes pour la collecte de ferrailles et métaux valorisables sur chantiers et sites industriels.",
   },
   {
-    name: "Enlèvement camion-grue",
-    slug: "logistique-chantier/enlevement-camion-grue",
+    name: "Enlèvement chantier",
+    slug: "enlevement-chantier",
     description:
-      "Manutention et enlèvement de charges lourdes : poutrelles, machines industrielles et structures métalliques.",
+      "Chargement, enlèvement et évacuation de ferrailles, structures métalliques et lots de chantier selon le volume.",
   },
   {
     name: "Évacuation de ferrailles",
-    slug: "evacuation-ferrailles-metalliques",
+    slug: "recyclage-ferrailles",
     description:
       "Enlèvement et évacuation de ferrailles et objets métalliques encombrants sur site.",
   },

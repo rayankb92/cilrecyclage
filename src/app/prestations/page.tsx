@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ALL_SERVICES } from "@/content";
 import { SITE } from "@/content/site";
 import { PhoneLink } from "@/components/ui/PhoneLink";
-import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
+import { BreadcrumbJsonLd, FaqPageJsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
 
 const url = `${SITE.url}/prestations`;
@@ -44,6 +44,24 @@ const SERVICE_SNIPPETS: Record<string, string> = {
   "depose-de-bennes":
     "Bennes ferrailles déposées sur site avec rotation, pesée et valorisation du contenu selon le lot.",
 };
+
+const PRESTATIONS_FAQ = [
+  {
+    question: "Quelles prestations propose CIL Recyclage ?",
+    answer:
+      "CIL Recyclage propose le rachat de métaux, le recyclage de ferrailles, le tri des métaux non ferreux et spéciaux, l'enlèvement chantier et la dépose de bennes.",
+  },
+  {
+    question: "Peut-on apporter les métaux directement au dépôt ?",
+    answer:
+      "Oui, les particuliers, artisans et professionnels peuvent apporter leurs métaux directement au dépôt de Villaines-sous-Bois selon la nature et le volume des apports.",
+  },
+  {
+    question: "CIL Recyclage se déplace-t-il sur chantier ?",
+    answer:
+      "Oui, CIL Recyclage peut organiser un enlèvement sur chantier ou sur site pour les lots métalliques, l'évacuation de ferrailles et les besoins logistiques adaptés.",
+  },
+];
 
 function ServiceIcon({ slug }: { slug: string }) {
   const common = "h-6 w-6 text-white";
@@ -103,6 +121,7 @@ export default function PrestationsPage() {
   return (
     <>
       <BreadcrumbJsonLd items={breadcrumbItems} />
+      <FaqPageJsonLd faq={PRESTATIONS_FAQ} />
 
       {/* Header */}
       <section className="border-b border-[#232323] bg-[#121212] px-4 py-14 sm:px-6">

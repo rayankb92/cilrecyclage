@@ -164,6 +164,7 @@ export default function InfosPratiquesPage() {
               <p className="font-semibold text-slate-900">{SITE.name}</p>
               <p>{SITE.address.streetAddress}</p>
               <p>{SITE.address.postalCode} {SITE.address.addressLocality}</p>
+              <p className="text-sm font-medium text-[#D95F02]">{SITE.accessNote}</p>
             </address>
 
             <a
@@ -177,7 +178,9 @@ export default function InfosPratiquesPage() {
               </svg>
               <span className="flex flex-col">
                 <span className="text-sm font-bold text-slate-900">Lancer la navigation</span>
-                <span className="text-xs text-slate-500">{SITE.address.streetAddress}, {SITE.address.addressLocality}</span>
+                <span className="text-xs text-slate-500">
+                  {SITE.address.streetAddress}, {SITE.address.addressLocality} · {SITE.landmarkName}
+                </span>
               </span>
               <svg className="ml-auto h-4 w-4 shrink-0 text-[#F47A20] transition group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />

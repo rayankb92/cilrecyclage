@@ -26,6 +26,7 @@ export function Footer() {
             <p>
               {SITE.address.postalCode} {SITE.address.addressLocality}
             </p>
+            <p className="text-[#FFD7B5]">{SITE.accessNote}</p>
             <p>Lun–Ven 8h–17h · Sam 8h–12h</p>
             <PhoneLink
               className="mt-2 inline-block font-bold text-[#F47A20] hover:text-[#FFD7B5]"

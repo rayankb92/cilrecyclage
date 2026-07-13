@@ -6,6 +6,7 @@ import { ALL_CITIES, NEARBY_DEPARTMENTS, EXTENDED_DEPARTMENTS } from "@/content"
 import { CORE_SERVICES, SITE } from "@/content/site";
 import { AnimateIn } from "@/components/ui/AnimateIn";
 import { PhoneLink } from "@/components/ui/PhoneLink";
+import { FaqPageJsonLd } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: `${SITE.name} — Ferrailleur Villaines-sous-Bois | Rachat Métaux 95`,
@@ -36,9 +37,34 @@ const METAL_GRID = [
   },
 ];
 
+const HOME_FAQ = [
+  {
+    question: "Où se trouve le dépôt CIL Recyclage ?",
+    answer:
+      "Le dépôt CIL Recyclage se situe route de Viarmes CD 909, 95570 Villaines-sous-Bois, dans le nord du Val-d'Oise, avec un accès via le parking GAMM VERT.",
+  },
+  {
+    question: "Quels métaux CIL Recyclage rachète-t-il ?",
+    answer:
+      "CIL Recyclage rachète notamment le cuivre, le laiton, l'aluminium, la ferraille, le zinc, le plomb, l'inox et certains métaux spéciaux selon la nature du lot.",
+  },
+  {
+    question: "CIL Recyclage intervient-il seulement dans le Val-d'Oise ?",
+    answer:
+      "Le dépôt est basé à Villaines-sous-Bois dans le Val-d'Oise, avec des interventions possibles en Île-de-France pour les enlèvements, chantiers et besoins logistiques selon les volumes.",
+  },
+  {
+    question: "Comment contacter rapidement CIL Recyclage ?",
+    answer:
+      "Le numéro principal du dépôt CIL Recyclage est le 01 34 71 94 63 pour un apport au dépôt, un enlèvement ou une demande de benne.",
+  },
+];
+
 export default function HomePage() {
   return (
     <>
+      <FaqPageJsonLd faq={HOME_FAQ} />
+
       <section className="relative overflow-hidden bg-[#232323]">
         <Image
           src="/images/logistique/chargement-grue-camion.webp"
@@ -277,6 +303,7 @@ export default function HomePage() {
                   <p>
                     {SITE.address.postalCode} {SITE.address.addressLocality}
                   </p>
+                  <p className="text-[#FFD7B5]">{SITE.accessNote}</p>
                   <p>Lun–Ven 8h–17h · Sam 8h–12h</p>
                 </address>
                 <div className="mt-6 flex flex-col gap-3">

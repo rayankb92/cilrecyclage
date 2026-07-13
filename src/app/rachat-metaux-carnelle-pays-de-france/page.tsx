@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ALL_CITIES, getCitiesByPhase } from "@/content";
 import { SITE } from "@/content/site";
-import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
+import { BreadcrumbJsonLd, FaqPageJsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
 import { PhoneLink } from "@/components/ui/PhoneLink";
 
@@ -40,10 +40,29 @@ const serviceLinks = [
   { label: "Dépose de bennes", slug: "depose-de-bennes" },
 ];
 
+const HUB_FAQ = [
+  {
+    question: "Quelles communes couvre le bassin Carnelle Pays-de-France de CIL Recyclage ?",
+    answer:
+      "Cette page regroupe le bassin local autour de Villaines-sous-Bois avec Viarmes, Belloy-en-France, Montsoult, Maffliers, Domont, Luzarches et d'autres communes proches du nord du Val-d'Oise.",
+  },
+  {
+    question: "Pourquoi cette zone est-elle importante pour CIL Recyclage ?",
+    answer:
+      "Le bassin Carnelle Pays-de-France correspond à la zone de proximité naturelle du dépôt, reliée par la D909, la RD301, la Croix Verte, la N104 et l'A16.",
+  },
+  {
+    question: "Quels profils font appel à CIL Recyclage sur ce bassin local ?",
+    answer:
+      "Les particuliers en rénovation, les artisans, les PME et les chantiers locaux sollicitent CIL Recyclage pour le rachat de métaux, l'enlèvement et la logistique ferraille.",
+  },
+];
+
 export default function CarnellePaysDeFrancePage() {
   return (
     <>
       <BreadcrumbJsonLd items={breadcrumbItems} />
+      <FaqPageJsonLd faq={HUB_FAQ} />
 
       <section className="border-b border-[#232323] bg-[#121212] px-4 py-14 sm:px-6">
         <div className="mx-auto max-w-5xl">

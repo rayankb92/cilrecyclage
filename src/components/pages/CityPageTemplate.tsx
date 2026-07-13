@@ -2,7 +2,11 @@ import Link from "next/link";
 import type { CityContent } from "@/content/types";
 import { ALL_SERVICES } from "@/content";
 import { Breadcrumb } from "@/components/seo/Breadcrumb";
-import { BreadcrumbJsonLd, LocalBusinessJsonLd } from "@/components/seo/JsonLd";
+import {
+  BreadcrumbJsonLd,
+  FaqPageJsonLd,
+  LocalBusinessJsonLd,
+} from "@/components/seo/JsonLd";
 import { SITE } from "@/content/site";
 import { PhoneLink } from "@/components/ui/PhoneLink";
 import { RichParagraph } from "@/lib/render-content";
@@ -21,9 +25,24 @@ export function CityPageTemplate({ content }: { content: CityContent }) {
     },
     { label: content.ville },
   ];
+  const faq = [
+    {
+      question: `CIL Recyclage intervient-il à ${content.ville} ?`,
+      answer: `Oui, CIL Recyclage intervient à ${content.ville} pour le rachat de métaux, l'évacuation de ferrailles et l'organisation logistique adaptée selon les apports et les volumes.`,
+    },
+    {
+      question: `Quels métaux peut-on faire reprendre à ${content.ville} ?`,
+      answer: `À ${content.ville}, CIL Recyclage reprend notamment le cuivre, le laiton, l'aluminium, la ferraille, le zinc, le plomb et d'autres métaux valorisables selon le type de lot.`,
+    },
+    {
+      question: `Faut-il aller au dépôt ou demander un enlèvement depuis ${content.ville} ?`,
+      answer: `Depuis ${content.ville}, l'apport au dépôt de Villaines-sous-Bois est possible pour de nombreux lots. Pour les volumes plus importants ou les contraintes chantier, une intervention sur site peut être étudiée.`,
+    },
+  ];
 
   return (
     <>
+      <FaqPageJsonLd faq={faq} />
       <LocalBusinessJsonLd
         city={content.ville}
         pageUrl={`${SITE.url}/${content.slug}`}
