@@ -56,12 +56,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={`${manrope.variable} h-full antialiased`}>
+      <head>
+        <GoogleAdsTag />
+      </head>
       <body className="flex min-h-full flex-col bg-white text-zinc-900">
         <LocalBusinessJsonLd />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        <GoogleAdsTag />
         <Analytics />
       </body>
     </html>

@@ -3,10 +3,17 @@
 /**
  * Lien téléphone réutilisable.
  * - Centralise le formatage href tel:
+ * - Envoie la conversion Google Ads "Annonce Appel Direct" sur chaque clic.
  */
 
 import { track } from "@vercel/analytics";
 import { SITE } from "@/content/site";
+
+declare global {
+  interface Window {
+    gtag_report_conversion?: (url?: string) => boolean;
+  }
+}
 
 function normalizePhone(phone: string) {
   return phone.replace(/\s/g, "");
@@ -33,6 +40,11 @@ export function PhoneLink({
     });
 
     onClick?.(e);
+    if (e.defaultPrevented) return;
+
+    // tel: n'unload pas la page : on envoie la conversion sans bloquer
+    // l'appel natif (sinon adblock / gtag.js async cassent le clic).
+    window.gtag_report_conversion?.();
   }
 
   return (
