@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { GoogleAdsTag } from "@/components/seo/GoogleAdsTag";
 import { LocalBusinessJsonLd } from "@/components/seo/JsonLd";
 import { SITE } from "@/content/site";
 import { Analytics } from "@vercel/analytics/next";
@@ -60,6 +61,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <GoogleAdsTag />
         <Analytics />
       </body>
     </html>
